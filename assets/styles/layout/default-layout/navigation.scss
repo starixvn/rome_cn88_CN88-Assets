@@ -1,0 +1,40 @@
+﻿
+.navigation {
+    position: absolute;
+    top: 88px;
+    bottom: 0;
+    width: 256px;
+
+
+    .main-tab {
+        overflow: hidden;
+        margin-bottom: 0;
+
+        li {
+            cursor: pointer;
+            float: left;
+            width: 50%;
+
+            &.disabledViewAccInfo {
+                margin-bottom: 0;
+                cursor: default;
+            }
+
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                display: block;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                font-weight: bold;
+                color: #fff;
+                white-space: nowrap;
+            }
+
+            &.active {
+                background: #fff;
+            }
+        }
+    }
+}

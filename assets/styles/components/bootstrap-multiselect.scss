@@ -1,0 +1,137 @@
+﻿@import "../abstracts/_variables.scss";
+@import "../abstracts/_mixins.scss";
+
+.btn-group {
+    button.multiselect {
+         @include box-shadow(0, 1px, 1px, rgba(0,0,0,.3));
+        background: #fff;
+        font-size: $font-size;
+        margin-right: 0;
+        position: relative;
+        padding: 6px 10px;
+        
+        &:hover {
+            color: inherit;
+        }
+
+        &:focus, &:visited {
+            @include box-shadow(0, 1px, 1px, rgba(0,0,0,.3));
+        }
+
+        .caret {
+            position: absolute;
+            right: 10px;
+            top: 12px;
+        }
+    }
+
+    &.open > .dropdown-toggle {
+        &.btn.btn-default {
+            background: #fff;
+            @include effect-textbox;
+        }
+    }
+        
+}
+
+.btn:not(.btn-raised):not(.btn-link):hover, .btn:not(.btn-raised):not(.btn-link):focus, .input-group-btn .btn:not(.btn-raised):not(.btn-link):hover, .input-group-btn .btn:not(.btn-raised):not(.btn-link):focus {
+    background: #fff;
+}
+
+.multiselect {
+    &.btn-default.active, &.btn-default:active {
+        background: #fff;
+    }
+
+    .multiselect-selected-text {
+        width: 170px;
+        margin-right: 10px;
+        display: inline-block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: left;
+    }
+}
+
+.multiselect-container.dropdown-menu {
+    border: 1px solid $dropdown-border;
+    font-size: 13px;
+    @include effect-normal;
+
+    > li:hover > a {
+        background-color: $dropdown-bg-hover;
+    }
+
+    > li > a > label {
+        line-height: 28px;
+        padding: 0 20px 0 35px;
+    }
+
+    label.checkbox {
+        display: block;
+    }
+
+    label.radio {
+        padding-left: 8px;
+        input[type=radio] {
+            display: none;
+        }
+    }
+
+    .filter {
+        padding: 0;
+        &:hover {
+            background: #fff;
+        }
+        .input-group {
+            width: 91%;
+
+            .input-group-addon, .input-group-btn {
+                display: none;
+            }
+
+            .form-control.multiselect-search {
+                width: 100%;
+                margin-left: 8px;
+                border-radius: 2px;
+                box-shadow: none;
+                border: 1px solid #aaa;
+                line-height: 18px;
+
+                &:hover {
+                    background: #fff;
+                }
+            }
+        }
+    }
+
+    .checkbox input[type="checkbox"],
+    .checkbox-inline input[type="checkbox"] 
+     {
+        margin-left: -22px;
+        top: 2px;
+    }
+
+
+    .multiselect-all a {
+        border-bottom: 1px solid $border-color-dark;
+    }
+}
+
+.form-inline .multiselect-container {
+    label.checkbox{
+        padding: 2px 20px 2px 36px;
+    }
+
+    .active > a label, .active > a:hover label, .active > a:focus label {
+        color: $text-color;
+    }
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+    background: none;
+    color: $text-color;
+}

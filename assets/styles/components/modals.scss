@@ -1,0 +1,175 @@
+﻿@import '../abstracts/_variables.scss';
+@import '../abstracts/_mixins.scss';
+@import '../components/buttons.scss';
+
+
+.modal[id^="page-popup"] {
+    position: absolute !important;
+}
+
+#page-popup, .modal {
+    height: auto;
+    @include effect-special;
+}
+
+#modal-draggable-mask {
+    border: dashed 2px #dfdfdf;
+    background-color: transparent;
+    z-index: 2000;
+    border-style: dotted;
+    cursor: move;
+}
+
+.modal-dialog {
+    margin: 0 auto;
+
+    &.ex-modal {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.modal-content {
+    border-color: $border-color;
+    margin: auto;
+    height: 100%;
+    @include border-radius(1px);
+
+    .modal-header {
+        padding: 0 16px;
+        border-bottom: none;
+
+        .icon-close {
+            margin-right: 0;
+            color: #333;
+            opacity: 1;
+            font-size: 18px;
+            top: 6px;
+            width: 60px;
+            height: 30px;
+            left: 10px;
+
+            &:before {
+                position: relative;
+                left: 13px;
+            }
+        }
+
+        .modal-title {
+            border-bottom: 1px solid #dfdfdf;
+            color: #333;
+            font-weight: 700;
+            padding: 10px 0;
+            font-size: 13px;
+            cursor: move;
+            font-size: 13px;
+
+            .popup-title:empty {
+                height: 20px;
+                display: block;
+            }
+
+            .icon-info {
+                color: #0f82c4;
+                font-size: 18px;
+                margin-left: 8px;
+                position: absolute;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .modal-body {
+        padding: 2px 16px 8px;
+        line-height: 22px;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    .modal-footer {
+        border-top: none;
+        padding: 12px 16px 20px;
+
+        button:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+@media only screen and (max-device-width : $screen-device-lower768) {
+    .popup-guidelines {
+        width: 95% !important;
+    }
+}
+
+/*********************************/
+/* Bootboxjs*/
+/*********************************/
+.bootbox {
+
+    .close {
+        color: $text-color;
+        opacity: 1;
+        position: relative;
+    }
+
+    .modal-header .close {        
+        top: 9px;
+        right: 0;
+    }
+
+    .modal-header + .modal-body {
+        padding-top: 16px;
+    }
+
+    .modal-body {
+        padding: 40px 16px 16px;
+        font-size: 14px;
+
+        .close {
+            top: -18px;
+            right: -4px;
+        }
+    }
+
+    .modal-dialog {
+        margin: 0;
+        width: 500px;
+        display: table;
+    }
+
+    .modal-footer {
+        border-top: none;
+        padding-bottom: 4px;
+
+        .btn {
+            border: none;
+            background: none;
+            color: #045ace;
+            font-weight: bold;
+            line-height: 32px;
+            padding: 0 16px;
+            margin: 8px;
+            min-width: 86px;
+            text-transform: capitalize;
+            text-transform: uppercase;
+            @include border-radius(1px);
+            @include box-shadow(0, 0, 0, transparent);
+
+            &:hover, &:focus {
+                background-color: #ececec;
+            }
+
+            &.btn-default {
+                color: $text-color;
+                float: right;
+            }
+        }
+    }
+}
+
+@media \0screen\,screen\9 {
+    .modal-dialog {
+        margin: 0 auto !important;
+    }
+}
