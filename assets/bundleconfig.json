@@ -38,15 +38,10 @@
 		]
 	},
 	{
-		"outputFileName": "bundles/site-main/agent.css",
+		"outputFileName": "bundles/site-cn88/default.css",
 		"inputFiles": [
-			"styles/vendors-extensions/site-main/bootstrap-material-ex.css",
-			"styles/vendors/ripples.css",
-			"styles/vendors/jquery.mCustomScrollbar.css",
 			"styles/layout/default-layout/header.css",
-			"styles/layout/default-layout/navigation.css",
 			"styles/layout/default-layout/sidebar.css",
-			"styles/themes/agent.css",
 			"styles/vendors/toastr/toastr.css",
 			"styles/components/toastr.css",
 			"styles/components/resizable.css"
@@ -68,7 +63,7 @@
 		]
 	},
 	{
-		"outputFileName": "bundles/site-main/super.css",
+		"outputFileName": "bundles/site-cn88/super.css",
 		"inputFiles": [
 			"styles/vendors-extensions/site-main/bootstrap-material-ex.css",
 			"styles/vendors/ripples.css",

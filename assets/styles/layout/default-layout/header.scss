@@ -1,25 +1,36 @@
 ﻿@import "../../abstracts/_variables.scss";
 @import "../../abstracts/_mixins.scss";
 
-$text-color: #fff;
+$text-color: #5b534f;
 
-.header {
+/*.header {
     position: fixed;
     z-index: 90;
     left: 256px;
     top: 0;
     right: 0;
-}
+}*/
 /********************************** Header Navigation ************************************/
 .header-nav {
-    @include border-radius(0);
-    background: url('../../images/headerbg.png') no-repeat;
-    height: 48px;
+    height: 35px;
+    font-size: 12px;
     margin-bottom: 0;
     min-height: unset;
     border: none;
-
-    .icon-collapse {
+    display: flex;
+    justify-content: space-between;
+    .header-left {
+        li {
+            display: inline-block;
+        }
+    }
+    .header-right {
+        li {
+            display: inline-block;
+            padding: 8px 12px;
+        }
+    }
+    /*.icon-collapse {
         @include border-radius(50%);
         display: inline-block;
         padding: 8px;
@@ -212,11 +223,11 @@ $text-color: #fff;
 
     .visible-mobile {
         display: none !important;
-    } 
+    }*/ 
 }
 
 /********************************** Header Notification *************************************/
-.header-msg {
+/*.header-msg {
     @include box-shadow(1px, 0, 3px, rgba(0, 0, 0, 0.3));
     background: $text-color;
     height: 40px;
@@ -470,4 +481,4 @@ $text-color: #fff;
     .header-msg {
         display: none;
     } 
-}
+}*/
