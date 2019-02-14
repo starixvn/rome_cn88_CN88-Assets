@@ -20,11 +20,13 @@ $text-color: #5b534f;
     display: flex;
     justify-content: space-between;
     .header-left {
+        margin-bottom: 0;
         li {
             display: inline-block;
         }
     }
     .header-right {
+        margin-bottom: 0;
         li {
             display: inline-block;
             padding: 8px 12px;
