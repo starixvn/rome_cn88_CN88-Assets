@@ -10,18 +10,39 @@
         .menu-item {
             display: inline-block;
             text-transform: uppercase;
-            padding: 12px 16px 7px;
-            a {
-                color: #fff;
-            }
-            &:hover a {
-                color: #FF9999;
+            padding: 12px 16px 11px;
+            position: relative;
+            &:first-child {
+                padding: 12px 13px 11px;
+                background-color: #631010;
                 text-decoration: none;
             }
+            a {
+                color: #fff;
+                &:hover {
+                    text-decoration: none;
+                    color: #FF9999;
+                }
+            }
+            &:hover:not(:first-child), &.active  {
+                &:after {
+                    width: 0;
+                    height: 0;
+                    border-left: 8px solid transparent;
+                    border-right: 8px solid transparent;
+                    border-bottom: 8px solid #fff;
+                    content: " ";
+                    position: absolute;
+                    bottom: -1px;
+                    left: 50%;
+                    margin-left: -8px;
+                }
+            }
+            
         }
     }
     .sub-menu {
-         margin-bottom: 0;
+         margin-bottom: 10px;
          @include box-shadow(1px, 0, 3px, rgba(0, 0, 0, 0.3));
         .sub-menu-item  {
             display: inline-block;

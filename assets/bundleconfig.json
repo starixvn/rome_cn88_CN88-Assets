@@ -4,7 +4,7 @@
 		"inputFiles": [
 			"styles/base/reset.css",
 			"styles/vendors-extensions/common/bootstrap-ex.css",
-			"styles/fonts/iconalpha/style.css",
+      "styles/fonts/iconcn88/style.css",
 			"styles/base/scaffolding.css",
 			"styles/components/alerts.css",
 			"styles/components/blockui.css",
