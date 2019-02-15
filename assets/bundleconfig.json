@@ -6,35 +6,10 @@
 			"styles/vendors-extensions/common/bootstrap-ex.css",
       "styles/fonts/iconcn88/style.css",
 			"styles/base/scaffolding.css",
-			"styles/components/alerts.css",
 			"styles/components/blockui.css",
-			"styles/components/buttons.css",
-			"styles/components/breadcrumbs.css",
 			"styles/components/checkbox-radio.css",
 			"styles/components/dropdown.css",
-			"styles/components/form.css",
-			"styles/components/textboxes.css",
-			"styles/components/modals.css",
-			"styles/components/tabs.css",
 			"styles/components/icon.css"
-		]
-	},
-	{
-		"outputFileName": "bundles/common/common-super.css",
-		"inputFiles": [
-			"styles/themes/components/tabs/tab-super.css"
-		]
-	},
-	{
-		"outputFileName": "bundles/common/common-master.css",
-		"inputFiles": [
-			"styles/themes/components/tabs/tab-master.css"
-		]
-	},
-	{
-		"outputFileName": "bundles/common/common-agent.css",
-		"inputFiles": [
-			"styles/themes/components/tabs/tab-agent.css"
 		]
 	},
 	{
@@ -46,37 +21,8 @@
 			"styles/components/toastr.css",
 			"styles/components/resizable.css"
 		]
-	},
-	{
-		"outputFileName": "bundles/site-main/master.css",
-		"inputFiles": [
-			"styles/vendors-extensions/site-main/bootstrap-material-ex.css",
-			"styles/vendors/ripples.css",
-			"styles/vendors/jquery.mCustomScrollbar.css",
-			"styles/layout/default-layout/header.css",
-			"styles/layout/default-layout/navigation.css",
-			"styles/layout/default-layout/sidebar.css",
-			"styles/themes/master.css",
-			"styles/vendors/toastr/toastr.css",
-			"styles/components/toastr.css",
-			"styles/components/resizable.css"
-		]
-	},
-	{
-		"outputFileName": "bundles/site-cn88/super.css",
-		"inputFiles": [
-			"styles/vendors-extensions/site-main/bootstrap-material-ex.css",
-			"styles/vendors/ripples.css",
-			"styles/vendors/jquery.mCustomScrollbar.css",
-			"styles/layout/default-layout/header.css",
-			"styles/layout/default-layout/navigation.css",
-			"styles/layout/default-layout/sidebar.css",
-			"styles/themes/super.css",
-			"styles/vendors/toastr/toastr.css",
-			"styles/components/toastr.css",
-			"styles/components/resizable.css"
-		]
-	},
+	},	
+	
 	{
 		"outputFileName": "bundles/site-main/unsupport-browser/super.css",
 		"inputFiles": [

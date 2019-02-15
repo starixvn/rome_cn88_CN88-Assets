@@ -105,7 +105,7 @@
 }
 
 .icon-bell {
-    @include ripple-effect-icon($margin-left: 0px, $margin-right: -4px, $height: 32px, $width: 32px, $top: 5px);
+    //@include ripple-effect-icon($margin-left: 0px, $margin-right: -4px, $height: 32px, $width: 32px, $top: 5px);
 }
 
 .icon-logout, .setting > a, .icon-collapse, .icon-home, .icon-add, .icon-message {
