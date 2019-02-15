@@ -13,6 +13,7 @@ $text-color: #5b534f;
 /********************************** Header Navigation ************************************/
 .header-nav {
     height: 35px;
+    line-height: 35px;
     font-size: 12px;
     margin-bottom: 0;
     min-height: unset;
@@ -23,13 +24,15 @@ $text-color: #5b534f;
         margin-bottom: 0;
         li {
             display: inline-block;
+            cursor: pointer;
         }
     }
     .header-right {
         margin-bottom: 0;
         li {
             display: inline-block;
-            padding: 8px 12px;
+            padding: 0 12px;
+            cursor: pointer;
         }
     }
     /*.icon-collapse {
