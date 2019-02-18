@@ -15,14 +15,14 @@ $text-color: #5b534f;
     justify-content: space-between;
     .header-left {
         margin-bottom: 0;
-        li {
+        .header-item {
             display: inline-block;
             cursor: pointer;
         }
     }
     .header-right {
         margin-bottom: 0;
-        li {
+        .header-item {
             display: inline-block;
             padding: 0 12px;
             cursor: pointer;
