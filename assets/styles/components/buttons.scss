@@ -28,8 +28,10 @@ input[type="submit"][disabled] {
     padding-right: 16px;
     white-space: nowrap;
     -webkit-appearance: none;
+    font-size: 13px;
     @include box-sizing;
     @include border-radius(0);
+    min-width: 100px;
 
     &[disabled], .disabled {
        opacity: .4;

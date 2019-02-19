@@ -30,13 +30,14 @@
         top: 3px;
     }
 
-    .form-control {        
-        border: none;
-        font-size: 12px;
-        height: 28px;
+    .form-control {  
+        @include border-radius(0);      
+        border: 1px solid #c8c8c8;
+        font-size: 13px;
+        height: 32px;
         background: #fff;
         margin-left: 0;
-        @include effect-textbox;
+        //@include effect-textbox;
     }
 }
 

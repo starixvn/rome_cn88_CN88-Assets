@@ -154,6 +154,19 @@
     }
 }
 
+.tbl-noborder {
+    > thead > tr > th {
+        height: 48px;
+        border-bottom: 2px solid #c8c8c8;
+        color: #828282;
+        text-align: center;
+    } 
+    > tbody > tr > td {
+        height: 40px;
+        border-bottom: 1px solid #c8c8c8;
+        text-align: center;
+    }
+}
 .combined-fixed-pagination-bottom {
     margin-bottom: 48px;
 }
