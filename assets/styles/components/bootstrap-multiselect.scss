@@ -3,7 +3,7 @@
 
 .btn-group {
     button.multiselect {
-         @include box-shadow(0, 1px, 1px, rgba(0,0,0,.3));
+         //@include box-shadow(0, 1px, 1px, rgba(0,0,0,.3));
         background: #fff;
         font-size: $font-size;
         margin-right: 0;
@@ -15,7 +15,7 @@
         }
 
         &:focus, &:visited {
-            @include box-shadow(0, 1px, 1px, rgba(0,0,0,.3));
+            //@include box-shadow(0, 1px, 1px, rgba(0,0,0,.3));
         }
 
         .caret {
@@ -63,11 +63,19 @@
         background-color: $dropdown-bg-hover;
     }
 
+    > li > a {
+        padding: 0;
+    }
+
     > li > a > label {
         line-height: 28px;
         padding: 0 20px 0 35px;
     }
-
+    label.checkbox, label.radio {
+        margin: 0;
+        font-size: 13px;
+        color: #333;
+    }
     label.checkbox {
         display: block;
     }

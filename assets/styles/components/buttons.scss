@@ -21,15 +21,15 @@ input[type="submit"][disabled] {
 %btn {
     border: none;
     cursor: pointer;
-    height: $height-normal;
+    height: 32px;
     outline: none;
     margin-right: 8px;
     padding-left: 16px;
     padding-right: 16px;
     white-space: nowrap;
     -webkit-appearance: none;
-    @include effect-button;
     @include box-sizing;
+    @include border-radius(0);
 
     &[disabled], .disabled {
        opacity: .4;
@@ -39,6 +39,7 @@ input[type="submit"][disabled] {
 
 .btn-default {
     @extend %btn;
+    border: 1px solid #c8c8c8;
     background-color: $btn-bg;    
     color: $btn-color;
      &:hover, &:active {

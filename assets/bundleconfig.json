@@ -77,8 +77,6 @@
   {
     "outputFileName": "bundles/site-features/default.css",
     "inputFiles": [
-      "styles/vendors-extensions/site-main/bootstrap-material-ex.css",
-      "styles/base/roboto-fonts.css",
       "styles/components/tables.css",
       "styles/vendors/jqueryui/jquery-ui-1.9.1.custom.css",
       "styles/vendors/jquery-easyui-1.5/easyui.css",
