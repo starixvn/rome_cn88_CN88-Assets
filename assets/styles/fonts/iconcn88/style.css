@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'CN88Icon';
-  src:  url('fonts/CN88Icon.eot?tq21ky');
-  src:  url('fonts/CN88Icon.eot?tq21ky#iefix') format('embedded-opentype'),
-    url('fonts/CN88Icon.ttf?tq21ky') format('truetype'),
-    url('fonts/CN88Icon.woff?tq21ky') format('woff'),
-    url('fonts/CN88Icon.svg?tq21ky#CN88Icon') format('svg');
+  src:  url('fonts/CN88Icon.eot?810rb4');
+  src:  url('fonts/CN88Icon.eot?810rb4#iefix') format('embedded-opentype'),
+    url('fonts/CN88Icon.ttf?810rb4') format('truetype'),
+    url('fonts/CN88Icon.woff?810rb4') format('woff'),
+    url('fonts/CN88Icon.svg?810rb4#CN88Icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-add:before {
+  content: "\e907";
+}
+.icon-add-outline:before {
+  content: "\e908";
+}
+.icon-arrow-down:before {
+  content: "\e909";
+}
+.icon-edit:before {
+  content: "\e90a";
+}
+.icon-pass:before {
+  content: "\e90b";
+}
+.icon-security:before {
+  content: "\e90c";
+}
 .icon-calendar:before {
   content: "\e906";
 }
