@@ -170,3 +170,40 @@
 .combined-fixed-pagination-bottom {
     margin-bottom: 48px;
 }
+
+$table2-header-bg-color: #f5f1f2;
+$table2-header-color: #3b3b3b;
+
+.tble-style2 {
+
+    thead th, tbody td, tfoot td {
+        height: $height-normal;
+        padding: 0 8px;
+        vertical-align: middle;
+        @include box-sizing;
+    }
+
+
+    thead {
+        border-bottom: 1px solid #bfbfbf;
+
+        th {
+            background-color: $table2-header-bg-color;
+            color: $table2-header-color;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        td {
+            &.text-center {
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,218 +1,187 @@
-﻿[
+[
   {
     "outputFile": "styles/components/blockui.css",
-    "inputFile": "styles/components/blockui.scss"
+    "inputFile": "styles/components/blockui.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/modals.css",
-    "inputFile": "styles/components/modals.scss"
+    "inputFile": "styles/components/modals.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/dropdown.css",
-    "inputFile": "styles/components/dropdown.scss"
+    "inputFile": "styles/components/dropdown.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/buttons.css",
-    "inputFile": "styles/components/buttons.scss"
+    "inputFile": "styles/components/buttons.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/tables.css",
-    "inputFile": "styles/components/tables.scss"
+    "inputFile": "styles/components/tables.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/layout/default-layout/header.css",
-    "inputFile": "styles/layout/default-layout/header.scss"
+    "inputFile": "styles/layout/default-layout/header.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/layout/default-layout/navigation.css",
-    "inputFile": "styles/layout/default-layout/navigation.scss"
+    "inputFile": "styles/layout/default-layout/navigation.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/layout/default-layout/sidebar.css",
-    "inputFile": "styles/layout/default-layout/sidebar.scss"
+    "inputFile": "styles/layout/default-layout/sidebar.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/icon.css",
-    "inputFile": "styles/components/icon.scss"
+    "inputFile": "styles/components/icon.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/base/scaffolding.css",
-    "inputFile": "styles/base/scaffolding.scss"
+    "inputFile": "styles/base/scaffolding.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/vendors/bootstrap.css",
-    "inputFile": "styles/vendors/bootstrap.scss"
-  },
-  {
-    "outputFile": "styles/themes/super.css",
-    "inputFile": "styles/themes/super.scss"
-  },
-  {
-    "outputFile": "styles/themes/master.css",
-    "inputFile": "styles/themes/master.scss"
-  },
-  {
-    "outputFile": "styles/themes/agent.css",
-    "inputFile": "styles/themes/agent.scss"
-  },
-  {
-    "outputFile": "styles/vendors-extensions/site-main/bootstrap-material-ex.css",
-    "inputFile": "styles/vendors-extensions/site-main/bootstrap-material-ex.scss"
-  },
-  {
-    "outputFile": "styles/base/roboto-fonts.css",
-    "inputFile": "styles/base/roboto-fonts.scss"
-  },
-  {
-    "outputFile": "styles/vendors-extensions/site-results/bootstrap-ex.css",
-    "inputFile": "styles/vendors-extensions/site-results/bootstrap-ex.scss"
+    "inputFile": "styles/vendors/bootstrap.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/base/icon-fonts.css",
-    "inputFile": "styles/base/icon-fonts.scss"
+    "inputFile": "styles/base/icon-fonts.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/tabs.css",
-    "inputFile": "styles/components/tabs.scss"
-  },
-  {
-    "outputFile": "styles/themes/unsupport-browser/agent.css",
-    "inputFile": "styles/themes/unsupport-browser/agent.scss"
-  },
-  {
-    "outputFile": "styles/themes/unsupport-browser/master.css",
-    "inputFile": "styles/themes/unsupport-browser/master.scss"
-  },
-  {
-    "outputFile": "styles/themes/unsupport-browser/super.css",
-    "inputFile": "styles/themes/unsupport-browser/super.scss"
-  },
-  {
-    "outputFile": "styles/vendors-extensions/site-totalbetsforecast/bootstrap-ex.css",
-    "inputFile": "styles/vendors-extensions/site-totalbetsforecast/bootstrap-ex.scss"
+    "inputFile": "styles/components/tabs.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/textboxes.css",
-    "inputFile": "styles/components/textboxes.scss"
-  },
-  {
-    "outputFile": "styles/vendors-extensions/site-viewlogs/bootstrap-ex.css",
-    "inputFile": "styles/vendors-extensions/site-viewlogs/bootstrap-ex.scss"
+    "inputFile": "styles/components/textboxes.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/form.css",
-    "inputFile": "styles/components/form.scss"
+    "inputFile": "styles/components/form.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/checkbox-radio.css",
-    "inputFile": "styles/components/checkbox-radio.scss"
-  },
-  {
-    "outputFile": "styles/themes/components/tabs/tab-agent.css",
-    "inputFile": "styles/themes/components/tabs/tab-agent.scss"
-  },
-  {
-    "outputFile": "styles/themes/components/tabs/tab-master.css",
-    "inputFile": "styles/themes/components/tabs/tab-master.scss"
-  },
-  {
-    "outputFile": "styles/themes/components/tabs/tab-super.css",
-    "inputFile": "styles/themes/components/tabs/tab-super.scss"
+    "inputFile": "styles/components/checkbox-radio.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/pagination.css",
-    "inputFile": "styles/components/pagination.scss"
+    "inputFile": "styles/components/pagination.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/month-picker.css",
-    "inputFile": "styles/components/month-picker.scss"
+    "inputFile": "styles/components/month-picker.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/bootstrap-multiselect.css",
-    "inputFile": "styles/components/bootstrap-multiselect.scss"
+    "inputFile": "styles/components/bootstrap-multiselect.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/checkbox-radio-material.css",
-    "inputFile": "styles/components/checkbox-radio-material.scss"
+    "inputFile": "styles/components/checkbox-radio-material.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/select2.css",
-    "inputFile": "styles/components/select2.scss"
-  },
-  {
-    "outputFile": "styles/themes/components/checkbox-radio-material/checkbox-radio-material-agent.css",
-    "inputFile": "styles/themes/components/checkbox-radio-material/checkbox-radio-material-agent.scss"
-  },
-  {
-    "outputFile": "styles/themes/components/checkbox-radio-material/checkbox-radio-material-master.css",
-    "inputFile": "styles/themes/components/checkbox-radio-material/checkbox-radio-material-master.scss"
-  },
-  {
-    "outputFile": "styles/themes/components/checkbox-radio-material/checkbox-radio-material-super.css",
-    "inputFile": "styles/themes/components/checkbox-radio-material/checkbox-radio-material-super.scss"
+    "inputFile": "styles/components/select2.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/fanex-pagination.css",
-    "inputFile": "styles/components/fanex-pagination.scss"
+    "inputFile": "styles/components/fanex-pagination.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/fanex-grid.css",
-    "inputFile": "styles/components/fanex-grid.scss"
+    "inputFile": "styles/components/fanex-grid.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/calendars.css",
-    "inputFile": "styles/components/calendars.scss"
+    "inputFile": "styles/components/calendars.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/alerts.css",
-    "inputFile": "styles/components/alerts.scss"
+    "inputFile": "styles/components/alerts.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/accordions.css",
-    "inputFile": "styles/components/accordions.scss"
+    "inputFile": "styles/components/accordions.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/breadcrumbs.css",
-    "inputFile": "styles/components/breadcrumbs.scss"
+    "inputFile": "styles/components/breadcrumbs.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/layout/before-home-page/before-home-page.css",
-    "inputFile": "styles/layout/before-home-page/before-home-page.scss"
+    "inputFile": "styles/layout/before-home-page/before-home-page.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/vendors/toastr/toastr.css",
-    "inputFile": "styles/vendors/toastr/toastr.scss"
+    "inputFile": "styles/vendors/toastr/toastr.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/toastr.css",
-    "inputFile": "styles/components/toastr.scss"
+    "inputFile": "styles/components/toastr.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/vendors-extensions/common/bootstrap-ex.css",
-    "inputFile": "styles/vendors-extensions/common/bootstrap-ex.scss"
+    "inputFile": "styles/vendors-extensions/common/bootstrap-ex.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/layout/dcs/customizeDCS.css",
-    "inputFile": "styles/layout/dcs/customizeDCS.scss"
+    "inputFile": "styles/layout/dcs/customizeDCS.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/toastr.css",
-    "inputFile": "styles/components/toastr.scss"
+    "inputFile": "styles/components/toastr.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/bootstrap.nexDatePicker.css",
-    "inputFile": "styles/components/bootstrap.nexDatePicker.scss"
+    "inputFile": "styles/components/bootstrap.nexDatePicker.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/tablesorter.css",
-    "inputFile": "styles/components/tablesorter.scss"
+    "inputFile": "styles/components/tablesorter.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/themes/customer-status.css",
-    "inputFile": "styles/themes/customer-status.scss"
+    "inputFile": "styles/themes/customer-status.scss",
+    "sourceMap": false
   },
   {
     "outputFile": "styles/components/popover.css",
-    "inputFile": "styles/components/popover.scss"
+    "inputFile": "styles/components/popover.scss",
+    "sourceMap": false
   }
 ]

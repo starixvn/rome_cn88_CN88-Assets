@@ -10,80 +10,23 @@
     margin-right: 5px;
 }
 
+.icon-pass,
+.icon-security {
+    @include ripple-effect-icon($margin-left: -5px, $margin-right: -4px, $height: 26px, $width: 26px, $top: 0);
+    display: inline-block;
+    font-size: 17px;
+}
+
 .icon-add {
+    @include ripple-effect-icon($margin-left: -5px, $margin-right: -4px, $height: 26px, $width: 26px, $top: -1px);
     display: inline-block;
-    padding: 8px;
     font-size: 16px;
-    left: 3px;
-    margin-right: 0;
-}
-
-.icon-flag:before {
-    background: url("../images/flag.png");
-    content: '';
-    display: inline-block;
-    background-size: 32px 36px;
-    width: 16px;
-    height: 12px;
-}
-
-.langFlag-en-us:before {
-    background-position: -16px -24px;
-}
-
-.langFlag-zh-tw:before {
-    background-position: 0 -12px;
-}
-
-.langFlag-zh-cn:before {
-    background-position: 0 -12px;
-}
-
-.langFlag-zh-hans:before {
-    background-position: 0 -12px;
-}
-
-.langFlag-ko-kr:before {
-    background-position: -16px 0;
-}
-
-.langFlag-th-th:before {
-    background-position: -16px -12px;
-}
-
-.langFlag-ja-jp:before {
-    background-position: 0 0;
-}
-
-.langFlag-vi-vn:before {
-    background-position: 0 -24px;
-}
-
-.icon-time {
-    cursor: default;
-    opacity: 0.8;
-    top: 2px;
-}
-
-.icon-instruction {
-    margin-right: 0;
-    opacity: 0.8;
-    top: 2px;
-    @include ripple-effect-icon($margin-left: -8px, $margin-right: -4px, $height: 32px, $width: 32px, $top: -3px);
-
-    &:before {
-        color: #fff;
-
-        font: {
-            size: 17px;
-            weight: 100;
-        }
-    }
+    color: #25a77b;
 }
 
 .icon-edit {
-    @include ripple-effect-icon($margin-left: -7px, $margin-right: -4px, $height: 26px, $width: 26px, $top: -3px);
-    font-size: 12px;
+    @include ripple-effect-icon($margin-left: -7px, $margin-right: -4px, $height: 26px, $width: 26px, $top: 0);
+    font-size: 19px;
     display: inline-block;
 }
 
@@ -104,14 +47,6 @@
     cursor: pointer;
 }
 
-.icon-bell {
-    //@include ripple-effect-icon($margin-left: 0px, $margin-right: -4px, $height: 32px, $width: 32px, $top: 5px);
-}
-
-.icon-logout, .setting > a, .icon-collapse, .icon-home, .icon-add, .icon-message {
-    @include ripple-effect-icon($margin-left: 0, $margin-right: -4px, $height: 32px, $width: 32px, $top: 4px);
-}
-
 .icon-excel {
     @include ripple-effect-icon($margin-left: -11px, $height: 36px, $width: 36px, $top: 0);
     cursor: pointer;
@@ -124,39 +59,5 @@
     &:before {
         position: relative;
         top: 5px;
-    }
-}
-
-.icon-printer {
-    @include ripple-effect-icon($top: -7px, $margin-left: -7px, $margin-right: 0, $width: 32px, $height: 32px);
-    color: #888;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 18px;
-    vertical-align: middle;
-}
-
-@media only screen and (max-device-width: $screen-device-greater1024) {
-    .icon {
-        font-size: 20px;
-    }
-
-    .icon-instruction {
-        @include ripple-effect-icon($margin-left: -12px, $height: 40px, $width: 40px, $top: -4px);
-        top: -1px;
-    }
-
-    .icon-logout, .icon-collapse, .icon-add, .icon-message {
-        @include ripple-effect-icon($margin-left: -2px, $height: 40px, $width: 40px, $top: 3px);
-    }
-
-    .icon-home {
-        @include ripple-effect-icon($margin-left: 2px, $height: 40px, $width: 40px, $top: 6px);
-    }
-}
-
-@media \0screen\,screen\9 {
-    .icon-instruction, .icon-logout, .setting > a, .icon-collapse, .icon-home, .icon-add, .icon-message, .icon-squares {
-        @include ripple-effect-icon($background: transparent);
     }
 }

@@ -44,6 +44,45 @@
     text-transform: uppercase;
 }
 
+// The style has background color
+
+.nav-tabs-style2 {
+    border-bottom: 1px solid #ca9d48;
+}
+.nav-tabs-style2 > li {
+    margin-right: 1px;
+    float: left;
+    position: relative;
+    bottom: -1px;
+}
+
+.nav-tabs-style2 > li > a:hover {
+    background: none;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.nav.nav-tabs-style2 > li > a {
+    font-size: $font-size;
+    border: 1px solid #ca9d48;
+    padding: 10px 20px;
+    color: #fff;
+    background: #ca9d48;
+}
+
+.nav-tabs-style2 > li.active > a, 
+.nav-tabs-style2 > li.active > a:focus,
+.nav-tabs-style2 > li.active > a:hover {
+    border-bottom: 1px solid #fff;
+    color: #3b3b3b;
+    background: #fff;
+}
+
+.nav-tabs-style2 > li > a {
+    color: $tab-color;
+    outline: none;
+}
+
 @media only screen and (max-device-width: $screen-device-greater1024) {
     .nav.nav-tabs > li:hover:after {
         width: 0;

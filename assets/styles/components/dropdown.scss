@@ -2,11 +2,10 @@
 @import "../abstracts/_mixins.scss";
 
 select {
-    border: none;
+    border: 1px solid $border-color;
     color: $text-color;
-	height: $height-normal;
+    height: $height-normal;
     padding: 4px 8px;
-    @include effect-textbox;
     @include box-sizing;
 
     option {
@@ -18,8 +17,8 @@ select {
     }
 
     &[disabled], .disabled {
-       opacity: .4;
-       cursor: not-allowed;
+        opacity: .4;
+        cursor: not-allowed;
     }
 }
 
