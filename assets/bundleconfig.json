@@ -91,6 +91,8 @@
       "styles/components/pagination.css",
       "styles/components/icon.css",
       "styles/components/tabs.css",
+      "styles/components/buttons.css", 
+      "styles/components/dropdown.css"
     ]
   },
   {
