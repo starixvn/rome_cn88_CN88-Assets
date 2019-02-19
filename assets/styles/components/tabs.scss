@@ -20,7 +20,7 @@
 .nav.nav-tabs > li:after {
     content: '';
     display: block;
-    height: 3px;
+    height: 2px;
     width: 0;
     background: transparent;
     @include transition('width .5s ease, background-color .5s ease');
@@ -40,8 +40,8 @@
 
 .nav-tabs > li > a {
     color: $tab-color;
-    font-weight: bold;
     outline: none;
+    text-transform: uppercase;
 }
 
 @media only screen and (max-device-width: $screen-device-greater1024) {
