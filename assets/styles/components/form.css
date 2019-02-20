@@ -1,0 +1,67 @@
+﻿/*******************************************/
+/* Ripple Effect */
+/*******************************************/
+.filter {
+  padding-top: 15px;
+  position: relative; }
+  .filter .form-group {
+    display: inline-block;
+    margin: 0 16px 15px 0;
+    vertical-align: middle; }
+    .filter .form-group label {
+      font-weight: normal;
+      margin-right: 5px;
+      max-width: none; }
+    .filter .form-group .control {
+      display: inline-block;
+      width: 200px;
+      vertical-align: middle;
+      margin-left: 5px; }
+      .filter .form-group .control.date {
+        width: 130px; }
+      .filter .form-group .control .form-control {
+        padding-top: 0;
+        padding-bottom: 0; }
+  .filter [class^="col-"] {
+    margin-bottom: 15px; }
+  .filter .txt-red {
+    color: #f00; }
+
+.form-group {
+  margin-bottom: 16px; }
+
+.form-control:focus {
+  -webkit-border-radius: 1px;
+  -khtml-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+  -khtml-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
+
+.form-validation .txt.error ~ .validation, .form-validation .txt.valid ~ .validation {
+  font-family: 'Iconalpha';
+  font-style: normal; }
+
+.form-validation .form-group {
+  position: relative; }
+
+.form-validation .txt.error ~ .validation, .form-validation .txt.valid ~ .validation {
+  font-size: 18px;
+  right: 8px;
+  top: 25px;
+  position: absolute; }
+
+.form-validation .txt.error ~ .validation:before {
+  content: '\e92c';
+  color: #fe0000; }
+
+.form-validation .txt.valid ~ .validation:before {
+  content: '\e91f';
+  color: #52a220; }
+

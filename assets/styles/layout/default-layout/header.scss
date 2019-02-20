@@ -13,20 +13,24 @@ $text-color: #5b534f;
     border: none;
     display: flex;
     justify-content: space-between;
-    .header-left {
+    .header-left, .header-right {        
         margin-bottom: 0;
-        .header-item {
-            display: inline-block;
-            cursor: pointer;
-        }
-    }
-    .header-right {
-        margin-bottom: 0;
+        padding-left: 0;
         .header-item {
             display: inline-block;
             padding: 0 12px;
             cursor: pointer;
+            a {
+                color: inherit;
+            }
         }
+    }
+    .header-left {
+        .language {
+            padding-left: 20px;
+        }
+    }
+    .header-right {
         .icon-chat {
             padding-right: 6px;
             &:before {
@@ -35,6 +39,10 @@ $text-color: #5b534f;
         }
         .icon-bell:before {
             font-size: 15px;
+        }
+        .header-custname .dropdown-menu {
+            right: 0;
+            left: unset;
         }
     }
     .language-text {

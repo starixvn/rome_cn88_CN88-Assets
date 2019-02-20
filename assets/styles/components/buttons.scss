@@ -171,6 +171,21 @@ input[type=reset], .btn-reset {
     }
 }
 
+.btn-secondary {
+    @extend %btn;
+    background-color: $btn-secondary-bg;
+    color: $btn-secondary-color;
+    border: 1px solid $btn-secondary-bg;
+
+    &:hover, &:active, &:focus {
+        //background-color: $btn-secondary-bg-hover;
+
+        &[disabled], .disabled {
+            background-color: $btn-secondary-bg;    
+            color: $btn-secondary-color;
+        }
+    }
+}
 
 
 .btn {

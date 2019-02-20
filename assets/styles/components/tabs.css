@@ -1,0 +1,82 @@
+﻿/*******************************************/
+/* Ripple Effect */
+/*******************************************/
+.nav-tabs > li {
+  margin-right: 12px; }
+
+.nav-tabs > li > a:hover {
+  background: none;
+  border-color: transparent;
+  cursor: pointer; }
+
+.nav.nav-tabs > li > a {
+  font-size: 13px;
+  padding: 10px 20px 8px;
+  border: none; }
+
+.nav.nav-tabs > li:after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background: transparent;
+  -webkit-transition: width .5s ease, background-color .5s ease;
+  -khtml-transition: width .5s ease, background-color .5s ease;
+  -moz-transition: width .5s ease, background-color .5s ease;
+  -ms-transition: width .5s ease, background-color .5s ease;
+  -o-transition: width .5s ease, background-color .5s ease;
+  transition: width .5s ease, background-color .5s ease; }
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  border: none;
+  color: #c0392b;
+  background: transparent; }
+
+.nav.nav-tabs > li.active:after,
+.nav.nav-tabs > li:hover:after {
+  width: 100%;
+  background: #c0392b; }
+
+.nav-tabs > li > a {
+  color: #666;
+  outline: none;
+  text-transform: uppercase; }
+
+.nav-tabs-style2 {
+  border-bottom: 1px solid #ca9d48; }
+
+.nav-tabs-style2 > li {
+  margin-right: 1px;
+  float: left;
+  position: relative;
+  bottom: -1px; }
+
+.nav-tabs-style2 > li > a:hover {
+  background: none;
+  border-color: transparent;
+  cursor: pointer; }
+
+.nav.nav-tabs-style2 > li > a {
+  font-size: 13px;
+  border: 1px solid #ca9d48;
+  padding: 10px 20px;
+  color: #fff;
+  background: #ca9d48; }
+
+.nav-tabs-style2 > li.active > a,
+.nav-tabs-style2 > li.active > a:focus,
+.nav-tabs-style2 > li.active > a:hover {
+  border-bottom: 1px solid #fff;
+  color: #3b3b3b;
+  background: #fff; }
+
+.nav-tabs-style2 > li > a {
+  color: #666;
+  outline: none; }
+
+@media only screen and (max-device-width: 1024px) {
+  .nav.nav-tabs > li:hover:after {
+    width: 0; }
+  .nav.nav-tabs > li.active:after {
+    width: 100%; } }
+

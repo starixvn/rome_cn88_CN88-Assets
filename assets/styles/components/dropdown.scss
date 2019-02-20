@@ -44,10 +44,6 @@ select {
         }
     }
 
-    .dropdown-toggle {
-        padding-right: 30px;
-    }
-
     .btn-default:active, .btn-default.active, &.open>.btn-default.dropdown-toggle {
         color: $dropdown-color;
     }
