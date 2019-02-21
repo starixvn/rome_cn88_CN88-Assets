@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'CN88Icon';
-  src:  url('fonts/CN88Icon.eot?7js5qx');
-  src:  url('fonts/CN88Icon.eot?7js5qx#iefix') format('embedded-opentype'),
-    url('fonts/CN88Icon.ttf?7js5qx') format('truetype'),
-    url('fonts/CN88Icon.woff?7js5qx') format('woff'),
-    url('fonts/CN88Icon.svg?7js5qx#CN88Icon') format('svg');
+  src:  url('fonts/CN88Icon.eot?hexc0u');
+  src:  url('fonts/CN88Icon.eot?hexc0u#iefix') format('embedded-opentype'),
+    url('fonts/CN88Icon.ttf?hexc0u') format('truetype'),
+    url('fonts/CN88Icon.woff?hexc0u') format('woff'),
+    url('fonts/CN88Icon.svg?hexc0u#CN88Icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-sort-arrow:before {
+  content: "\e913";
+}
 .icon-error:before {
   content: "\e90f";
 }
