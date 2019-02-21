@@ -5,11 +5,11 @@
   width: 100%; }
 
 .tblRpt {
-  border: 1px solid #d1d1d1;
+  border: 1px solid #e5e5e5;
   border-collapse: collapse;
   background-color: #fff; }
   .tblRpt.tblRpt-bordered > thead > tr > th, .tblRpt.tblRpt-bordered > tbody > tr > td, .tblRpt.tblRpt-bordered tfoot > tr > td {
-    border: 1px solid #d1d1d1; }
+    border: 1px solid #e5e5e5; }
   .tblRpt.tblRpt-striped tbody > tr:nth-of-type(2n) {
     background-color: #eae9ee; }
   .tblRpt.alternative-row-table tbody .even-row {
@@ -132,8 +132,8 @@
   .tble-style2 thead th {
     background-color: #f5f1f2;
     color: #3b3b3b;
-    font-weight: 400;
-    text-align: center; }
+    font-weight: bold;
+    text-align: left; }
 
 .tble-style2 tbody tr {
   border-bottom: 1px solid #e5e5e5; }

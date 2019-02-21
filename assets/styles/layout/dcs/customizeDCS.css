@@ -247,7 +247,7 @@ select.setting-field {
   margin-right: 4px; }
 
 .setting-field--invalid {
-  background-color: #fadddd;
+  background-color: #ffe2e2;
   border: 1px solid #fe8989 !important; }
 
 /*******************************/
@@ -359,15 +359,15 @@ select.setting-field {
   .msg__icon:before {
     font-size: 20px; }
   .msg--success {
-    color: #52a220; }
+    color: #2da57e; }
     .msg--success .msg__icon:before {
       content: '\e93b'; }
   .msg--warning {
-    color: #7e3d00; }
+    color: #f17507; }
     .msg--warning .msg__icon:before {
       content: '\e93d'; }
   .msg--error {
-    color: #fe0000; }
+    color: #7b0f0f; }
     .msg--error .msg__icon:before {
       content: '\e93e'; }
   .msg__content {
@@ -451,10 +451,10 @@ select.setting-field {
     color: #fff; }
 
 .btn + .btn {
-  background: #909090;
-  color: #fff; }
+  background: #ffffff;
+  color: #737373; }
   .btn + .btn:hover, .btn + .btn:focus {
-    background: #838383;
+    background: #f2f2f2;
     color: #fff; }
 
 .btn--margin-top {

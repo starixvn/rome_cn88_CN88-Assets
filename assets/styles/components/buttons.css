@@ -101,15 +101,16 @@ input[type=reset], .btn-reset {
     color: #fff; }
 
 .btn-cancel {
-  background-color: #909090;
-  color: #fff; }
+  border: 1px solid #d2d2d2;
+  background-color: #ffffff;
+  color: #737373; }
   .btn-cancel:hover, .btn-cancel:active, .btn-cancel:focus {
-    background-color: #838383; }
+    background-color: #f2f2f2; }
     .btn-cancel:hover[disabled], .btn-cancel:hover .disabled, .btn-cancel:active[disabled], .btn-cancel:active .disabled, .btn-cancel:focus[disabled], .btn-cancel:focus .disabled {
-      background-color: #909090;
-      color: #fff; }
+      background-color: #ffffff;
+      color: #737373; }
   .btn-cancel[disabled] {
-    color: #fff; }
+    color: #737373; }
 
 .btn-remove {
   background-color: #930a14;

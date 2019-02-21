@@ -4,7 +4,7 @@
 .msg {
   border-width: 1px;
   border-style: solid;
-  padding: 8px 8px 8px 36px;
+  padding: 8px 8px 8px 30px;
   position: relative;
   margin: 12px 0;
   -webkit-border-radius: 2px;
@@ -20,39 +20,39 @@
   -o-box-sizing: border-box;
   box-sizing: border-box; }
   .msg:before {
-    font-family: Iconalpha;
-    font-size: 24px;
+    font-family: CN88Icon;
+    font-size: 18px;
     line-height: 20px;
     position: absolute;
-    left: 8px;
-    top: 8px; }
+    left: 6px;
+    top: 5px; }
 
 .msg-success {
-  background-color: #eefbe9;
-  border-color: #1db51a;
-  color: #52a220; }
+  background-color: #e7fff7;
+  border-color: #62f1c3;
+  color: #2da57e; }
   .msg-success:before {
-    content: '\e93b'; }
+    content: '\e911'; }
 
 .msg-info {
-  background-color: #e3f5fa;
-  border-color: #3475c7;
-  color: #326cb4; }
+  background-color: #f17507;
+  border-color: #fdd8b7;
+  color: #4885b4; }
   .msg-info:before {
-    content: '\e93c'; }
+    content: '\e910'; }
 
 .msg-warning {
-  background-color: #faf8dd;
-  border-color: #bcba7d;
-  color: #7e3d00; }
+  background-color: #ffeede;
+  border-color: #fdd8b7;
+  color: #f17507; }
   .msg-warning:before {
-    content: '\e93d';
-    color: #f08708; }
+    content: '\e912';
+    color: #f17507; }
 
 .msg-error {
-  background-color: #fadddd;
-  border-color: #ef2d2d;
-  color: #fe0000; }
+  background-color: #ffe2e2;
+  border-color: #fabbbb;
+  color: #7b0f0f; }
   .msg-error:before {
-    content: '\e93e'; }
+    content: '\e90f'; }
 

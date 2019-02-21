@@ -104,15 +104,16 @@ input[type=reset], .btn-reset {
     color: #fff; }
 
 .btn-cancel {
-  background-color: #909090;
-  color: #fff; }
+  border: 1px solid #d2d2d2;
+  background-color: #ffffff;
+  color: #737373; }
   .btn-cancel:hover, .btn-cancel:active, .btn-cancel:focus {
-    background-color: #838383; }
+    background-color: #f2f2f2; }
     .btn-cancel:hover[disabled], .btn-cancel:hover .disabled, .btn-cancel:active[disabled], .btn-cancel:active .disabled, .btn-cancel:focus[disabled], .btn-cancel:focus .disabled {
-      background-color: #909090;
-      color: #fff; }
+      background-color: #ffffff;
+      color: #737373; }
   .btn-cancel[disabled] {
-    color: #fff; }
+    color: #737373; }
 
 .btn-remove {
   background-color: #930a14;
@@ -171,13 +172,13 @@ input[type=reset], .btn-reset {
   cursor: move; }
 
 .modal-dialog {
-  margin: 0 auto; }
+  margin: 112px auto 0; }
   .modal-dialog.ex-modal {
     width: 100%;
     height: auto; }
 
 .modal-content {
-  border-color: #d2d2d2;
+  border: none;
   margin: auto;
   height: 100%;
   -webkit-border-radius: 1px;
@@ -187,37 +188,32 @@ input[type=reset], .btn-reset {
   -o-border-radius: 1px;
   border-radius: 1px; }
   .modal-content .modal-header {
-    padding: 0 16px;
-    border-bottom: none; }
+    padding: 0;
+    border-bottom: none;
+    background-color: #7e1414; }
     .modal-content .modal-header .icon-close {
+      position: absolute;
+      right: 0;
+      top: 2px;
+      width: 40px;
+      height: 40px;
       margin-right: 0;
-      color: #333;
+      color: #fff;
       opacity: 1;
-      font-size: 18px;
-      top: 6px;
-      width: 60px;
-      height: 30px;
-      left: 10px; }
-      .modal-content .modal-header .icon-close:before {
-        position: relative;
-        left: 13px; }
+      font-size: 12px;
+      font-weight: normal;
+      background-color: #630f0f;
+      text-align: center;
+      outline: none; }
     .modal-content .modal-header .modal-title {
-      border-bottom: 1px solid #dfdfdf;
-      color: #333;
-      font-weight: 700;
-      padding: 10px 0;
-      font-size: 13px;
+      color: #fff;
+      padding: 11px 16px;
       cursor: move;
-      font-size: 13px; }
+      font-size: 14px;
+      text-transform: uppercase; }
       .modal-content .modal-header .modal-title .popup-title:empty {
         height: 20px;
         display: block; }
-      .modal-content .modal-header .modal-title .icon-info {
-        color: #0f82c4;
-        font-size: 18px;
-        margin-left: 8px;
-        position: absolute;
-        text-decoration: none; }
   .modal-content .modal-body {
     padding: 2px 16px 8px;
     line-height: 22px;
