@@ -4148,11 +4148,11 @@ button.close {
 
 @font-face {
   font-family: 'CN88Icon';
-  src:  url('../../styles/fonts/iconcn88/fonts/CN88Icon.eot?9f86t4');
-  src:  url('../../styles/fonts/iconcn88/fonts/CN88Icon.eot?9f86t4#iefix') format('embedded-opentype'),
-    url('../../styles/fonts/iconcn88/fonts/CN88Icon.ttf?9f86t4') format('truetype'),
-    url('../../styles/fonts/iconcn88/fonts/CN88Icon.woff?9f86t4') format('woff'),
-    url('../../styles/fonts/iconcn88/fonts/CN88Icon.svg?9f86t4#CN88Icon') format('svg');
+  src:  url('../../styles/fonts/iconcn88/fonts/CN88Icon.eot?h9jd2m');
+  src:  url('../../styles/fonts/iconcn88/fonts/CN88Icon.eot?h9jd2m#iefix') format('embedded-opentype'),
+    url('../../styles/fonts/iconcn88/fonts/CN88Icon.ttf?h9jd2m') format('truetype'),
+    url('../../styles/fonts/iconcn88/fonts/CN88Icon.woff?h9jd2m') format('woff'),
+    url('../../styles/fonts/iconcn88/fonts/CN88Icon.svg?h9jd2m#CN88Icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -4172,6 +4172,21 @@ button.close {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-add:before {
+  content: "\e909";
+}
+.icon-add-outline:before {
+  content: "\e90a";
+}
+.icon-edit:before {
+  content: "\e90b";
+}
+.icon-pass:before {
+  content: "\e90c";
+}
+.icon-security:before {
+  content: "\e90d";
+}
 .icon-chevron-left:before {
   content: "\e907";
 }
@@ -4277,7 +4292,7 @@ body {
   color: #3c3c3c;
   font-size: 18px;
   line-height: 56px;
-  margin: 0 20px; }
+  padding: 0 20px; }
 
 a, a:focus, a:active, a:target, a:hover {
   outline: none; }
@@ -4288,8 +4303,12 @@ a, a:focus, a:active, a:target, a:hover {
 .center {
   text-align: center; }
 
-.link, .link:hover {
-  color: #045ace; }
+.link {
+  color: #0072bb; }
+
+.link:hover {
+  color: #0091ee;
+  cursor: pointer; }
 
 .display-none {
   display: none; }
@@ -4581,7 +4600,7 @@ select {
     top: -1px;
     width: 26px;
     height: 26px;
-    margin-left: -5px;
+    margin-left: -6px;
     margin-top: -4px;
     background: #b1aea3;
     border-radius: 100%;

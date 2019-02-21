@@ -182,7 +182,7 @@ input, button {
   .block .help-rules .error {
     position: relative; }
     .block .help-rules .error .icon-rules {
-      color: #045ace;
+      color: #0072bb;
       cursor: pointer;
       font-size: 16px;
       position: relative;
@@ -190,7 +190,7 @@ input, button {
       left: auto;
       padding: 8px 12px 8px 8px; }
       .block .help-rules .error .icon-rules:hover {
-        color: #033983; }
+        color: #00436f; }
   .block [class^="btn-"] {
     font-size: 15px;
     height: 40px;
@@ -213,7 +213,7 @@ input, button {
     margin-top: 20px; }
 
 .rules-title {
-  color: #045ace;
+  color: #0072bb;
   cursor: pointer;
   padding-bottom: 8px;
   padding-top: 20px; }
@@ -223,7 +223,7 @@ input, button {
     position: relative;
     top: 3px; }
   .rules-title:hover {
-    color: #033983; }
+    color: #00436f; }
 
 .modal.information .modal-dialog {
   margin-top: 13%; }

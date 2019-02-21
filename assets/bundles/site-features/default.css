@@ -103,13 +103,13 @@
     text-align: center; }
 
 .tbl-noborder > thead > tr > th {
-  height: 48px;
   border-bottom: 2px solid #c8c8c8;
   color: #828282;
-  text-align: center; }
+  text-align: center;
+  padding: 16px 0; }
 
 .tbl-noborder > tbody > tr > td {
-  height: 40px;
+  padding: 12px 0;
   border-bottom: 1px solid #c8c8c8;
   text-align: center; }
 
@@ -4545,7 +4545,7 @@ body .ui-tooltip { border-width: 2px; }
     top: -1px;
     width: 26px;
     height: 26px;
-    margin-left: -5px;
+    margin-left: -6px;
     margin-top: -4px;
     background: #b1aea3;
     border-radius: 100%;
@@ -4804,7 +4804,7 @@ input[type="submit"][disabled] {
 .btn-default, .btn-submit, input[type=reset], .btn-reset, .btn-refresh, .btn-cancel, .btn-remove, .btn-secondary {
   border: none;
   cursor: pointer;
-  height: 32px;
+  height: 30px;
   outline: none;
   margin-right: 8px;
   padding-left: 16px;

@@ -28,7 +28,7 @@ input[type="submit"][disabled] {
 .btn-default, .btn-submit, input[type=reset], .btn-reset, .btn-refresh, .btn-cancel, .btn-remove, .btn-secondary {
   border: none;
   cursor: pointer;
-  height: 32px;
+  height: 30px;
   outline: none;
   margin-right: 8px;
   padding-left: 16px;
