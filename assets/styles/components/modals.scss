@@ -21,7 +21,7 @@
 }
 
 .modal-dialog {
-    margin: 0 auto;
+    margin: 112px auto 0;
 
     &.ex-modal {
         width: 100%;
@@ -30,51 +30,42 @@
 }
 
 .modal-content {
-    border-color: $border-color;
+    border: none;
     margin: auto;
     height: 100%;
     @include border-radius(1px);
 
     .modal-header {
-        padding: 0 16px;
+        padding: 0;
         border-bottom: none;
+        background-color: #7e1414;
 
         .icon-close {
+            position: absolute;
+            right: 0;
+            top: 2px;
+            width: 40px;
+            height: 40px;
             margin-right: 0;
-            color: #333;
+            color: #fff;
             opacity: 1;
-            font-size: 18px;
-            top: 6px;
-            width: 60px;
-            height: 30px;
-            left: 10px;
-
-            &:before {
-                position: relative;
-                left: 13px;
-            }
+            font-size: 12px;
+            font-weight: normal;
+            background-color: #630f0f;
+            text-align: center;
+            outline: none;
         }
 
         .modal-title {
-            border-bottom: 1px solid #dfdfdf;
-            color: #333;
-            font-weight: 700;
-            padding: 10px 0;
-            font-size: 13px;
+            color: #fff;
+            padding: 11px 16px;
             cursor: move;
-            font-size: 13px;
+            font-size: 14px;
+            text-transform: uppercase;
 
             .popup-title:empty {
                 height: 20px;
                 display: block;
-            }
-
-            .icon-info {
-                color: #0f82c4;
-                font-size: 18px;
-                margin-left: 8px;
-                position: absolute;
-                text-decoration: none;
             }
         }
     }

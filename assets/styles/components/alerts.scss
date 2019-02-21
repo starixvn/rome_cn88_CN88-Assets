@@ -4,19 +4,19 @@
 .msg {
     border-width: 1px;
     border-style: solid;
-    padding: 8px 8px 8px 36px;
+    padding: 8px 8px 8px 30px;
     position: relative;
     margin: 12px 0;
     @include border-radius(2px);
     @include box-sizing;
 
     &:before {
-        font-family: Iconalpha;
-        font-size: 24px;
+        font-family: CN88Icon;
+        font-size: 18px;
         line-height: 20px;
         position: absolute;
-        left: 8px;
-        top: 8px;
+        left: 6px;
+        top: 5px;
     }
 }
 
@@ -26,7 +26,7 @@
     color: $msg-success-color;
 
     &:before {
-        content: '\e93b';
+        content: '\e911';
     }
 }
 
@@ -36,7 +36,7 @@
     color: $msg-info-color;
 
     &:before {
-        content: '\e93c';
+        content: '\e910';
     }
 }
 
@@ -46,7 +46,7 @@
     color: $msg-warning-color;
 
     &:before {
-        content: '\e93d';
+        content: '\e912';
         color: $msg-warning-icon-color;
     }
 }
@@ -57,7 +57,7 @@
     color: $msg-error-color;
 
     &:before {
-        content: '\e93e';
+        content: '\e90f';
     }
 }
 

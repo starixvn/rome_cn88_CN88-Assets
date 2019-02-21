@@ -39,10 +39,11 @@ $btn-refresh-color: #fff;
 $btn-refresh-bg-hover: darken($btn-refresh-bg, 5%);
 $btn-refresh-color-hover: #fff;
 
-$btn-cancel-bg: #909090;
-$btn-cancel-color: #fff;
+$btn-cancel-bg: #ffffff;
+$btn-cancel-color: #737373;
 $btn-cancel-bg-hover: darken($btn-cancel-bg, 5%);
 $btn-cancel-color-hover: #fff;
+$btn-cancel-border-color: #d2d2d2;
 
 $btn-remove-bg: #930a14;
 $btn-remove-color: #fff;
@@ -78,28 +79,33 @@ $table-footer-color: #fff;
 $table-league-bg: #f3f5e0;
 $table-live-bg: #f9ceae;
 
+$table2-header-bg-color: #f5f1f2;
+$table2-header-color: #3b3b3b;
+$table-header-border-color: #bfbfbf;
+$table-border-color: #e5e5e5;
+
 $paging-bg: #fff;
 $paging-btn-bg: #979797;
 $paging-btn-color: #fff;
 $paging-btn-bg-hover: #676767;
 $paging-border: #cecece;
 
-$msg-success-bg: #eefbe9;
-$msg-success-color: #52a220;
-$msg-success-border: #1db51a;
+$msg-success-bg: #e7fff7;
+$msg-success-color: #2da57e;
+$msg-success-border: #62f1c3;
 
-$msg-info-bg: #e3f5fa;
-$msg-info-color: #326cb4;
-$msg-info-border: #3475c7;
+$msg-info-bg: #f17507;
+$msg-info-color: #4885b4;
+$msg-info-border: #fdd8b7;
 
-$msg-warning-bg: #faf8dd;
-$msg-warning-color: #7e3d00;
-$msg-warning-border: #bcba7d;
-$msg-warning-icon-color: #f08708;
+$msg-warning-bg: #ffeede;
+$msg-warning-color: #f17507;
+$msg-warning-border: #fdd8b7;
+$msg-warning-icon-color: #f17507;
 
-$msg-error-bg: #fadddd;
-$msg-error-color: #fe0000;
-$msg-error-border: #ef2d2d;
+$msg-error-bg: #ffe2e2;
+$msg-error-color: #7b0f0f;
+$msg-error-border: #fabbbb;
 
 $status-closed: #ccc7ba;
 $status-closedby-pwd-others-bg: #ccc7ba;

@@ -90,7 +90,10 @@
       "styles/components/buttons.css",
       "styles/components/textboxes.css",
       "styles/components/dropdown.css",
-      "styles/components/form.css"
+      "styles/components/form.css",
+      "styles/components/modals.css",
+      "styles/components/alerts.css",
+      "styles/components/tooltip.css"
     ]
   },
   {

@@ -171,8 +171,7 @@
     margin-bottom: 48px;
 }
 
-$table2-header-bg-color: #f5f1f2;
-$table2-header-color: #3b3b3b;
+// New style
 
 .tble-style2 {
 
@@ -185,19 +184,19 @@ $table2-header-color: #3b3b3b;
 
 
     thead {
-        border-bottom: 1px solid #bfbfbf;
+        border-bottom: 1px solid $table-header-border-color;
 
         th {
             background-color: $table2-header-bg-color;
             color: $table2-header-color;
-            font-weight: 400;
-            text-align: center;
+            font-weight: bold;
+            text-align: left;
         }
     }
 
     tbody {
         tr {
-            border-bottom: 1px solid #e5e5e5;
+            border-bottom: 1px solid $table-border-color;
         }
 
         td {

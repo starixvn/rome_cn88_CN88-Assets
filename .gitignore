@@ -33,7 +33,8 @@ _ReSharper*/
 /PrecompiledWeb
 *.suo
 .vs/config/applicationhost.config
-
+*.css
+*.min.css
 !/styles/base/reset.css
 !/styles/vendor/*
 

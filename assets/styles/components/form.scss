@@ -50,6 +50,12 @@
     @include effect-textbox;
 }
 
+.form {
+    label {
+        font-weight: normal;
+    }
+}
+
 .form-validation {
     %alphaIcon {
         font: {
