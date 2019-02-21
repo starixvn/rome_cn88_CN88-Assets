@@ -18,7 +18,7 @@
 }
 
 .icon-add {
-    @include ripple-effect-icon($margin-left: -5px, $margin-right: -4px, $height: 26px, $width: 26px, $top: -1px);
+    @include ripple-effect-icon($margin-left: -6px, $margin-right: -4px, $height: 26px, $width: 26px, $top: -1px);
     display: inline-block;
     font-size: 16px;
     color: #25a77b;

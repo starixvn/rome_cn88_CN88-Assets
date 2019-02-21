@@ -109,10 +109,14 @@ a, a:focus, a:active, a:target, a:hover {
     text-align: center;
 }
 
-.link, .link:hover {
-    color: #045ace;
+.link {
+    color: $link-color;
 }
 
+.link:hover {
+    color: $link-hover-color;
+    cursor: pointer;
+}
 
 .display-none {
     display: none;
