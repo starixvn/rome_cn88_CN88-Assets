@@ -101,6 +101,7 @@
     "inputFiles": [
       "js/libs/bootstrap/transition.js",
       "js/libs/bootstrap/collapse.js",
+      "js/libs/bootstrap/tooltip.js",
       "js/components/pagination/jquery.draggable.js",
       "js/components/pagination/jquery.resizable.js",
       "js/components/pagination/jquery.parser.js",

@@ -27,9 +27,6 @@
   .filter .txt-red {
     color: #f00; }
 
-.form-group {
-  margin-bottom: 16px; }
-
 .form-control:focus {
   -webkit-border-radius: 1px;
   -khtml-border-radius: 1px;
@@ -45,7 +42,11 @@
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); }
 
 .form label {
-  font-weight: normal; }
+  font-weight: normal;
+  margin-right: 10px; }
+
+.form .form-group {
+  margin-bottom: 20px; }
 
 .form-validation .txt.error ~ .validation, .form-validation .txt.valid ~ .validation {
   font-family: 'Iconalpha';

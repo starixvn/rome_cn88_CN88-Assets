@@ -42,10 +42,6 @@
     }
 }
 
-.form-group {
-    margin-bottom: 16px;
-}
-
 .form-control:focus {
     @include effect-textbox;
 }
@@ -53,6 +49,11 @@
 .form {
     label {
         font-weight: normal;
+        margin-right: 10px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
     }
 }
 

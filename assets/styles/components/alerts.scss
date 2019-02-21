@@ -7,7 +7,6 @@
     padding: 8px 8px 8px 30px;
     position: relative;
     margin: 12px 0;
-    @include border-radius(2px);
     @include box-sizing;
 
     &:before {

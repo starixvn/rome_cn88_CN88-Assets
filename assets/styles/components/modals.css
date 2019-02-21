@@ -215,7 +215,7 @@ input[type=reset], .btn-reset {
         height: 20px;
         display: block; }
   .modal-content .modal-body {
-    padding: 2px 16px 8px;
+    padding: 16px 20px;
     line-height: 22px;
     overflow-y: hidden;
     overflow-x: auto; }
