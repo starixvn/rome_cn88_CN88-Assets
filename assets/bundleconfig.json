@@ -17,9 +17,7 @@
     "inputFiles": [
       "styles/layout/default-layout/header.css",
       "styles/layout/default-layout/sidebar.css",
-      "styles/vendors/toastr/toastr.css",
-      "styles/components/toastr.css",
-      "styles/components/resizable.css"
+      "styles/components/tables.css"
     ]
   },
   {
@@ -33,21 +31,6 @@
       "js/libs/mobile/isMobile.js",
       "js/components/blockui/jquery.blockUI.js",
       "js/components/bootbox/bootbox.js"
-    ]
-  },
- 
-  {
-    "outputFileName": "bundles/site-cn88/default.css",
-    "inputFiles": [
-      "styles/components/tables.css",
-      "styles/vendors/jqueryui/jquery-ui-1.9.1.custom.css",
-      "styles/vendors/jquery-easyui-1.5/easyui.css",
-      "styles/components/tablesorter.css",
-      "styles/vendors/bootstrap-multiselect.css",
-      "styles/components/bootstrap-multiselect.css",
-      "styles/components/pagination.css",
-      "styles/components/icon.css",
-      "styles/themes/customer-status.css"
     ]
   },
   {

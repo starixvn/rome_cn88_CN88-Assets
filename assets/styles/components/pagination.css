@@ -55,19 +55,19 @@
     -o-box-sizing: border-box;
     box-sizing: border-box; }
     .pagination .pagination-first:before, .pagination .pagination-prev:before, .pagination .pagination-last:before, .pagination .pagination-next:before {
-      font-family: Iconalpha;
+      font-family: CN88Icon;
       font-size: 15px;
       color: #fff; }
     .pagination .pagination-first:hover, .pagination .pagination-prev:hover, .pagination .pagination-last:hover, .pagination .pagination-next:hover {
       background-color: #676767; }
   .pagination .pagination-first:before {
-    content: '\e940'; }
+    content: '\e905'; }
   .pagination .pagination-prev:before {
-    content: '\e93f'; }
+    content: '\e907'; }
   .pagination .pagination-last:before {
-    content: '\e941'; }
+    content: '\e903'; }
   .pagination .pagination-next:before {
-    content: '\e942'; }
+    content: '\e908'; }
   .pagination .l-btn-disabled .pagination-first, .pagination .l-btn-disabled .pagination-prev, .pagination .l-btn-disabled .pagination-last, .pagination .l-btn-disabled .pagination-next {
     cursor: default; }
     .pagination .l-btn-disabled .pagination-first:hover, .pagination .l-btn-disabled .pagination-prev:hover, .pagination .l-btn-disabled .pagination-last:hover, .pagination .l-btn-disabled .pagination-next:hover {
