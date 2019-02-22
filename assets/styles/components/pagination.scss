@@ -49,7 +49,7 @@
         @include box-sizing;
 
         &:before {
-            font-family: Iconalpha;
+            font-family: CN88Icon;
             font-size: 15px;
             color: $paging-btn-color;
         }
@@ -60,19 +60,19 @@
     }
 
     .pagination-first:before {
-        content: '\e940';
+        content: '\e905';
     }
 
     .pagination-prev:before {
-        content: '\e93f';
+        content: '\e907';
     }
 
     .pagination-last:before {
-        content: '\e941';
+        content: '\e903';
     }
 
     .pagination-next:before {
-        content: '\e942';
+        content: '\e908';
     }
 
     .l-btn-disabled {

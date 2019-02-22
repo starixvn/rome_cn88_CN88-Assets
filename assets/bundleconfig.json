@@ -93,7 +93,8 @@
       "styles/components/form.css",
       "styles/components/modals.css",
       "styles/components/alerts.css",
-      "styles/components/tooltip.css"
+      "styles/components/tooltip.css", 
+      "styles/components/breadcrumbs.css"
     ]
   },
   {
