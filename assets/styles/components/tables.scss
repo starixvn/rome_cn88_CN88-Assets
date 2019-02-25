@@ -171,7 +171,7 @@
 
 // New style
 
-.tble-style2 {
+.tbl-style2 {
 
     thead th, tbody td, tfoot td {
         height: $height-normal;
@@ -180,9 +180,8 @@
         @include box-sizing;
     }
 
-
     thead {
-        border-bottom: 1px solid $table-header-border-color;
+        border-bottom: 1px solid $table2-header-border-color;
 
         th {
             background-color: $table2-header-bg-color;
@@ -194,7 +193,7 @@
 
     tbody {
         tr {
-            border-bottom: 1px solid $table-border-color;
+            border-bottom: 1px solid $table2-border-color;
         }
 
         td {
@@ -202,5 +201,10 @@
                 text-align: center;
             }
         }
+    }
+
+    .tfoot-bg {
+        background-color: #ecf4e2;
+        font-weight: bold;
     }
 }

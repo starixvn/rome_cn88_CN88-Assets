@@ -10,7 +10,7 @@
   cursor: pointer; }
 
 .nav.nav-tabs > li > a {
-  font-size: 13px;
+  font-size: 14px;
   padding: 10px 20px 8px;
   border: none; }
 
@@ -57,7 +57,7 @@
   cursor: pointer; }
 
 .nav.nav-tabs-style2 > li > a {
-  font-size: 13px;
+  font-size: 14px;
   border: 1px solid #ca9d48;
   padding: 10px 20px;
   color: #fff;
@@ -79,4 +79,3 @@
     width: 0; }
   .nav.nav-tabs > li.active:after {
     width: 100%; } }
-

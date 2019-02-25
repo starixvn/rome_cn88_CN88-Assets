@@ -68,4 +68,3 @@
 .form-validation .txt.valid ~ .validation:before {
   content: '\e91f';
   color: #2da57e; }
-

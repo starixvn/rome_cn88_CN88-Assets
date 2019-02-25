@@ -29,7 +29,7 @@ select {
     min-width: 78px; }
     .dropdown .dropdown-menu > li > a, .dropup .dropdown-menu > li > a {
       padding: 6px 15px;
-      font-size: 13px; }
+      font-size: 14px; }
     .dropdown .dropdown-menu > li a:hover, .dropup .dropdown-menu > li a:hover {
       color: #3b3b3b;
       background: #ddd; }
@@ -95,4 +95,3 @@ select {
   -ms-border-radius: 1px;
   -o-border-radius: 1px;
   border-radius: 1px; }
-

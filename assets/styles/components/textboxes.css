@@ -22,4 +22,3 @@ input[type='text'], input[type='password'], input[type='email'], input[type='tel
   input[type='text'][disabled], input[type='text'] .disabled, input[type='password'][disabled], input[type='password'] .disabled, input[type='email'][disabled], input[type='email'] .disabled, input[type='tel'][disabled], input[type='tel'] .disabled {
     opacity: .4;
     cursor: not-allowed; }
-

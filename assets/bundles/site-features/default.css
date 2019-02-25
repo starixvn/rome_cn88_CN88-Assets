@@ -5,11 +5,11 @@
   width: 100%; }
 
 .tblRpt {
-  border: 1px solid #e5e5e5;
+  border: 1px solid #d1d1d1;
   border-collapse: collapse;
   background-color: #fff; }
   .tblRpt.tblRpt-bordered > thead > tr > th, .tblRpt.tblRpt-bordered > tbody > tr > td, .tblRpt.tblRpt-bordered tfoot > tr > td {
-    border: 1px solid #e5e5e5; }
+    border: 1px solid #d1d1d1; }
   .tblRpt.tblRpt-striped tbody > tr:nth-of-type(2n) {
     background-color: #eae9ee; }
   .tblRpt.alternative-row-table tbody .even-row {
@@ -114,7 +114,7 @@
 .combined-fixed-pagination-bottom {
   margin-bottom: 48px; }
 
-.tble-style2 thead th, .tble-style2 tbody td, .tble-style2 tfoot td {
+.tbl-style2 thead th, .tbl-style2 tbody td, .tbl-style2 tfoot td {
   height: 30px;
   padding: 0 8px;
   vertical-align: middle;
@@ -125,20 +125,23 @@
   -o-box-sizing: border-box;
   box-sizing: border-box; }
 
-.tble-style2 thead {
+.tbl-style2 thead {
   border-bottom: 1px solid #bfbfbf; }
-  .tble-style2 thead th {
+  .tbl-style2 thead th {
     background-color: #f5f1f2;
     color: #3b3b3b;
     font-weight: bold;
     text-align: left; }
 
-.tble-style2 tbody tr {
+.tbl-style2 tbody tr {
   border-bottom: 1px solid #e5e5e5; }
 
-.tble-style2 tbody td.text-center {
+.tbl-style2 tbody td.text-center {
   text-align: center; }
 
+.tbl-style2 .tfoot-bg {
+  background-color: #ecf4e2;
+  font-weight: bold; }
 
 /*! jQuery UI - v1.9.1 - 2012-11-21
 * http://jqueryui.com
@@ -3560,7 +3563,7 @@ body .ui-tooltip { border-width: 2px; }
 /*******************************************/
 .btn-group button.multiselect {
   background: #fff;
-  font-size: 13px;
+  font-size: 14px;
   margin-right: 0;
   position: relative;
   padding: 6px 10px; }
@@ -3669,7 +3672,6 @@ body .ui-tooltip { border-width: 2px; }
 .dropdown-menu > .active > a:focus {
   background: none;
   color: #3b3b3b; }
-
 
 /*!
  * Datetimepicker for Bootstrap 3
@@ -4282,13 +4284,11 @@ body .ui-tooltip { border-width: 2px; }
       -webkit-animation: ripple 1s ease-out;
       animation: ripple 1s ease-out; } }
 
-
 .input-group.date .input-group-addon {
   padding-right: 0; }
 
 .daterange-picker {
   display: none; }
-
 
 /*******************************************/
 /* Ripple Effect */
@@ -4387,8 +4387,7 @@ body .ui-tooltip { border-width: 2px; }
     background: #fff;
     width: 100%;
     padding: 10px 0;
-    border-top: 1px solid #e5e5e5; }
-
+    border-top: 1px solid #d1d1d1; }
 
 /*******************************************/
 /* Ripple Effect */
@@ -4691,7 +4690,6 @@ body .ui-tooltip { border-width: 2px; }
     position: relative;
     top: 5px; }
 
-
 /*******************************************/
 /* Ripple Effect */
 /*******************************************/
@@ -4704,7 +4702,7 @@ body .ui-tooltip { border-width: 2px; }
   cursor: pointer; }
 
 .nav.nav-tabs > li > a {
-  font-size: 13px;
+  font-size: 14px;
   padding: 10px 20px 8px;
   border: none; }
 
@@ -4751,7 +4749,7 @@ body .ui-tooltip { border-width: 2px; }
   cursor: pointer; }
 
 .nav.nav-tabs-style2 > li > a {
-  font-size: 13px;
+  font-size: 14px;
   border: 1px solid #ca9d48;
   padding: 10px 20px;
   color: #fff;
@@ -4773,7 +4771,6 @@ body .ui-tooltip { border-width: 2px; }
     width: 0; }
   .nav.nav-tabs > li.active:after {
     width: 100%; } }
-
 
 /*******************************************/
 /* Ripple Effect */
@@ -4920,7 +4917,6 @@ input[type=reset], .btn-reset {
 .btn:focus, .btn:active, .btn:visited {
   outline: none; }
 
-
 /*******************************************/
 /* Ripple Effect */
 /*******************************************/
@@ -4945,7 +4941,6 @@ input[type='text'], input[type='password'], input[type='email'], input[type='tel
   input[type='text'][disabled], input[type='text'] .disabled, input[type='password'][disabled], input[type='password'] .disabled, input[type='email'][disabled], input[type='email'] .disabled, input[type='tel'][disabled], input[type='tel'] .disabled {
     opacity: .4;
     cursor: not-allowed; }
-
 
 /*******************************************/
 /* Ripple Effect */
@@ -4978,7 +4973,7 @@ select {
     min-width: 78px; }
     .dropdown .dropdown-menu > li > a, .dropup .dropdown-menu > li > a {
       padding: 6px 15px;
-      font-size: 13px; }
+      font-size: 14px; }
     .dropdown .dropdown-menu > li a:hover, .dropup .dropdown-menu > li a:hover {
       color: #3b3b3b;
       background: #ddd; }
@@ -5044,7 +5039,6 @@ select {
   -ms-border-radius: 1px;
   -o-border-radius: 1px;
   border-radius: 1px; }
-
 
 /*******************************************/
 /* Ripple Effect */
@@ -5116,7 +5110,6 @@ select {
 .form-validation .txt.valid ~ .validation:before {
   content: '\e91f';
   color: #2da57e; }
-
 
 /*******************************************/
 /* Ripple Effect */
@@ -5412,7 +5405,6 @@ input[type=reset], .btn-reset {
   .modal-dialog {
     margin: 0 auto !important; } }
 
-
 /*******************************************/
 /* Ripple Effect */
 /*******************************************/
@@ -5464,7 +5456,6 @@ input[type=reset], .btn-reset {
   color: #7b0f0f; }
   .msg-error:before {
     content: '\e90f'; }
-
 
 .tooltip {
   font-size: 14px; }

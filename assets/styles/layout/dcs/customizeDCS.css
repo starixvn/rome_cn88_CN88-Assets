@@ -100,7 +100,7 @@
 body {
   background: none;
   font-family: Arial, Tahoma, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   color: #3b3b3b;
   padding-top: 14px; }
 
@@ -561,4 +561,3 @@ select.setting-field {
 
 .setting-field--error {
   border-color: #e9322d !important; }
-

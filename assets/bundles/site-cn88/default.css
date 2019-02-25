@@ -34,7 +34,6 @@
   .header-nav .language-text {
     color: #333; }
 
-
 /*******************************************/
 /* Ripple Effect */
 /*******************************************/
@@ -119,11 +118,11 @@
   width: 100%; }
 
 .tblRpt {
-  border: 1px solid #e5e5e5;
+  border: 1px solid #d1d1d1;
   border-collapse: collapse;
   background-color: #fff; }
   .tblRpt.tblRpt-bordered > thead > tr > th, .tblRpt.tblRpt-bordered > tbody > tr > td, .tblRpt.tblRpt-bordered tfoot > tr > td {
-    border: 1px solid #e5e5e5; }
+    border: 1px solid #d1d1d1; }
   .tblRpt.tblRpt-striped tbody > tr:nth-of-type(2n) {
     background-color: #eae9ee; }
   .tblRpt.alternative-row-table tbody .even-row {
@@ -228,7 +227,7 @@
 .combined-fixed-pagination-bottom {
   margin-bottom: 48px; }
 
-.tble-style2 thead th, .tble-style2 tbody td, .tble-style2 tfoot td {
+.tbl-style2 thead th, .tbl-style2 tbody td, .tbl-style2 tfoot td {
   height: 30px;
   padding: 0 8px;
   vertical-align: middle;
@@ -239,16 +238,20 @@
   -o-box-sizing: border-box;
   box-sizing: border-box; }
 
-.tble-style2 thead {
+.tbl-style2 thead {
   border-bottom: 1px solid #bfbfbf; }
-  .tble-style2 thead th {
+  .tbl-style2 thead th {
     background-color: #f5f1f2;
     color: #3b3b3b;
     font-weight: bold;
     text-align: left; }
 
-.tble-style2 tbody tr {
+.tbl-style2 tbody tr {
   border-bottom: 1px solid #e5e5e5; }
 
-.tble-style2 tbody td.text-center {
+.tbl-style2 tbody td.text-center {
   text-align: center; }
+
+.tbl-style2 .tfoot-bg {
+  background-color: #ecf4e2;
+  font-weight: bold; }

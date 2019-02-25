@@ -3,7 +3,7 @@
 /*******************************************/
 body {
   font-family: Arial, Tahoma, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   background-color: #e9e9e9;
   margin: 0;
   padding-top: 8%;
@@ -111,7 +111,7 @@ input, button {
       .block .box-lang .flag.flag-vi-VN {
         background-position: 0 -104px; }
   .block .title {
-    font-size: 24px;
+    font-size: 25px;
     color: #3b3b3b;
     margin-top: 16px;
     margin-bottom: 16px; }
@@ -192,7 +192,7 @@ input, button {
       .block .help-rules .error .icon-rules:hover {
         color: #00436f; }
   .block [class^="btn-"] {
-    font-size: 15px;
+    font-size: 16px;
     height: 40px;
     line-height: 40px;
     margin-right: 0;
@@ -204,7 +204,7 @@ input, button {
     font-weight: normal; }
   .block label.error {
     color: #7b0f0f;
-    font-size: 13px;
+    font-size: 14px;
     display: block;
     padding-top: 8px;
     text-align: left; }
@@ -246,7 +246,7 @@ input, button {
       border-bottom: none;
       color: #fff;
       font-weight: normal;
-      font-size: 15px;
+      font-size: 16px;
       line-height: 50px;
       cursor: move;
       padding: 0; }
@@ -257,7 +257,7 @@ input, button {
   .modal.information .modal-content .modal-body {
     color: #3b3b3b;
     padding: 12px 20px;
-    font-size: 15px; }
+    font-size: 16px; }
     .modal.information .modal-content .modal-body p {
       margin-bottom: 4px; }
     .modal.information .modal-content .modal-body ul {
@@ -272,7 +272,7 @@ input, button {
 
 @media only screen and (max-device-width: 767px) {
   body {
-    font-size: 16px;
+    font-size: 17px;
     padding-top: 0;
     background-color: #fff; }
   .block {
@@ -297,9 +297,9 @@ input, button {
     .block label.error {
       padding-top: 4px;
       margin-bottom: 0;
-      font-size: 14px; }
+      font-size: 15px; }
     .block .help-rules .error .icon-rules {
-      font-size: 18px;
+      font-size: 19px;
       top: -3px; }
     .block .avatar {
       padding-top: 0;
@@ -312,15 +312,15 @@ input, button {
   .modal.information .modal-dialog {
     margin-top: 0; }
   .modal.information .modal-content .modal-header .modal-title {
-    font-size: 17px; }
+    font-size: 18px; }
   .modal.information .modal-content .modal-body {
-    font-size: 16px; }
+    font-size: 17px; }
   .modal.information .modal-content {
     width: 100%; } }
 
 @media only screen and (max-device-width: 374px) {
   body {
-    font-size: 13px;
+    font-size: 14px;
     padding-top: 0;
     background-color: #fff; }
   .block {
@@ -338,7 +338,7 @@ input, button {
       margin-bottom: 16px; }
     .block .title {
       margin: 0 0 4px;
-      font-size: 20px; }
+      font-size: 21px; }
     .block .list-button {
       padding-top: 0; }
     .block .avatar {
@@ -349,14 +349,13 @@ input, button {
         height: 84px;
         width: 84px; }
     .block [class^="btn"] {
-      font-size: 13px; }
+      font-size: 14px; }
     .block label.error {
-      font-size: 12px; }
+      font-size: 13px; }
     .block .help-rules .error .icon-rules {
-      font-size: 18px;
+      font-size: 19px;
       top: -3px; }
   .modal.information .modal-content .modal-header .modal-title {
-    font-size: 14px; }
+    font-size: 15px; }
   .modal.information .modal-content .modal-body {
-    font-size: 13px; } }
-
+    font-size: 14px; } }

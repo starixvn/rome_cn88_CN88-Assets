@@ -3,7 +3,7 @@
 /*******************************************/
 .btn-group button.multiselect {
   background: #fff;
-  font-size: 13px;
+  font-size: 14px;
   margin-right: 0;
   position: relative;
   padding: 6px 10px; }
@@ -112,4 +112,3 @@
 .dropdown-menu > .active > a:focus {
   background: none;
   color: #3b3b3b; }
-

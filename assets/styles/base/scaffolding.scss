@@ -85,16 +85,15 @@ body {
     font-family: $font-family;
     font-size: $font-size;
     line-height: unset;
-    overflow: hidden;
+    //overflow: hidden;
 }
 
 .page-title {
     display: table;
     width: 100%;
-    color: #3c3c3c;
-    font-size: 18px;
-    line-height: 56px;
-    padding: 0 20px;
+    color: #3B3B3B;
+    font-size: 16px;
+    padding: 0 0 20px;
 }
 
 a, a:focus, a:active, a:target, a:hover {
@@ -105,8 +104,8 @@ a, a:focus, a:active, a:target, a:hover {
     font-weight: bold;
 }
 
-.center {
-    text-align: center;
+.text-center {
+    text-align: center !important;
 }
 
 .link {
