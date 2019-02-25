@@ -4,7 +4,6 @@
 body {
     font-family: $font-family;
     font-size: $font-size + 2;
-    background-color: #e9e9e9;
     margin: 0;
     padding-top: 8%;
     color: #666;
@@ -17,151 +16,33 @@ input, button {
     font-size: inherit;
 }
 
-%alphaIcon {
-    font: {
-        family: 'Iconalpha';
-        style: normal;
-    }
-}
-
 .block {
-    width: 360px;
-    max-width: 400px;
-    background: #fff;
-    padding: 30px;
+    width: 530px;
+    background: #E2E2E2;
+    color: #323232;
     margin: auto;
-    @include box-sizing;
-    @include effect-button();
 
-
-    .box-lang {
-        display: table;
-        width: 100%;
-
-        .dropdown-menu {
-            left: auto;
-            right: 0;
-        }
-
-        .btn:active, .btn.active {
-            @include box-shadow-multiple(none);
-        }
-
-        .dropdown {
-            float: right;
-
-            .dropdown-menu {
-                @include border-radius(1px);
-                @include effect-button;
-
-                li a {
-                    padding-bottom: 6px;
-                    padding-top: 6px;
-                    cursor: pointer;
-
-                    &:hover {
-                        background-color: #ddd;
-                    }
-                }
-            }
-
-            .caret {
-                position: static;
-            }
-        }
-
-        .flag {
-            background: url(../../images/flag_sprite.png) no-repeat;
-            display: inline-block;
-            width: 23px;
-            height: 16px;
-            position: relative;
-            top: 4px;
-            margin-right: 2px;
-
-            &.flag-en-US {
-                background-position: 0 0px;
-            }
-
-            &.flag-zh-CN {
-                background-position: 0 -17px;
-            }
-
-            &.flag-zh-Hans {
-                background-position: 0 -17px;
-            }
-
-            &.flag-zh-TW {
-                background-position: 0 -34px;
-            }
-
-            &.flag-ja-JP {
-                background-position: 0 -50px;
-            }
-
-            &.flag-th-TH {
-                background-position: 0 -69px;
-            }
-
-            &.flag-ko-KR {
-                background-position: 0 -86px;
-            }
-
-            &.flag-vi-VN {
-                background-position: 0 -104px;
-            }
-        }
+    .title-box {
+        background: #7B0F0F;
+        height: 55px;
+        line-height: 55px;
+        color: #fff;
+        padding-left: 30px;
     }
 
-    .title {
-        font-size: $font-size + 11;
-        color: $text-color;
-        margin-top: 16px;
-        margin-bottom: 16px;
-    }
-
-    .avatar {
-        padding-top: 10px;
-        padding-bottom: 12px;
-        text-align: center;
-
-        img {
-            height: 72px;
-            width: 72px;
-            border: 3px solid #aeaeae;
-            @include border-radius(50%);
-        }
-
-        figcaption {
-            padding: 12px 0;
-
-            .username {
-                color: $text-color;
-                font-weight: bold;
-            }
-        }
+    .form-force-change-pass {
+        padding: 30px;
     }
 
     .txt {
         border: none;
         outline: none;
-        width: 100%;
-        border-bottom: 1px solid #c4c4c4;
-        height: 36px;
-        line-height: 36px;
+        border: 1px solid #bdbdbd;
+        height: 55px;
+        line-height: 55px;
         padding: 0 0 0 28px;
-        color: #888;
-        @include border-radius(0);
-        @include box-shadow-multiple('none');
-
-        &:focus {
-            border-bottom: 2px solid #666;
-            color: #666;
-
-            + [class^="icon"] {
-                color: #666;
-            }
-        }
+        color: #323232;
+        width: 328px;
 
         &.error ~ .validation, &.valid ~ .validation {
             right: 0;
@@ -178,21 +59,12 @@ input, button {
         margin-bottom: 15px;
         position: relative;
 
-        [class^="icon"] {
-            color: #ccc;
-            position: absolute;
-            left: 0;
+        .lb-title {
+            width: 136px;
         }
-
-        .icon-account-key {
-            font-size: 20px;
-            top: 7px;
-        }
-
-        .icon-lock {
-            font-size: 18px;
-            top: 7px;
-        }
+    }
+    .rules {
+        margin-bottom: 23px;
     }
 
     .help-rules {
@@ -217,8 +89,8 @@ input, button {
 
     [class^="btn-"] {
         font-size: $font-size + 2;
-        height: 40px;
-        line-height: 40px;
+        height: 55px;
+        line-height: 55px;
         margin-right: 0;
         width: 46%;
         text-transform: uppercase;
@@ -246,94 +118,10 @@ input, button {
     }
 }
 
-.rules-title {
-    color: $link-color;
-    cursor: pointer;
-    padding-bottom: 8px;
-    padding-top: 20px;
-
-    .icon-rules {
-        font-size: 20px;
-        margin-right: 6px;
-        position: relative;
-        top: 3px;
-    }
-
-    &:hover {
-        color: darken($link-color, 15%);
-    }
-}
-
-.modal.information {
-    .modal-dialog {
-        margin-top: 13%;
-    }
-
-    .modal-content {
-        border: none;
-        width: 400px;
-
-        .modal-header {
-            background-color: #0483e4;
-            color: #fff;
-            height: 60px;
-            padding: 6px 0 6px 20px;
-
-            .icon-rules {
-                margin-right: 4px;
-                font-size: 22px;
-                position: relative;
-                top: 4px;
-                margin-right: 8px;
-            }
-
-            .modal-title {
-                border-bottom: none;
-                color: #fff;
-
-                font: {
-                    weight: normal;
-                    size: $font-size + 2;
-                }
-
-                line-height: 50px;
-                cursor: move;
-                padding: 0;
-            }
-
-            .icon-close {
-                color: #fff;
-                top: 16px;
-                position: relative;
-            }
-        }
-
-        .modal-body {
-            color: $text-color;
-            padding: 12px 20px;
-            font-size: $font-size + 2;
-
-            p {
-                margin-bottom: 4px;
-            }
-
-            ul {
-                list-style-type: disc;
-                padding-left: 30px;
-            }
-        }
-    }
-}
 
 @media screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
     body {
         padding-top: 5%;
-    }
-
-    .modal.information {
-        .modal-dialog {
-            margin-top: 10%;
-        }
     }
 }
 
@@ -348,14 +136,6 @@ input, button {
         padding: 0 30px;
         width: 100%;
         @include box-shadow-multiple(none);
-
-        .box-lang {
-            padding-top: 4px;
-
-            .dropdown .btn {
-                padding: 6px 8px;
-            }
-        }
 
         .rowlg {
             margin-bottom: 20px;
@@ -379,38 +159,6 @@ input, button {
             font-size: $font-size + 5;
             top: -3px;
         }
-
-        .avatar {
-            padding-top: 0;
-            padding-bottom: 8px;
-
-            figcaption {
-                padding-bottom: 0;
-            }
-
-            img {
-                height: 94px;
-                width: 94px;
-            }
-        }
-    }
-
-    .modal.information {
-        .modal-dialog {
-            margin-top: 0;
-        }
-
-        .modal-content .modal-header .modal-title {
-            font-size: $font-size + 4;
-        }
-
-        .modal-content .modal-body {
-            font-size: $font-size + 3;
-        }
-
-        .modal-content {
-            width: 100%;
-        }
     }
 }
 
@@ -424,11 +172,6 @@ input, button {
     .block {
         padding: 0 30px;
         width: 100%;
-        @include box-shadow-multiple(none);
-
-        .box-lang {
-            padding-top: 8px;
-        }
 
         .rowlg {
             margin-bottom: 16px;
@@ -443,19 +186,6 @@ input, button {
             padding-top: 0;
         }
 
-        .avatar {
-            padding-bottom: 4px;
-
-            figcaption {
-                padding-top: 4px;
-            }
-
-            img {
-                height: 84px;
-                width: 84px;
-            }
-        }
-
         [class^="btn"] {
             font-size: $font-size;
         }
@@ -467,18 +197,6 @@ input, button {
         .help-rules .error .icon-rules {
             font-size: $font-size + 5;
             top: -3px;
-        }
-    }
-
-    .modal.information {
-        .modal-content {
-            .modal-header .modal-title {
-                font-size: $font-size + 1;
-            }
-
-            .modal-body {
-                font-size: $font-size;
-            }
         }
     }
 }

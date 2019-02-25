@@ -76,8 +76,15 @@
       "styles/components/form.css",
       "styles/components/modals.css",
       "styles/components/alerts.css",
-      "styles/components/tooltip.css", 
+      "styles/components/tooltip.css",
       "styles/components/breadcrumbs.css"
+    ]
+  },
+  {
+    "outputFileName": "bundles/site-cn88/security/before-home-page.css",
+    "inputFiles": [
+       "styles/components/buttons.css",
+      "styles/layout/before-home-page/before-home-page.css"
     ]
   },
   {
