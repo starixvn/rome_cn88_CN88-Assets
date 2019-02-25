@@ -22,6 +22,13 @@ input, button {
     color: #323232;
     margin: auto;
 
+    .msg {
+        padding: 18px 8px 18px 30px;
+        &:before {
+            top: 15px;
+        }
+    }
+
     .title-box {
         background: #7B0F0F;
         height: 55px;
@@ -104,14 +111,6 @@ input, button {
         font-weight: normal;
     }
 
-    label.error {
-        color: $msg-error-color;
-        font-size: $font-size;
-        display: block;
-        padding-top: 8px;
-        text-align: left;
-    }
-
     .note {
         color: #666;
         margin-top: 20px;
@@ -188,10 +187,6 @@ input, button {
 
         [class^="btn"] {
             font-size: $font-size;
-        }
-
-        label.error {
-            font-size: $font-size - 1;
         }
 
         .help-rules .error .icon-rules {
