@@ -186,7 +186,7 @@
         th {
             background-color: $table2-header-bg-color;
             color: $table2-header-color;
-            font-weight: bold;
+            font-weight: normal;
             text-align: left;
         }
     }
@@ -206,5 +206,9 @@
     .tfoot-bg {
         background-color: #ecf4e2;
         font-weight: bold;
+
+        tr {
+            border-bottom: 1px solid $table2-border-color;
+        }
     }
 }

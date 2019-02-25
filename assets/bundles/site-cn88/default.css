@@ -243,7 +243,7 @@
   .tbl-style2 thead th {
     background-color: #f5f1f2;
     color: #3b3b3b;
-    font-weight: bold;
+    font-weight: normal;
     text-align: left; }
 
 .tbl-style2 tbody tr {
@@ -255,3 +255,5 @@
 .tbl-style2 .tfoot-bg {
   background-color: #ecf4e2;
   font-weight: bold; }
+  .tbl-style2 .tfoot-bg tr {
+    border-bottom: 1px solid #e5e5e5; }
