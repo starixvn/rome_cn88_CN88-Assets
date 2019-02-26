@@ -81,6 +81,18 @@
     ]
   },
   {
+    "outputFileName": "bundles/site-messages/default.css",
+    "inputFiles": [
+      "styles/vendors/bootstrap-datetimepicker.css",
+      "styles/components/tables.css",
+      "styles/components/calendars.css",
+      "styles/components/tabs.css",
+      "styles/components/bootstrap.nexDatePicker.css",
+      "styles/components/month-picker.css",
+      "styles/components/buttons.css"
+    ]
+  },
+  {
     "outputFileName": "bundles/site-cn88/security.css",
     "inputFiles": [
       "styles/components/buttons.css",
@@ -114,6 +126,16 @@
       "js/components/autocomplete/autocomplete.js",
       "js/libs/cleave/cleave.js",
       "js/libs/raven/raven.js"
+    ]
+  },
+  {
+    "outputFileName": "bundles/site-messages/message-default.js",
+    "inputFiles": [
+      "js/libs/moment/moment.js",
+      "js/libs/bootstrap/tab.js",
+      "js/components/datetimepicker/datepicker.js",
+      "js/components/datetimepicker/bootstrap-datetimepicker.js",
+      "js/components/bootstrap.nexDatePicker/bootstrap.nexDatePicker.js"
     ]
   }
 ]
