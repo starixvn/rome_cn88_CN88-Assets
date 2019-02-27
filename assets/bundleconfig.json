@@ -18,7 +18,7 @@
     "inputFiles": [
       "styles/layout/default-layout/header.css",
       "styles/layout/default-layout/sidebar.css",
-      "styles/components/tables.css",      
+      "styles/components/tables.css",
       "styles/components/modals.css"
     ]
   },
@@ -142,6 +142,13 @@
       "js/components/datetimepicker/datepicker.js",
       "js/components/datetimepicker/bootstrap-datetimepicker.js",
       "js/components/bootstrap.nexDatePicker/bootstrap.nexDatePicker.js"
+    ]
+  },
+  {
+    "outputFileName": "bundles/site-cn88/security.js",
+    "inputFiles": [
+      "js/components/secure-hashing/sha1.js",
+      "js/components/secure-hashing/sha256.js"
     ]
   }
 ]
