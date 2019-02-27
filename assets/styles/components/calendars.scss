@@ -35,7 +35,7 @@
         @include border-radius(0);      
         border: 1px solid #c8c8c8;
         font-size: 13px;
-        height: 32px;
+        height: $height-normal;
         background: #fff;
         margin-left: 0;
     }
