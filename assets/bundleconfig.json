@@ -9,7 +9,8 @@
       "styles/components/blockui.css",
       "styles/components/checkbox-radio.css",
       "styles/components/dropdown.css",
-      "styles/components/icon.css"
+      "styles/components/icon.css",
+      "styles/components/modals.css"
     ]
   },
   {
@@ -53,7 +54,10 @@
       "js/libs/bootstrap/tab.js",
       "js/libs/numeral/numeral.js",
       "js/components/autocomplete/autocomplete.js",
-      "js/libs/cleave/cleave.js"
+      "js/libs/cleave/cleave.js",
+
+      "js/components/draggable/tiny-draggable.js",
+      "js/components/resizable/resizable.js"
     ]
   },
   {
@@ -78,7 +82,8 @@
       "styles/components/modals.css",
       "styles/components/alerts.css",
       "styles/components/tooltip.css",
-      "styles/components/breadcrumbs.css"
+      "styles/components/breadcrumbs.css",
+      "styles/components/resizable.css"
     ]
   },
   {
