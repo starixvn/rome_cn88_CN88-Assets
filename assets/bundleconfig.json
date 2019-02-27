@@ -17,7 +17,8 @@
     "inputFiles": [
       "styles/layout/default-layout/header.css",
       "styles/layout/default-layout/sidebar.css",
-      "styles/components/tables.css"
+      "styles/components/tables.css",      
+      "styles/components/modals.css"
     ]
   },
   {
