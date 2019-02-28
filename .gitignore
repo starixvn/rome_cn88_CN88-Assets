@@ -42,3 +42,4 @@ _ReSharper*/
 */bundles/**/*.js
 
 assets/vwd.webinfo
+.vs/
