@@ -19,7 +19,8 @@
       "styles/layout/default-layout/header.css",
       "styles/layout/default-layout/sidebar.css",
       "styles/components/tables.css",
-      "styles/components/modals.css"
+      "styles/components/modals.css",
+      "styles/components/resizable.css"
     ]
   },
   {
@@ -82,8 +83,7 @@
       "styles/components/modals.css",
       "styles/components/alerts.css",
       "styles/components/tooltip.css",
-      "styles/components/breadcrumbs.css",
-      "styles/components/resizable.css"
+      "styles/components/breadcrumbs.css"
     ]
   },
   {
@@ -103,7 +103,7 @@
     "inputFiles": [
       "styles/components/buttons.css",
       "styles/components/alerts.css",
-      "styles/fonts/iconcn88/style.css", 
+      "styles/fonts/iconcn88/style.css",
       "styles/components/textboxes.css"
     ]
   },
