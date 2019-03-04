@@ -17,11 +17,12 @@
     font-size: 17px;
 }
 
-.icon-add {
+.icon-add,
+.icon-minus {
     @include ripple-effect-icon($margin-left: -6px, $margin-right: -4px, $height: 26px, $width: 26px, $top: -1px);
     display: inline-block;
-    font-size: 16px;
     color: #25a77b;
+    font-size: 16px;
 }
 
 .icon-edit {
