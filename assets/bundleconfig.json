@@ -77,7 +77,17 @@
       "styles/components/form.css",
       "styles/components/alerts.css",
       "styles/components/tooltip.css",
-      "styles/components/breadcrumbs.css"
+      "styles/components/breadcrumbs.css",
+      "styles/layout/default-layout/sidebar.css"
+    ]
+  },
+  {
+    "outputFileName": "bundles/site-features/security.css",
+    "inputFiles": [
+      "styles/components/buttons.css",
+      "styles/components/alerts.css",
+      "styles/fonts/iconcn88/style.css",
+      "styles/components/textboxes.css"
     ]
   },
   {
