@@ -9,7 +9,9 @@
 
     &.date {
         width: 130px;
-        position: relative;
+        position: relative;            
+        border: 1px solid #c8c8c8;
+        background-color: #fff;
     }
 }
 
@@ -17,7 +19,7 @@
     position: initial;
 
     .icon-calendar {
-        font-size: 24px;
+        font-size: 16px;
         color: #7f7f7f;
         display: inline-block;
         @include ripple-effect-icon($margin-left: -6px, $height: 36px, $width: 36px, $top: -2px);
@@ -27,17 +29,17 @@
         background: transparent;
         border: none;
         padding: 0px 8px;
-        position: relative;
-        top: 3px;
     }
 
     .form-control {  
-        @include border-radius(0);      
-        border: 1px solid #c8c8c8;
+        @include border-radius(0);  
+        border: none;
         font-size: 13px;
         height: $height-normal;
         background: #fff;
         margin-left: 0;
+        height: 28px;
+        box-shadow: none;
     }
 }
 
