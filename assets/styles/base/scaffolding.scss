@@ -76,15 +76,13 @@
     background: transparent;
 }
 
-html, body {
+body {
     height: 100%;
     width: 100%;
-}
-
-body {
     font-family: $font-family;
     font-size: $font-size;
     line-height: unset;
+    letter-spacing: 0.5px;
     //overflow: hidden;
 }
 
@@ -93,6 +91,7 @@ body {
     width: 100%;
     color: #3B3B3B;
     font-size: 16px;
+    margin-bottom: 12px;
 }
 
 a, a:focus, a:active, a:target, a:hover {
@@ -118,4 +117,8 @@ a, a:focus, a:active, a:target, a:hover {
 
 .display-none {
     display: none;
+}
+
+.page-container {
+    padding: 20px;
 }
