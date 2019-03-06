@@ -63,6 +63,7 @@
     "inputFiles": [
       "styles/vendors/jqueryui/jquery-ui-1.9.1.custom.css",
       "styles/vendors/jquery-easyui-1.5/easyui.css",
+      "styles/layout/default-layout/sidebar.css",
       "styles/components/tablesorter.css",
       "styles/vendors/bootstrap-multiselect.css",
       "styles/components/bootstrap-multiselect.css",
