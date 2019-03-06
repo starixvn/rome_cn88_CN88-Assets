@@ -6,18 +6,19 @@
       "styles/vendors-extensions/common/bootstrap-ex.css",
       "styles/fonts/iconcn88/style.css",
       "styles/base/scaffolding.css",
+      "styles/base/icon-fonts.css",
       "styles/components/blockui.css",
       "styles/components/dropdown.css",
       "styles/components/icon.css",
-      "styles/components/tables.css"
+      "styles/components/tables.css",
+      "styles/components/modals.css"
     ]
   },
   {
     "outputFileName": "bundles/site-cn88/default.css",
     "inputFiles": [
       "styles/layout/default-layout/header.css",
-      "styles/layout/default-layout/sidebar.css",
-      "styles/components/modals.css"
+      "styles/layout/default-layout/sidebar.css"      
     ]
   },
   {

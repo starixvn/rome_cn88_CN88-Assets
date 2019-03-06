@@ -40,7 +40,7 @@
         border-bottom: none;
         background-color: #7e1414;
 
-        .icon-close {
+        .icon-close, .close {
             position: absolute;
             right: 0;
             top: 2px;
@@ -54,6 +54,14 @@
             background-color: #630f0f;
             text-align: center;
             outline: none;
+        }
+        .close {
+            font-size: 0;
+            &:before {
+                font-family: 'CN88Icon';
+                content: "\e90e";
+                font-size: 12px;
+            }
         }
 
         .modal-title {
@@ -93,71 +101,6 @@
     }
 }
 
-/*********************************/
-/* Bootboxjs*/
-/*********************************/
-.bootbox {
-
-    .close {
-        color: $text-color;
-        opacity: 1;
-        position: relative;
-    }
-
-    .modal-header .close {        
-        top: 9px;
-        right: 0;
-    }
-
-    .modal-header + .modal-body {
-        padding-top: 16px;
-    }
-
-    .modal-body {
-        padding: 40px 16px 16px;
-        font-size: 14px;
-
-        .close {
-            top: -18px;
-            right: -4px;
-        }
-    }
-
-    .modal-dialog {
-        margin: 0;
-        width: 500px;
-        display: table;
-    }
-
-    .modal-footer {
-        border-top: none;
-        padding-bottom: 4px;
-
-        .btn {
-            border: none;
-            background: none;
-            color: #045ace;
-            font-weight: bold;
-            line-height: 32px;
-            padding: 0 16px;
-            margin: 8px;
-            min-width: 86px;
-            text-transform: capitalize;
-            text-transform: uppercase;
-            @include border-radius(1px);
-            @include box-shadow(0, 0, 0, transparent);
-
-            &:hover, &:focus {
-                background-color: #ececec;
-            }
-
-            &.btn-default {
-                color: $text-color;
-                float: right;
-            }
-        }
-    }
-}
 
 @media \0screen\,screen\9 {
     .modal-dialog {
