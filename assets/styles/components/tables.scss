@@ -160,7 +160,7 @@
         color: #828282;
         padding: 16px 0;
     } 
-    > tbody > tr > td {
+    > tbody > tr > td, > tfoot > tr > td {
         padding: 12px 0;
         border-bottom: 1px solid #c8c8c8;
     }
