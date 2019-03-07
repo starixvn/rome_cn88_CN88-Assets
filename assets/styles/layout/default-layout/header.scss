@@ -13,40 +13,62 @@ $text-color: #5b534f;
     border: none;
     display: flex;
     justify-content: space-between;
-    .header-left, .header-right {        
+
+
+    .header-left, .header-right {
         margin-bottom: 0;
         padding-left: 0;
+
         .header-item {
             display: inline-block;
             padding: 0 12px;
             cursor: pointer;
+
             a {
                 color: inherit;
             }
         }
+
+        .language-selector-container:hover {
+            text-decoration: none;
+        }
     }
+
     .header-left {
         .language {
             padding-left: 20px;
         }
     }
+
     .header-right {
         .icon-chat {
             padding-right: 6px;
+
             &:before {
                 font-size: 15px;
             }
         }
+
         .icon-bell:before {
             font-size: 15px;
         }
+
         .header-custname .dropdown-menu {
             right: 0;
             left: unset;
         }
     }
+
     .language-text {
         color: #333;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .online-member:hover {
+        text-decoration: underline;
     }
 }
 

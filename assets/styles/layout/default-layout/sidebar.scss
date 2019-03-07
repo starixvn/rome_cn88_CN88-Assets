@@ -24,6 +24,11 @@
                     color: #FF9999;
                 }
             }
+
+            &:hover {
+                cursor: pointer;
+            }
+
             &:hover:not(:first-child), &.active  {
                 &:after {
                     width: 0;
