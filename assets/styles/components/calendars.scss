@@ -22,7 +22,7 @@
         font-size: 16px;
         color: #7f7f7f;
         display: inline-block;
-        @include ripple-effect-icon($margin-left: -6px, $height: 36px, $width: 36px, $top: -2px);
+        @include ripple-effect-icon($margin-left: -8px, $height: 32px, $width: 32px, $top: -2px);
     }
 
     .input-group-addon {

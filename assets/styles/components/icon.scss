@@ -55,7 +55,7 @@
 }
 
 .icon-excel {
-    @include ripple-effect-icon($margin-left: 37px, $height: 36px, $width: 36px, $top: -24px);
+    @include ripple-effect-icon($margin-left: -11px, $height: 36px, $width: 36px, $top: -2px);
     cursor: pointer;
     color: #1d6f42;
     font-size: 19px;
