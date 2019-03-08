@@ -135,7 +135,9 @@
       "js/libs/numeral/numeral.js",
       "js/components/autocomplete/autocomplete.js",
       "js/libs/cleave/cleave.js",
-      "js/libs/raven/raven.js"
+      "js/libs/raven/raven.js",
+      "js/components/draggable/tiny-draggable.js",
+      "js/components/resizable/resizable.js"
     ]
   },
   {
