@@ -29,15 +29,11 @@ $btn-submit-color: #fff;
 $btn-submit-bg-hover: darken($btn-submit-bg, 5%);
 $btn-submit-color-hover: #fff;
 
-$btn-reset-bg: #F6731B;
-$btn-reset-color: #fff;
-$btn-reset-bg-hover: darken($btn-reset-bg, 5%);
-$btn-reset-color-hover: #fff;
+$btn-back-bg: #d2d2d2;
+$btn-back-color: #3b3b3b;
+$btn-back-bg-hover: darken($btn-back-bg, 5%);
+$btn-back-color-hover: #3b3b3b;
 
-$btn-refresh-bg: #1bac69;
-$btn-refresh-color: #fff;
-$btn-refresh-bg-hover: darken($btn-refresh-bg, 5%);
-$btn-refresh-color-hover: #fff;
 
 $btn-cancel-bg: #ffffff;
 $btn-cancel-color: #737373;
@@ -45,15 +41,6 @@ $btn-cancel-bg-hover: darken($btn-cancel-bg, 5%);
 $btn-cancel-color-hover: #fff;
 $btn-cancel-border-color: #d2d2d2;
 
-$btn-remove-bg: #930a14;
-$btn-remove-color: #fff;
-$btn-remove-bg-hover: darken($btn-remove-bg, 5%);
-$btn-remove-color-hover: #fff;
-
-$btn-secondary-bg: #ca9d48;
-$btn-secondary-color: #fff;
-$btn-secondary-bg-hover: darken($btn-remove-bg, 5%);
-$btn-secondary-color-hover: #fff;
 
 $dropdown-color: $text-color;
 $dropdown-color-disable: #888;
