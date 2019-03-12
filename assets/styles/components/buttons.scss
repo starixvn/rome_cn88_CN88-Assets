@@ -105,7 +105,8 @@ input[type="submit"][disabled] {
     border: 1px solid $btn-back-bg;
 
     &:hover, &:active, &:focus {
-        //background-color: $btn-secondary-bg-hover;
+        background-color: $btn-back-bg-hover;
+
         &[disabled], .disabled {
             background-color: $btn-back-bg;
             color: $btn-back-color;
