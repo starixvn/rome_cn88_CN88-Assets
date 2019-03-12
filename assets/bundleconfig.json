@@ -111,6 +111,29 @@
     ]
   },
   {
+    "outputFileName": "bundles/site-viewlogs/viewlogs.css",
+    "inputFiles": [
+      "styles/vendors/jqueryui/jquery-ui-1.9.1.custom.css",
+      "styles/vendors/monthpicker/monPickr-0.0.3.css",
+      "styles/vendors/jquery-easyui-1.5/easyui.css",
+      "styles/vendors/jquery-easyui-1.5/icon.css",
+      "styles/components/month-picker.css",
+      "styles/components/tabs.css",
+      "styles/components/buttons.css",
+      "styles/components/textboxes.css",
+      "styles/components/form.css",
+      "styles/components/checkbox-radio.css",
+      "styles/components/pagination.css"
+    ]
+  },
+    {
+    "outputFileName": "bundles/site-totalbets/totalbets.css",
+    "inputFiles": [
+      "styles/components/buttons.css",
+      "styles/components/form.css"
+    ]
+  },
+  {
     "outputFileName": "bundles/site-features/default.js",
     "inputFiles": [
       "js/libs/bootstrap/transition.js",
@@ -155,22 +178,6 @@
     "inputFiles": [
       "js/components/secure-hashing/sha1.js",
       "js/components/secure-hashing/sha256.js"
-    ]
-  },
-  {
-    "outputFileName": "bundles/site-viewlogs/viewlogs.css",
-    "inputFiles": [
-      "styles/vendors/jqueryui/jquery-ui-1.9.1.custom.css",
-      "styles/vendors/monthpicker/monPickr-0.0.3.css",
-      "styles/vendors/jquery-easyui-1.5/easyui.css",
-      "styles/vendors/jquery-easyui-1.5/icon.css",
-      "styles/components/month-picker.css",
-      "styles/components/tabs.css",
-      "styles/components/buttons.css",
-      "styles/components/textboxes.css",
-      "styles/components/form.css",
-      "styles/components/checkbox-radio.css",
-      "styles/components/pagination.css"
     ]
   },
   {

@@ -52,6 +52,7 @@
     }
     .sub-menu {
          margin-bottom: 2px;
+         padding-left: 0;
          @include box-shadow(1px, 0, 5px, rgba(0, 0, 0, 0.3));
         .sub-menu-item  {
             display: inline-block;
