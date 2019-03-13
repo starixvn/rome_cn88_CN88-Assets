@@ -132,12 +132,14 @@
       "styles/vendors/bootstrap-multiselect.css",
       "styles/components/bootstrap-multiselect.css",
       "styles/components/buttons.css",
-      "styles/components/form.css"
+      "styles/components/form.css",
+      "styles/components/tooltip.css"
     ]
   },
   {
     "outputFileName": "bundles/site-totalbets/default.js",
     "inputFiles": [
+      "js/libs/bootstrap/tooltip.js",
       "js/components/sticky-table-headers/jquery.stickytableheaders.js",
       "js/components/tablesorter/tablesorter.js",
       "js/components/multiselect/bootstrap-multiselect.js",
