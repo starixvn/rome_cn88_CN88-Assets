@@ -133,7 +133,8 @@
       "styles/components/bootstrap-multiselect.css",
       "styles/components/buttons.css",
       "styles/components/form.css",
-      "styles/components/tooltip.css"
+      "styles/components/tooltip.css", 
+      "styles/components/textboxes.css"
     ]
   },
   {
