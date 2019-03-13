@@ -10,8 +10,14 @@
     }
 
     .select2-selection--single {
-        @include effect-textbox;
-        border: none;
+        border-radius: 0;
+        border: 1px solid $border-color;
+        box-shadow: none;
+
+        .select2-selection__rendered {
+            color: $text-color;
+            line-height: 30px;
+        }
     }
 
     .select2-results__option {
@@ -29,7 +35,11 @@
     }
 }
 
+
 .select2-container {
     line-height: 20px;
     width: 300px;
+}
+.select2-container .select2-selection--single {
+    height: $height-normal;
 }
