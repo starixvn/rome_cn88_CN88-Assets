@@ -8,6 +8,7 @@ var store = {},
     scriptTag = 'script',
     storage
 
+store.enabled = true
 store.disabled = false
 store.version = '1.3.20'
 store.set = function (key, value) { }
