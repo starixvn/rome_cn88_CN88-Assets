@@ -146,6 +146,7 @@
       "js/components/sticky-table-headers/jquery.stickytableheaders.js",
       "js/components/tablesorter/tablesorter.js",
       "js/components/multiselect/bootstrap-multiselect.js",
+      "js/libs/bootstrap/tab.js",
       "js/libs/raven/raven.js"
     ]
   },

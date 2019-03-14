@@ -112,6 +112,9 @@ a, a:focus, a:active, a:target, a:hover {
 
 .link {
     color: $link-color;
+    &:focus {
+        text-decoration: none;
+    }
 }
 
 .link:hover {
