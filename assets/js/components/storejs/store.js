@@ -159,6 +159,7 @@ try {
     if (store.get(testKey) != testKey) { store.disabled = true }
     store.remove(testKey)
 } catch (e) {
-    store.disabled = true
+    store.disabled = true;
 }
-store.enabled = !store.disabled
+
+store.enabled = !store.disabled;
