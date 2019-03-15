@@ -136,7 +136,9 @@
       "styles/components/tooltip.css",
       "styles/components/textboxes.css",
       "styles/components/buttons.css",
-      "styles/components/tabs.css"
+      "styles/components/tabs.css",
+      "styles/components/breadcrumbs.css"
+
     ]
   },
   {
