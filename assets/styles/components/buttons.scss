@@ -31,7 +31,7 @@ input[type="submit"][disabled] {
     font-size: 13px;
     @include box-sizing;
     @include border-radius(0);
-    min-width: 100px;
+    min-width: 80px;
 
     &[disabled], .disabled {
        opacity: .4;
