@@ -1,7 +1,7 @@
 ﻿@import "../abstracts/_variables.scss";
 @import "../abstracts/_mixins.scss";
 
-input[type='text'], input[type='password'], input[type='email'], input[type='tel'] {
+input[type='text'], input[type='password'], input[type='email'], input[type='tel'], input[type='number'] {
     height: $height-normal;
     line-height: $height-normal;
     border: none;
@@ -21,4 +21,10 @@ input[type='text'], input[type='password'], input[type='email'], input[type='tel
         opacity: .4;
         cursor: not-allowed;
     }
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
