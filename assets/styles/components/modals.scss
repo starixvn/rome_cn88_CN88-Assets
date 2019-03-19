@@ -97,6 +97,10 @@
     }
 }
 
+.bootbox .modal-header .modal-title {
+    cursor: default;
+}
+
 @media only screen and (max-device-width : $screen-device-lower768) {
     .popup-guidelines {
         width: 95% !important;
