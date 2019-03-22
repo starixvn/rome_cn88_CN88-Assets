@@ -55,7 +55,8 @@
       "js/libs/cleave/cleave.js",
 
       "js/components/draggable/tiny-draggable.js",
-      "js/components/resizable/resizable.js"
+      "js/components/resizable/resizable.js",
+      "js/components/popup-manager/popup-manager.js"
     ]
   },
   {
@@ -181,7 +182,8 @@
       "js/libs/cleave/cleave.js",
       "js/libs/raven/raven.js",
       "js/components/draggable/tiny-draggable.js",
-      "js/components/resizable/resizable.js"
+      "js/components/resizable/resizable.js",
+      "js/components/popup-manager/popup-manager.js"
     ]
   },
   {
