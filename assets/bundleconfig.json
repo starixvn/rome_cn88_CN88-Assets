@@ -53,7 +53,6 @@
       "js/libs/numeral/numeral.js",
       "js/components/autocomplete/autocomplete.js",
       "js/libs/cleave/cleave.js",
-
       "js/components/draggable/tiny-draggable.js",
       "js/components/resizable/resizable.js",
       "js/components/popup-manager/popup-manager.js"

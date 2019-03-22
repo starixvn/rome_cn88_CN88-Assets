@@ -262,6 +262,21 @@ var PopupManager = (function () {
                 }
             })*/;
         };
+
+        this.bootboxAlert = function (title, message, callback) {
+            bootbox.dialog({
+                title: title,
+                message: message,
+                animate: false,
+                buttons: {
+                    confirm: {
+                        label: "OK",
+                        className: "btn-submit"
+                    }
+                }
+            }) ;
+        };
+
         this.hasPopupOpen = function () { return _this.activePopups.length > 0; };
         this.revertLatestPopupTitle = function () {
             if (_this.hasPopupOpen()) {
