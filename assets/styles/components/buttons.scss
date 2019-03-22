@@ -64,7 +64,7 @@ input[type="submit"][disabled] {
     background: $btn-submit-bg;
     color: $btn-submit-color;
     &:hover, &:active, &:focus {
-        background-color: $btn-submit-bg-hover;
+        background-color: $btn-submit-bg-hover !important;
         color: $btn-submit-color-hover;
 
         &[disabled], .disabled {
@@ -85,7 +85,7 @@ input[type="submit"][disabled] {
     color: $btn-cancel-color;
 
     &:hover, &:active, &:focus {
-        background-color: $btn-cancel-bg-hover;
+        background-color: $btn-cancel-bg-hover !important;
 
         &[disabled], .disabled {
             background-color: $btn-cancel-bg;
