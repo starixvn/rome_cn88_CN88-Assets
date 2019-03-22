@@ -232,39 +232,32 @@ var PopupManager = (function () {
             }
             _this.openPopUpAfterSetIframeSrc(activePopup, isAutoHeight, options);
         };
-        this.bootboxConfirm = function (title, message, callback) {
-            bootbox.confirm({
+        this.bootboxConfirm = function (title, message, callback, width) {
+            if (width === void 0) { width = undefined; }
+            var dialog = bootbox.confirm({
                 title: title,
                 message: message,
                 animate: false,
                 buttons: {
                     cancel: {
-                        label: "Cancel",
+                        //label: "Cancel",
                         className: "btn-cancel"
                     },
                     confirm: {
-                        label: "Submit",
+                        //label: "Submit",
                         className: "btn-submit"
                     }
                 },
                 callback: function (result) {
-                    if (result) {
-                        callback();
-                        return false;
-                    }
+                    result && callback();
                 }
-            }) /*.find(".modal-content").css({
-                "top": "100px",
-                "left": function () {
-                    let left = $(window).width() / 2 - $(".modal-dialog").width() / 2;
-    
-                    return left + "px";
-                }
-            })*/;
+            });
+            width && dialog.find("div.modal-dialog").css("width", width + "px");
         };
 
-        this.bootboxAlert = function (title, message, callback) {
-            bootbox.dialog({
+        this.bootboxAlert = function (title, message, callback, width) {
+            if (width === void 0) { width = undefined; }
+            var dialog = bootbox.dialog({
                 title: title,
                 message: message,
                 animate: false,
@@ -274,7 +267,8 @@ var PopupManager = (function () {
                         className: "btn-submit"
                     }
                 }
-            }) ;
+            });
+            width && dialog.find("div.modal-dialog").css("width", width + "px");
         };
 
         this.hasPopupOpen = function () { return _this.activePopups.length > 0; };
