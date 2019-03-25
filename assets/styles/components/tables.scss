@@ -212,3 +212,22 @@
         }
     }
 }
+
+table {
+    .sorting {
+        cursor: pointer;
+        &:after {
+            content: '\e913';
+            font-family: 'CN88Icon';
+            padding-left: 4px;
+            display: inline-block;
+        }
+        &.sorting-asc:after {
+            transform: rotate(180deg);
+            padding-right: 4px;
+        }
+        &.sorting-asc:after, &.sorting-desc:after {
+            color: #4175a9;
+        }
+    }
+}

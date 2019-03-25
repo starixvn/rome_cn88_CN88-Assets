@@ -7,7 +7,8 @@
       "styles/fonts/iconcn88/style.css",
       "styles/base/scaffolding.css",
       "styles/components/blockui.css",
-      "styles/components/dropdown.css",
+      "styles/components/dropdown.css",      
+      "styles/base/icon-fonts.css",
       "styles/components/icon.css",
       "styles/components/tables.css",
       "styles/components/modals.css"
@@ -63,7 +64,6 @@
     "inputFiles": [
       "styles/vendors/jqueryui/jquery-ui-1.9.1.custom.css",
       "styles/vendors/jquery-easyui-1.5/easyui.css",
-      "styles/base/icon-fonts.css",
       "styles/layout/default-layout/sidebar.css",
       "styles/components/tablesorter.css",
       "styles/vendors/bootstrap-multiselect.css",
