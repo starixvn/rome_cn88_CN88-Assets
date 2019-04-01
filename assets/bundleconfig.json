@@ -150,6 +150,13 @@
     ]
   },
   {
+    "outputFileName": "bundles/site-cn88/accessdenied.css",
+    "inputFiles": [
+      "styles/base/scaffolding.css",
+      "styles/fonts/iconcn88/style.css"
+    ]
+  },
+  {
     "outputFileName": "bundles/site-totalbets/default.js",
     "inputFiles": [
       "js/libs/bootstrap/tooltip.js",
