@@ -62,6 +62,18 @@
             display: inline-block;
             font-size: 13px;
             position: relative;
+            &.btn-item {
+                margin-top: 3px;
+                .btn-secondary {
+                    background-color: #c8ae7b;
+                    &:hover {
+                        background-color: darken(#c8ae7b, 5%);
+                    }
+                }
+                &:hover:after {
+                    content: none;
+                }
+            }
             a{
                 color: #5a4a42;
                 padding: 10px 16px;
