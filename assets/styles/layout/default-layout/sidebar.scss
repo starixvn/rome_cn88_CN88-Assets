@@ -115,22 +115,15 @@
         }
     }
 
-    &.has-submenu + .content {
-        position: absolute;
-        top: 119px;
-        bottom: 0;
-        left: 0;
-        right: 0;
+}
+.main-page {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    .menubar {
+        flex: 0 1 auto;
     }
-}
-.content {
-    position: absolute;
-    top: 77px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-@media only screen and (max-device-width:1024px) {
-   
+    .content {
+        flex: 1 1 auto;
+    }
 }
