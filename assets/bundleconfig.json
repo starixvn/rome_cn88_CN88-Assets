@@ -112,6 +112,13 @@
     ]
   },
   {
+    "outputFileName": "bundles/site-cn88/error-page.css",
+    "inputFiles": [
+      "styles/fonts/iconcn88/style.css",
+      "styles/base/scaffolding.css"
+    ]
+  },
+  {
     "outputFileName": "bundles/site-viewlogs/viewlogs.css",
     "inputFiles": [
       "styles/vendors/jqueryui/jquery-ui-1.9.1.custom.css",
