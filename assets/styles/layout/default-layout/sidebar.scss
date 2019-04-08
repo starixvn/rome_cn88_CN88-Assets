@@ -2,27 +2,33 @@
 
 .menubar {
     width: 100%;
-    font-size: 14px;   
+    font-size: 14px;
+
     .list-menu {
         margin-bottom: 0;
         background: #7E1414;
         padding-left: 0;
+
         .menu-item {
             display: inline-block;
             text-transform: uppercase;
             position: relative;
+
             &:first-child {
                 background-color: #631010;
                 text-decoration: none;
+
                 a {
                     padding: 12px 13px 11px;
                     display: inline-block;
                 }
             }
+
             a {
                 color: #fff;
                 padding: 12px 16px 11px;
                 display: inline-block;
+
                 &:hover {
                     text-decoration: none;
                     color: #FF9999;
@@ -33,7 +39,7 @@
                 cursor: pointer;
             }
 
-            &:hover:not(:first-child), &.active  {
+            &:hover:not(:first-child), &.active {
                 &:after {
                     width: 0;
                     height: 0;
@@ -46,39 +52,47 @@
                     left: 50%;
                     margin-left: -8px;
                 }
+
                 a {
                     color: #FF9999;
                     text-decoration: none;
                 }
             }
-            
         }
     }
+
     .sub-menu {
-         margin-bottom: 2px;
-         padding-left: 0;
-         @include box-shadow(1px, 0, 5px, rgba(0, 0, 0, 0.3));
-        .sub-menu-item  {
+        margin-bottom: 2px;
+        padding-left: 0;
+        @include box-shadow(1px, 0, 5px, rgba(0, 0, 0, 0.3));
+
+        .sub-menu-item {
             display: inline-block;
             font-size: 13px;
             position: relative;
+
             &.btn-item {
                 margin-top: 3px;
+
                 .btn-secondary {
                     background-color: #c8ae7b;
+
                     &:hover {
                         background-color: darken(#c8ae7b, 5%);
                     }
                 }
+
                 &:hover:after {
                     content: none;
                 }
             }
-            a{
+
+            a {
                 color: #5a4a42;
                 padding: 10px 16px;
                 display: inline-block;
             }
+
             &:hover, &.active {
                 &:after {
                     width: 0;
@@ -92,6 +106,7 @@
                     left: 50%;
                     margin-left: -8px;
                 }
+
                 a {
                     text-decoration: none;
                     color: #bb1919;
@@ -99,9 +114,10 @@
             }
         }
     }
+
     &.has-submenu + .content {
         position: absolute;
-        top: 112px;
+        top: 119px;
         bottom: 0;
         left: 0;
         right: 0;
