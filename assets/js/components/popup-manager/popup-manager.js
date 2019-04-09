@@ -66,10 +66,10 @@ var PopupManager = (function () {
             };
         };
         this.getScrollLeft = function (element) {
-            return element.pageXOffset || element.scrollX || element.scrollLeft || 0;
+            return element.pageXOffset || element.scrollX || element.scrollLeft || _this.$(window).scrollLeft() || 0;
         };
         this.getScrollTop = function (element) {
-            return element.pageYOffset || element.scrollY || element.scrollTop || 0;
+            return element.pageYOffset || element.scrollY || element.scrollTop || _this.$(window).scrollTop() || 0;
         };
         this.isiOS = function () {
             var isiOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
@@ -132,6 +132,8 @@ var PopupManager = (function () {
                 if (isAutoHeight) {
                     popUp.css({ display: 'table' });
                 }
+
+                popUp.css({ "padding-right": 0 });
             }).on("hidden.bs.modal", function () {
                 popUp.find("iframe").attr("src", "about:blank");
             });
@@ -195,6 +197,7 @@ var PopupManager = (function () {
             // Calculate body scrolltop to fix issue: focus popup make body scroll to popup position (on device)
             var scrollTop = _this.getScrollTop(window.document.body);
             var scrollLeft = _this.getScrollLeft(window.document.body);
+
             // ON iOS: there is scroll issues with popup. We must show popup with auto height
             var isAutoHeight = _this.isiOS();
             var left = options.centerScreen ? _this.$(window).width() / 2 - popupWidth / 2 : options.left + scrollLeft;
