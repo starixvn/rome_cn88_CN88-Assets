@@ -258,7 +258,7 @@ var PopupManager = (function () {
             width && dialog.find("div.modal-dialog").css("width", width + "px");
         };
 
-        this.bootboxAlert = function (title, message, callback, width) {
+        this.bootboxAlert = function (title, message, callback, width, okLabel) {
             if (width === void 0) { width = undefined; }
             var dialog = bootbox.dialog({
                 title: title,
@@ -266,7 +266,7 @@ var PopupManager = (function () {
                 animate: false,
                 buttons: {
                     confirm: {
-                        label: "OK",
+                        label: okLabel || "OK",
                         className: "btn-submit"
                     }
                 }
