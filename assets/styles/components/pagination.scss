@@ -17,6 +17,7 @@
     .pagination-page-list, .pagination-num {
         border: 1px solid $paging-border;
         height: 24px;
+        line-height: 24px;
         @include box-shadow-multiple(none);
         @include box-sizing;
     }
