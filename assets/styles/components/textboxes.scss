@@ -9,6 +9,7 @@ input[type='text'], input[type='password'], input[type='email'], input[type='tel
     padding-left: 8px;
     padding-right: 8px;
     width: 120px;
+    border-radius: 0;
     border: 1px solid $border-color;
     -webkit-appearance: none;
     @include box-sizing;
