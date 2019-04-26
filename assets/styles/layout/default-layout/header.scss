@@ -72,3 +72,8 @@ $text-color: #5b534f;
     }
 }
 
+@media (max-device-width: 768px) {
+    .header-nav {
+        display: none;
+    }
+}
