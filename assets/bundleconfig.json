@@ -79,6 +79,7 @@
       "styles/components/alerts.css",
       "styles/components/tooltip.css",
       "styles/components/breadcrumbs.css",
+      "styles/components/stacktable.css",
       "styles/layout/default-layout/sidebar.css"
     ]
   },
@@ -196,7 +197,8 @@
       "js/libs/raven/raven.js",
       "js/components/draggable/tiny-draggable.js",
       "js/components/resizable/resizable.js",
-      "js/components/popup-manager/popup-manager.js"
+      "js/components/popup-manager/popup-manager.js",
+      "js/components/stack-table/stacktable.js"
     ]
   },
   {

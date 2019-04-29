@@ -122,5 +122,9 @@
   {
     "outputFile": "styles/components/tooltip.css",
     "inputFile": "styles/components/tooltip.scss"
+  },
+  {
+    "outputFile": "styles/components/stacktable.css",
+    "inputFile": "styles/components/stacktable.scss"
   }
 ]
