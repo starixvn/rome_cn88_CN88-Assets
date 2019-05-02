@@ -93,3 +93,10 @@
         width: 100%;
     }
 }
+
+@media (max-device-width: 767px) {
+   .nav.nav-tabs > li > a {
+       padding: 7px 20px 7px;
+       font-size: $font-size-mobile;
+   }
+}

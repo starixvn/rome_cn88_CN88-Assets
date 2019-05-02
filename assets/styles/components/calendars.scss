@@ -34,12 +34,16 @@
     .form-control {
         @include border-radius(0);
         border: none;
-        font-size: 13px;
+        font-size: $font-size;
         height: $height-normal;
         background: #fff;
         margin-left: 0;
         height: 28px;
         box-shadow: none;
+
+         @media (max-device-width: 767px) {
+           font-size: $font-size-mobile;
+        }
     }
 }
 
