@@ -188,11 +188,15 @@
       }
     }
 
+    .menubar {
+        font-size: 13px;
+    }
+
     .menubar .list-menu {
         @include transition(width 0.7s cubic-bezier(0.15, 0.99, 0.18, 1.01) 0s);
         @include box-shadow-multiple("0 0 3px 0px rgba(0,0,0,.4)");
         position: absolute;
-        top: 40px;
+        top: 36px;
         left: 0;
         bottom: 0;
         width: 242px;
@@ -233,7 +237,7 @@
 
         .menu-item > a {
             display: block;
-            padding: 12px 14px 12px;
+            padding: 10px 14px 10px;
             color: #000;
         }
         

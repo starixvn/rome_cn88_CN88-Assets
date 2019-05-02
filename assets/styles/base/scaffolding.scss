@@ -84,6 +84,10 @@ body {
     line-height: unset;
     color: $text-color;
     //overflow: hidden;
+
+    @media (max-device-width: 767px) {
+        font-size: $font-size-mobile;
+    }
 }
 
 .page-title {

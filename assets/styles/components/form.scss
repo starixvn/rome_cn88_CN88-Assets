@@ -97,3 +97,20 @@
         }
     }
 }
+
+
+@media (max-device-width: 767px) {
+    .filter {
+        width: 100%;
+
+        .form-group {
+            display: block;
+            width: 100%;
+        }
+
+        .form-group label {
+            display: block;
+            text-transform: uppercase;
+        }
+    }
+}

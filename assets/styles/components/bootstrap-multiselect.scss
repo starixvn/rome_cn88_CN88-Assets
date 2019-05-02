@@ -144,3 +144,20 @@
     background: none;
     color: $text-color;
 }
+
+@media (max-device-width: 767px) {
+    .filter .btn-group {
+        width: 100%;
+
+        button.multiselect {
+            width: 100%;
+            text-align: left;
+        }
+    }
+
+    .btn-group button.multiselect,
+    .multiselect-container.dropdown-menu label.checkbox,
+     .multiselect-container.dropdown-menu label.radio {
+        font-size: $font-size-mobile;
+    }
+}
