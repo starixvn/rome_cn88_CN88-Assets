@@ -93,11 +93,14 @@
             if (typeof settings.myClass !== 'undefined') $stacktable.addClass(settings.myClass);
             var markup = '';
             var fixColumnMarkup = '';
-            var $table, $topRow, bodyMarkup, tr_class, displayHeader;
+            var $table, $topRow, bodyMarkup, tr_class, displayHeader,totalOfThNoStack,totalOfTh;
 
 
             $table.addClass('stacktable large-only');
             $topRow = $table.find('>thead>tr,>tbody>tr,>tfoot>tr').eq(settings.topIndex);
+            totalOfThNoStack = $topRow.find("th[data-stack-column!=true]").length + 1;
+            totalOfTh = $topRow.find("th").length;
+
 
             displayHeader = $table.data('display-header') === undefined ? settings.displayHeader : $table.data('display-header');
 
@@ -129,34 +132,47 @@
                             var currentHtml = me.html();
                             var sourceCell = $topRow.find('>td,>th').eq(cellIndex);
                             var isStackColumn = sourceCell.attr('data-stack-column') === 'true';
+                            var currentColSpan = parseInt(me.attr('colspan'));
 
-                            if (!isStackColumn) {
-                                fixColumnMarkup += '<td class="fix-column">' + currentHtml + '</td>';
-                            } else {
+                            if (currentColSpan === totalOfTh) {
+                                markup += '<tr class="' + tr_class + '">'
+                                    + '<td class="st-val ' + me.prop('class') + '" colspan="' + currentColSpan + '">'
+                                    + currentHtml
+                                    + '</td></tr>';
+                            }
+                            else {
+                                if (!isStackColumn) {
+                                    fixColumnMarkup += '<td class="fix-column">' + currentHtml + '</td>';
+                                } else {
+                                    if (currentHtml !== '') {
+                                        bodyMarkup += '<tr class="' + tr_class + ' stack-row stack-row-' + rowIndex + '">';
+                                        //if (sourceCell.html()) {
+                                        //    bodyMarkup += '<td class="st-key">' + sourceCell.html() + '</td>';
+                                        //} else {
+                                        //    bodyMarkup += '<td class="st-key"></td>';
+                                        //}
 
-                                if (currentHtml !== '') {
-                                    bodyMarkup += '<tr class="' + tr_class + ' stack-row stack-row-' + rowIndex + '">';
-                                    if (sourceCell.html()) {
-                                        bodyMarkup += '<td class="st-key">' + sourceCell.html() + '</td>';
-                                    } else {
-                                        bodyMarkup += '<td class="st-key"></td>';
+                                        bodyMarkup +=
+                                            '<td class="st-val ' + me.prop('class') + '" colspan="' + totalOfThNoStack + '">'
+                                            + sourceCell.html() + ' ' + currentHtml
+                                            + '</td>';
+                                        bodyMarkup += '</tr>';
                                     }
-
-                                    bodyMarkup += '<td class="st-val ' + me.prop('class') + '">' + currentHtml + '</td>';
-                                    bodyMarkup += '</tr>';
                                 }
                             }
                         });
 
-                        markup += '<tr class="fixed-row">'
-                            + fixColumnMarkup
-                            + '<td class="btn-collapse-expand collapsed" data-stack-row='
-                            + rowIndex
-                            + '>'
-                            + (isTHead ? '' : 'collapse')
-                            + '</td>'
-                            + '</tr >'
-                            + bodyMarkup;
+                        if (bodyMarkup !== '') {
+                            markup += '<tr class="fixed-row">'
+                                + fixColumnMarkup
+                                + '<td class="btn-collapse-expand collapsed" data-stack-row='
+                                + rowIndex
+                                + '>'
+                                + 'collapse'
+                                + '</td>'
+                                + '</tr >'
+                                + bodyMarkup;
+                        }
                         fixColumnMarkup = '';
                     }
                 }
