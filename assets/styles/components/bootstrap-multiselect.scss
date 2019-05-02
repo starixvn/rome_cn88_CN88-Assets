@@ -160,4 +160,8 @@
      .multiselect-container.dropdown-menu label.radio {
         font-size: $font-size-mobile;
     }
+
+    .multiselect-container.dropdown-menu {
+        width: 100%;
+    }
 }
