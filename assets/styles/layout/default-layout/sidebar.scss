@@ -201,6 +201,7 @@
         bottom: 0;
         width: 242px;
         background-color: #F5F5F5;
+        overflow: auto;
 
         &.collapsed {
              @include transition(width 0.5s cubic-bezier(0.15, 0.99, 0.18, 1.01) 0s);
