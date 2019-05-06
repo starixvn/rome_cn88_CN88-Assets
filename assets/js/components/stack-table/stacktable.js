@@ -206,12 +206,12 @@
                     if (isCollapsed) {
                         me.removeClass('icon-collapse')
                             .addClass('icon-expanse');
-                        $nextRows.show(300);
+                        $nextRows.slideDown(300);
                     }
                     else {
                         me.removeClass('icon-expanse')
                             .addClass('icon-collapse');
-                        $nextRows.hide(300);
+                        $nextRows.slideUp(300);
                     }
                 });
         });
