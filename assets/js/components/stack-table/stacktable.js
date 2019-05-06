@@ -119,7 +119,7 @@
                     if (displayHeader) {
                         var tableHeader = $($table.find("thead")[0].outerHTML);
                         tableHeader.find("th[data-stack-column=true]").remove();
-                        tableHeader.find("tr").append('<td></td>');
+                        tableHeader.find("tr").append('<th></th>');
                         //$stacktable.prepend($caption);
                         $stacktable.find('thead').html(tableHeader.html());
                     }
@@ -154,7 +154,12 @@
 
                                         bodyMarkup +=
                                             '<td class="st-val ' + me.prop('class') + '" colspan="' + totalOfThNoStack + '">'
-                                            + sourceCell.html() + ' ' + currentHtml
+                                            + '<span class="st-cell-label">'
+                                            + sourceCell.html()
+                                            + '</span>'
+                                            + '<span class="st-cell-value">'
+                                            + currentHtml
+                                            + '</span>'
                                             + '</td>';
                                         bodyMarkup += '</tr>';
                                     }
@@ -165,10 +170,10 @@
                         if (bodyMarkup !== '') {
                             markup += '<tr class="fixed-row">'
                                 + fixColumnMarkup
-                                + '<td class="btn-collapse-expand collapsed" data-stack-row='
+                                + '<td data-stack-row='
                                 + rowIndex
                                 + '>'
-                                + 'collapse'
+                                + '<span class="btn-collapse-expanse icon-collapse" />'
                                 + '</td>'
                                 + '</tr >'
                                 + bodyMarkup;
@@ -186,24 +191,22 @@
             var $stackTableElement = $('#' + $table.attr('id') + '-stack');
             
             $stackTableElement
-                .find('.btn-collapse-expand')
+                .find('.btn-collapse-expanse')
                 .off('click.stack')
                 .on('click.stack', function () {
                     var me = $(this);
-                    var rowIndex = me.attr('data-stack-row');
-                    var isCollapsed = me.hasClass('collapsed');
+                    var rowIndex = me.parent().attr('data-stack-row');
+                    var isCollapsed = me.hasClass('icon-collapse');
                     var $nextRows = $stackTableElement.find('.stack-row-' + rowIndex);
 
                     if (isCollapsed) {
-                        me.removeClass('collapsed')
-                            .addClass('expanded')
-                            .text('expanded');
+                        me.removeClass('icon-collapse')
+                            .addClass('icon-expanse');
                         $nextRows.show(200);
                     }
                     else {
-                        me.removeClass('expanded')
-                            .addClass('collapsed')
-                            .text('collapsed');
+                        me.removeClass('icon-expanse')
+                            .addClass('icon-collapse');
                         $nextRows.hide(200);
                     }
                 });
