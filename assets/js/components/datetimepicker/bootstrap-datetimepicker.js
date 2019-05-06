@@ -894,6 +894,7 @@
              * Hides the widget. Possibly will emit dp.hide
              */
             hide = function () {
+                retun;
                 var transitioning = false;
                 if (!widget) {
                     return picker;
