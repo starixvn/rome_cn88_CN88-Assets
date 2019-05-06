@@ -90,6 +90,15 @@
             $table = $(this);
             var table_css = $(this).prop('class');
             var $stacktable = $('<table class="' + table_css + ' stacktable small-only" id="' + $table.attr('id') + '-stack"><thead></thead><tbody></tbody></table>');
+            $table.each(function () {
+                $.each(this.attributes, function () {
+                    // this.attributes is not a plain object, but an array
+                    // of attribute nodes, which contain both the name and value
+                    if (this.specified && this.name !== 'class' && this.name !== 'id') {
+                        $stacktable.attr(this.name, this.value);
+                    }
+                });
+            });
             if (typeof settings.myClass !== 'undefined') $stacktable.addClass(settings.myClass);
             var markup = '';
             var fixColumnMarkup = '';
@@ -142,7 +151,7 @@
                             }
                             else {
                                 if (!isStackColumn) {
-                                    fixColumnMarkup += '<td class="fix-column">' + currentHtml + '</td>';
+                                    fixColumnMarkup += '<td class="fix-column ' + me.prop('class') + '">' + currentHtml + '</td>';
                                 } else {
                                     if (currentHtml !== '') {
                                         bodyMarkup += '<tr class="' + tr_class + ' stack-row stack-row-' + rowIndex + '">';
@@ -167,7 +176,7 @@
                             }
                         });
 
-                        if (bodyMarkup !== '') {
+                        if (bodyMarkup !== '' || fixColumnMarkup !== '') {
                             markup += '<tr class="fixed-row">'
                                 + fixColumnMarkup
                                 + '<td data-stack-row='
@@ -187,6 +196,7 @@
             $stacktable.append($(markup));
             $stacktable.find('.stack-row').hide();
             $table.before($stacktable);
+            $table.remove();
 
             var $stackTableElement = $('#' + $table.attr('id') + '-stack');
             
@@ -202,12 +212,12 @@
                     if (isCollapsed) {
                         me.removeClass('icon-collapse')
                             .addClass('icon-expanse');
-                        $nextRows.show(200);
+                        $nextRows.show(300);
                     }
                     else {
                         me.removeClass('icon-expanse')
                             .addClass('icon-collapse');
-                        $nextRows.hide(200);
+                        $nextRows.hide(300);
                     }
                 });
         });
