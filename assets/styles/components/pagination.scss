@@ -128,7 +128,7 @@
 }
 
 
- @media (max-device-width: 767px) {
+ @media (max-device-width: $screen-device-lower768) {
     .pagination .pagination-page-list {
         width: 50px;
     }

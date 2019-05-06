@@ -90,7 +90,7 @@ body {
     color: $text-color;
     //overflow: hidden;
 
-    @media (max-device-width: 767px) {
+    @media (max-device-width: $screen-device-lower768) {
         font-size: $font-size-mobile;
     }
 }

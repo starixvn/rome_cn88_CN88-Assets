@@ -239,7 +239,7 @@
         @include box-sizing;
     }
 
-    thead {
+    thead > tr {
         border-bottom: 1px solid $table2-header-border-color;
 
         th {
@@ -296,3 +296,17 @@
         }
     }
 }
+
+@media (max-device-width: $screen-device-lower768) {
+   .tbl-noborder > thead > tr > th {
+         background-color: $table2-header-bg-color;
+         color: $table2-header-color;
+         border-bottom-color: $table2-header-border-color;
+    }
+
+   .tbl-noborder > tbody > tr > td, .tbl-noborder > tfoot > tr > td {
+        padding: 12px 0;
+        border-bottom-color: 1px solid $table2-border-color;
+    }
+}
+

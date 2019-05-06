@@ -1,4 +1,6 @@
-﻿/* RESPONSIVE EXAMPLE */
+﻿@import "../abstracts/_variables.scss";
+
+/* RESPONSIVE EXAMPLE */
 
 .stacktable.large-only {
     display: table;
@@ -8,7 +10,7 @@
     display: none;
 }
 
-@media (max-device-width: 767px) {
+@media (max-device-width: $screen-device-lower768) {
     .stacktable {
         &.large-only {
             display: none;

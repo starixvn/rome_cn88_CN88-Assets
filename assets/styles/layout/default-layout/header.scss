@@ -72,7 +72,7 @@ $text-color: #5b534f;
     }
 }
 
-@media (max-device-width: 767px) {
+@media (max-device-width: $screen-device-lower768) {
     .header-nav {
         display: none;
     }
