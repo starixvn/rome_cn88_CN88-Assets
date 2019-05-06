@@ -229,6 +229,16 @@
 @media only screen and (max-device-width : $screen-device-lower768) {
     .from-date-box .bootstrap-datetimepicker-widget.dropdown-menu {
         left: 0 !important;
+
+        &:before {
+            left: 7px;
+            right: auto;
+        }
+
+        &:after {
+            left: 8px;
+            right: auto;
+        }
     }
 
     .to-date-box .bootstrap-datetimepicker-widget.dropdown-menu {
