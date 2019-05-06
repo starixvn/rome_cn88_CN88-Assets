@@ -102,13 +102,12 @@
             if (typeof settings.myClass !== 'undefined') $stacktable.addClass(settings.myClass);
             var markup = '';
             var fixColumnMarkup = '';
-            var $table, $topRow, bodyMarkup, tr_class, displayHeader,totalOfThNoStack,totalOfTh;
+            var $table, $topRow, bodyMarkup, tr_class, displayHeader,totalOfThNoStack;
 
 
             $table.addClass('stacktable large-only');
             $topRow = $table.find('>thead>tr,>tbody>tr,>tfoot>tr').eq(settings.topIndex);
             totalOfThNoStack = $topRow.find("th[data-stack-column!=true]").length + 1;
-            totalOfTh = $topRow.find("th").length;
 
 
             displayHeader = $table.data('display-header') === undefined ? settings.displayHeader : $table.data('display-header');
@@ -141,11 +140,11 @@
                             var currentHtml = me.html();
                             var sourceCell = $topRow.find('>td,>th').eq(cellIndex);
                             var isStackColumn = sourceCell.attr('data-stack-column') === 'true';
-                            var currentColSpan = parseInt(me.attr('colspan'));
+                            var isNoInfoRow = me.attr('data-isNoInfo') === 'true';
 
-                            if (currentColSpan === totalOfTh) {
+                            if (isNoInfoRow) {
                                 markup += '<tr class="' + tr_class + '">'
-                                    + '<td class="st-val ' + me.prop('class') + '" colspan="' + currentColSpan + '">'
+                                    + '<td align="center" class="st-val ' + me.prop('class') + '" colspan="' + parseInt(me.attr('colspan')) + '">'
                                     + currentHtml
                                     + '</td></tr>';
                             }
@@ -155,12 +154,7 @@
                                 } else {
                                     if (currentHtml !== '') {
                                         bodyMarkup += '<tr class="' + tr_class + ' stack-row stack-row-' + rowIndex + '">';
-                                        //if (sourceCell.html()) {
-                                        //    bodyMarkup += '<td class="st-key">' + sourceCell.html() + '</td>';
-                                        //} else {
-                                        //    bodyMarkup += '<td class="st-key"></td>';
-                                        //}
-
+ 
                                         bodyMarkup +=
                                             '<td class="st-val ' + me.prop('class') + '" colspan="' + totalOfThNoStack + '">'
                                             + '<span class="st-cell-label">'
