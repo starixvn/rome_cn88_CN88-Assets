@@ -113,4 +113,15 @@
             text-transform: uppercase;
         }
     }
+
+    [class^="icon-filter"] {
+        float: right;
+        background-color: #27A67B;
+        padding: 2px;
+        color: #fff;
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        line-height: 20px;
+    }
 }

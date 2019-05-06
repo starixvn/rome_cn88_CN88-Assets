@@ -128,3 +128,13 @@
 }
 
 
+ @media (max-device-width: 767px) {
+    .pagination .pagination-page-list {
+        width: 40px;
+    }
+
+    .pagination-info {
+        float: left;
+        margin: 0 6px 0 6px;
+    }
+}

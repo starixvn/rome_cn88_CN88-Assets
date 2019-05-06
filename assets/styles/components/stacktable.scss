@@ -8,12 +8,31 @@
     display: none;
 }
 
-@media (max-width: 800px) {
-    .stacktable.large-only {
-        display: none;
-    }
+@media (max-device-width: 767px) {
+    .stacktable {
+        &.large-only {
+            display: none;
+        }
 
-    .stacktable.small-only {
-        display: table;
+        &.small-only {
+            display: table;
+        }
+
+        .btn-collapse-expanse {
+            position: relative;
+            top: 2px;
+            line-height: 0;
+            font-size: 16px;
+            color: #0072BA;
+        }
+
+        .st-cell-label {
+            float: left;
+        }
+
+        .st-cell-value {
+            float: right;
+        }
     }
+    
 }
