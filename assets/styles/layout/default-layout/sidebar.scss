@@ -190,9 +190,12 @@
     }
 
     .menubar {
-        font-size: 13px;
+        font-size: 14px;
     }
 
+    .menubar .sub-menu .sub-menu-item {
+
+    }
     .menubar .list-menu {
         @include transition(width 0.7s cubic-bezier(0.15, 0.99, 0.18, 1.01) 0s);
         @include box-shadow-multiple("0 0 3px 0px rgba(0,0,0,.4)");
@@ -252,6 +255,7 @@
 
         .sub-menu .sub-menu-item {
             display: block;
+            font-size: 14px;
 
             &:hover:after, &.active:after {
                 display: none;
