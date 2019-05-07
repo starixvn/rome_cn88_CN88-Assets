@@ -176,7 +176,7 @@
                                 + '<td data-stack-row='
                                 + rowIndex
                                 + '>'
-                                + '<span class="btn-collapse-expanse icon-collapse" />'
+                                + '<span class="btn-collapse-expanse icon-add" />'
                                 + '</td>'
                                 + '</tr >'
                                 + bodyMarkup;
@@ -200,17 +200,17 @@
                 .on('click.stack', function () {
                     var me = $(this);
                     var rowIndex = me.parent().attr('data-stack-row');
-                    var isCollapsed = me.hasClass('icon-collapse');
+                    var isCollapsed = me.hasClass('icon-add');
                     var $nextRows = $stackTableElement.find('.stack-row-' + rowIndex);
 
                     if (isCollapsed) {
-                        me.removeClass('icon-collapse')
-                            .addClass('icon-expanse');
+                        me.removeClass('icon-add')
+                            .addClass('icon-minus');
                         $nextRows.show(200);
                     }
                     else {
-                        me.removeClass('icon-expanse')
-                            .addClass('icon-collapse');
+                        me.removeClass('icon-minus')
+                            .addClass('icon-add');
                         $nextRows.hide(200);
                     }
                 });
