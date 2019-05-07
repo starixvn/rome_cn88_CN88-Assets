@@ -127,7 +127,7 @@
                     if (displayHeader) {
                         var tableHeader = $($table.find("thead")[0].outerHTML);
                         tableHeader.find("th[data-stack-column=true]").remove();
-                        tableHeader.find("tr").append('<th></th>');
+                        tableHeader.find("tr").append('<th class="col-action"></th>');
                         //$stacktable.prepend($caption);
                         $stacktable.find('thead').html(tableHeader.html());
                     }

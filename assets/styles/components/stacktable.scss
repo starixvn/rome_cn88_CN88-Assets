@@ -40,6 +40,14 @@
         .st-cell-value {
             float: right;
         }
+
+        > tbody > tr.stack-row  > td {
+            padding: 8px 8px;
+        }
+
+        .col-action {
+            width: 34px;
+        }
     }
     
 }
