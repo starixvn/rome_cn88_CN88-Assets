@@ -162,8 +162,8 @@
             border-bottom-color: 1px solid $table2-border-color;
         }
 
-        .sorting {
-            white-space: nowrap;    
+        .sorting:after {
+            display: none;  
         }
    }
 }
