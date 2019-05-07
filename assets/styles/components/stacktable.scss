@@ -25,7 +25,12 @@
             top: 2px;
             line-height: 0;
             font-size: 16px;
-            color: #0072BA;
+            color: #27A67B;
+        }
+
+        .btn-collapse-expanse:hover:after {
+            left: 1px;
+            top: -9px;
         }
 
         .st-cell-label {
