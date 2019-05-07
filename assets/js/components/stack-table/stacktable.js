@@ -89,7 +89,7 @@
         return $tables.each(function () {
             $table = $(this);
             var table_css = $(this).prop('class');
-            var $stacktable = $('<table class="' + table_css + ' stacktable small-only" id="' + $table.attr('id') + '-stack"><thead></thead><tbody></tbody></table>');
+            var $stacktable = $('<table class="' + table_css + ' stacktable small-only" id="' + $table.attr('id') + '-stack"><thead></thead><tbody></tbody><tfoot></tfoot></table>');
             $table.each(function () {
                 $.each(this.attributes, function () {
                     // this.attributes is not a plain object, but an array
@@ -187,7 +187,8 @@
             });
 
 
-            $stacktable.append($(markup));
+            $stacktable.find('tbody').append($(markup));
+            $stacktable.find('tfoot').append($table.find('tfoot').html());
             $stacktable.find('.stack-row').hide();
             $table.before($stacktable);
             $table.remove();
