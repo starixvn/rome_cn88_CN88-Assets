@@ -207,9 +207,10 @@
         background-color: #F5F5F5;
         overflow: auto;
         z-index: 9001;
+        transition: left .2s ease-in-out .1s;
 
         &.collapsed {
-             @include transition(width 0.5s cubic-bezier(0.15, 0.99, 0.18, 1.01) 0s);
+             transition: left .1s ease-out .2s;
              left: -245px;
         }
 
