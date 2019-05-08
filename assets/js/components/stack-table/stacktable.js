@@ -140,6 +140,7 @@
                             var currentHtml = me.html();
                             var sourceCell = $topRow.find('>td,>th').eq(cellIndex);
                             var isStackColumn = sourceCell.attr('data-stack-column') === 'true';
+                            var isShowInBody = sourceCell.attr('data-stack-show-in-body') === 'true';
                             var isNoInfoRow = me.attr('data-isNoInfo') === 'true';
 
                             if (isNoInfoRow) {
@@ -151,21 +152,21 @@
                             else {
                                 if (!isStackColumn) {
                                     fixColumnMarkup += '<td class="fix-column ' + me.prop('class') + '">' + currentHtml + '</td>';
-                                } else {
-                                    if (currentHtml !== '') {
-                                        bodyMarkup += '<tr class="' + tr_class + ' stack-row stack-row-' + rowIndex + '">';
- 
-                                        bodyMarkup +=
-                                            '<td class="st-val ' + me.prop('class') + '" colspan="' + totalOfThNoStack + '">'
-                                            + '<span class="st-cell-label">'
-                                            + sourceCell.html()
-                                            + '</span>'
-                                            + '<span class="st-cell-value">'
-                                            + currentHtml
-                                            + '</span>'
-                                            + '</td>';
-                                        bodyMarkup += '</tr>';
-                                    }
+                                } 
+
+                                if (currentHtml !== '' && (isStackColumn || isShowInBody)) {
+                                    bodyMarkup += '<tr class="' + tr_class + ' stack-row stack-row-' + rowIndex + '">';
+
+                                    bodyMarkup +=
+                                        '<td class="st-val ' + me.prop('class') + '" colspan="' + totalOfThNoStack + '">'
+                                        + '<span class="st-cell-label">'
+                                        + sourceCell.html()
+                                        + '</span>'
+                                        + '<span class="st-cell-value">'
+                                        + currentHtml
+                                        + '</span>'
+                                        + '</td>';
+                                    bodyMarkup += '</tr>';
                                 }
                             }
                         });
