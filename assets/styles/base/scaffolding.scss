@@ -103,6 +103,29 @@ body {
     font-size: 16px;
 }
 
+.page-title-mobile {
+    position: relative;
+    padding: 2px 0 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: 24px;    
+    font-size: 13px;
+
+    .back-step {
+        display: inline-block;
+        position: relative;
+        top: 10px;
+        left: -9px;
+        width: 16px;
+        line-height: 0; 
+        font-size: 34px;                       
+    }
+
+    .back-area {
+        color: #337ab7;
+    }
+}
+
 a, a:focus, a:active, a:target, a:hover {
     outline: none;
     text-decoration: none;

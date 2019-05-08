@@ -130,7 +130,8 @@
 
  @media (max-device-width: $screen-device-lower768) {
     .pagination {
-        padding: 0 12px;
+        padding: 0;
+
         .pagination-page-list {
             margin: 0 10px 0 0;
             background: #fff;
