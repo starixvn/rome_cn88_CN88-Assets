@@ -7,7 +7,7 @@
       "styles/fonts/iconcn88/style.css",
       "styles/base/scaffolding.css",
       "styles/components/blockui.css",
-      "styles/components/dropdown.css",      
+      "styles/components/dropdown.css",
       "styles/base/icon-fonts.css",
       "styles/components/icon.css",
       "styles/components/tables.css",
@@ -167,7 +167,8 @@
       "js/components/multiselect/bootstrap-multiselect.js",
       "js/libs/bootstrap/tab.js",
       "js/libs/raven/raven.js",
-      "js/libs/cleave/cleave.js"
+      "js/libs/cleave/cleave.js",
+      "js/components/storejs/store.js"
     ]
   },
   {
