@@ -24,7 +24,15 @@
         > tbody > tr > td,
         > tfoot > tr > td {
             padding: 12px 8px;
-        }        
+        }
+        
+        > tbody > tr.fixed-row.stack-expanded > td {
+            border-bottom: none;
+        }
+
+        tbody > tr.stack-row.last-row {
+            border-bottom: 1px solid #c8c8c8;
+        }
 
         > tbody > tr.stack-row > td {
             padding: 8px 8px;
