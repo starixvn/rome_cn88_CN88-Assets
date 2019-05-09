@@ -80,6 +80,7 @@
       "styles/components/tooltip.css",
       "styles/components/breadcrumbs.css",
       "styles/components/stacktable.css",
+      "styles/components/backtop.css",
       "styles/layout/default-layout/sidebar.css"
     ]
   },
@@ -198,7 +199,8 @@
       "js/components/draggable/tiny-draggable.js",
       "js/components/resizable/resizable.js",
       "js/components/popup-manager/popup-manager.js",
-      "js/components/stack-table/stacktable.js"
+      "js/components/stack-table/stacktable.js",
+      "js/components/backtop/backtop.js"
     ]
   },
   {

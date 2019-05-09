@@ -126,5 +126,9 @@
   {
     "outputFile": "styles/components/stacktable.css",
     "inputFile": "styles/components/stacktable.scss"
+  },
+  {
+    "outputFile": "styles/components/backtop.css",
+    "inputFile": "styles/components/backtop.scss"
   }
 ]
