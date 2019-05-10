@@ -142,6 +142,7 @@
                             var isStackColumn = sourceCell.attr('data-stack-column') === 'true';
                             var isShowInBody = sourceCell.attr('data-stack-show-in-body') === 'true';
                             var isNoInfoRow = me.attr('data-isNoInfo') === 'true';
+                            var isLastChild = me.is(':last-child');
 
                             if (isNoInfoRow) {
                                 markup += '<tr class="' + tr_class + '">'
@@ -155,10 +156,17 @@
                                 } 
 
                                 if (currentHtml !== '' && (isStackColumn || isShowInBody)) {
-                                    bodyMarkup += '<tr class="' + tr_class + ' stack-row stack-row-' + rowIndex + '">';
+                                    bodyMarkup += '<tr class="'
+                                        + tr_class
+                                        + ' stack-row stack-row-'
+                                        + rowIndex
+                                        + (isLastChild ? ' stack-last-row' : '')
+                                        + '">';
 
-                                    bodyMarkup +=
-                                        '<td class="st-val ' + me.prop('class') + '" colspan="' + totalOfThNoStack + '">'
+                                    bodyMarkup += '<td class="st-val '
+                                        + me.prop('class')
+                                        + '" colspan="'
+                                        + totalOfThNoStack + '">'
                                         + '<span class="st-cell-label">'
                                         + sourceCell.html()
                                         + '</span>'
@@ -204,15 +212,18 @@
                     var rowIndex = me.parent().attr('data-stack-row');
                     var isCollapsed = me.hasClass('icon-add');
                     var $nextRows = $stackTableElement.find('.stack-row-' + rowIndex);
+                    var $tr = me.parent().parent();
 
                     if (isCollapsed) {
                         me.removeClass('icon-add')
                             .addClass('icon-minus');
+                        $tr.removeClass('stack-collapsed').addClass('stack-expanded');
                         $nextRows.show(200);
                     }
                     else {
                         me.removeClass('icon-minus')
                             .addClass('icon-add');
+                        $tr.removeClass('stack-expanded').addClass('stack-collapsed');
                         $nextRows.hide(200);
                     }
                 });

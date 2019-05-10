@@ -200,7 +200,7 @@
       "js/components/resizable/resizable.js",
       "js/components/popup-manager/popup-manager.js",
       "js/components/stack-table/stacktable.js",
-      "js/components/backtop/backtop.js"
+      "js/components/backtop/backtop.js" 
     ]
   },
   {
