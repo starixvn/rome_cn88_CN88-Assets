@@ -155,7 +155,7 @@
                                     fixColumnMarkup += '<td class="fix-column ' + me.prop('class') + '">' + currentHtml + '</td>';
                                 } 
 
-                                if (currentHtml !== '' && (isStackColumn || isShowInBody)) {
+                                if (isStackColumn || isShowInBody) {
                                     bodyMarkup += '<tr class="'
                                         + tr_class
                                         + ' stack-row stack-row-'
