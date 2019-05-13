@@ -159,17 +159,19 @@
         border-bottom: 2px solid #c8c8c8;
         color: #828282;
         padding: 16px 0;
-    } 
+    }
+
     > tbody > tr > td, > tfoot > tr > td {
         padding: 12px 0;
         border-bottom: 1px solid #c8c8c8;
     }
+
     .sorting {
         .sorting-item {
             position: relative;
             display: inline-block;
             padding-right: 17px;
-            cursor: pointer;            
+            cursor: pointer;
         }
 
         .sorting-item:after {
@@ -181,30 +183,47 @@
             top: 50%;
             margin-top: -7px;
         }
+
         &.sorting-asc .sorting-item:after {
             transform: rotate(180deg);
         }
-        &.sorting-asc .sorting-item:after, 
+
+        &.sorting-asc .sorting-item:after,
         &.sorting-desc .sorting-item:after {
             color: #4175a9;
         }
 
-         .sorting-item.more-info{
-             padding-right: 32px;
+        .sorting-item.more-info {
+            padding-right: 32px;
 
-             &:before {
-                 content: '\e910';
+            &:before {
+                content: '\e910';
                 font-family: 'CN88Icon';
                 display: inline-block;
                 position: absolute;
                 right: 15px;
                 top: 50%;
                 margin-top: -7px;
-             }
-         }
+            }
+        }
     }
 
+    .more-info {
+        position: relative;
+        padding-right: 32px;
+
+        &:before {
+            content: '\e910';
+            font-family: 'CN88Icon';
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            margin-top: -7px;
+        }
+    }
 }
+
 .combined-fixed-pagination-bottom {
     margin-bottom: 48px;
 }
@@ -251,8 +270,10 @@
             border-bottom: 1px solid $table2-border-color;
         }
     }
+
     .sorting {
         cursor: pointer;
+
         &:after {
             content: '\e900';
             font-family: 'CN88Icon';
@@ -264,10 +285,12 @@
             top: 2px;
             color: #acacac;
         }
+
         &.sorting-asc:after {
             transform: rotate(180deg);
             padding-right: 4px;
         }
+
         &.sorting-asc:after, &.sorting-desc:after {
             color: #ca0a0a;
         }
