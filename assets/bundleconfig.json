@@ -18,7 +18,8 @@
     "outputFileName": "bundles/site-cn88/default.css",
     "inputFiles": [
       "styles/layout/default-layout/header.css",
-      "styles/layout/default-layout/sidebar.css"
+      "styles/layout/default-layout/sidebar.css",
+      "styles/components/backtop.css"
     ]
   },
   {
@@ -56,7 +57,8 @@
       "js/libs/cleave/cleave.js",
       "js/components/draggable/tiny-draggable.js",
       "js/components/resizable/resizable.js",
-      "js/components/popup-manager/popup-manager.js"
+      "js/components/popup-manager/popup-manager.js",
+      "js/components/backtop/backtop.js"
     ]
   },
   {
