@@ -206,9 +206,10 @@
             
             $stackTableElement
                 .find('.btn-collapse-expanse')
+                .parent()
                 .off('click.stack')
                 .on('click.stack', function () {
-                    var me = $(this);
+                    var me = $(this).find(".btn-collapse-expanse");
                     var rowIndex = me.parent().attr('data-stack-row');
                     var isCollapsed = me.hasClass('icon-add');
                     var $nextRows = $stackTableElement.find('.stack-row-' + rowIndex);
