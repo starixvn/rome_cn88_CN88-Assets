@@ -62,3 +62,43 @@
     vertical-align: middle;
     height: $height-normal;
 }
+
+.back-to-top {  
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #777;   
+  padding: 7px 13px;
+  cursor: pointer;
+  
+  .icon {
+    position: relative;
+    display: block;
+    width: 2px;
+    height: 15px;
+    background: #fff;
+    margin: 0 auto;
+    
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      display: block;
+      width: 8px;
+      height: 2px;
+      background: #fff;
+    }
+    
+    &:before {      
+      left: -5px;
+      transform: rotate(-45deg);
+      transform-origin: 50% 100%;
+    }
+    
+    &:after {
+      right: -5px;
+      transform: rotate(45deg);
+      transform-origin: 50% 100%;
+    }
+  }
+}
