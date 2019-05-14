@@ -209,20 +209,20 @@
                 .parent()
                 .off('click.stack')
                 .on('click.stack', function () {
-                    var me = $(this).find(".btn-collapse-expanse");
-                    var rowIndex = me.parent().attr('data-stack-row');
-                    var isCollapsed = me.hasClass('icon-add');
+                    var btnIcon = $(this).find(".btn-collapse-expanse");
+                    var rowIndex = btnIcon.parent().attr('data-stack-row');
+                    var isCollapsed = btnIcon.hasClass('icon-add');
                     var $nextRows = $stackTableElement.find('.stack-row-' + rowIndex);
-                    var $tr = me.parent().parent();
+                    var $tr = btnIcon.parent().parent();
 
                     if (isCollapsed) {
-                        me.removeClass('icon-add')
+                        btnIcon.removeClass('icon-add')
                             .addClass('icon-minus');
                         $tr.removeClass('stack-collapsed').addClass('stack-expanded');
                         $nextRows.show(200);
                     }
                     else {
-                        me.removeClass('icon-minus')
+                        btnIcon.removeClass('icon-minus')
                             .addClass('icon-add');
                         $tr.removeClass('stack-expanded').addClass('stack-collapsed');
                         $nextRows.hide(200);
