@@ -10,7 +10,8 @@
     display: none;
 }
 
-@media (max-device-width: $screen-device-lower768) {
+@media (max-device-width: $screen-device-lower768),
+    (min-device-width: $screen-device-greater768) and (max-device-width: $screen-device-lower1024) and (orientation: landscape) {
     .stacktable {
         &.large-only {
             display: none;
@@ -23,7 +24,7 @@
         > thead > tr.total > th,
         > tbody > tr > td,
         > tfoot > tr > td {
-            padding: 12px 8px;
+            padding: 12px 8px !important;
         }
         
         > tbody > tr.fixed-row.stack-expanded > td {
