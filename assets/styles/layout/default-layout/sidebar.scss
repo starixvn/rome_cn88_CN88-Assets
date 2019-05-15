@@ -12,8 +12,7 @@
         padding-left: 0;
 
         .menu-item {
-            display: inline-block;           
-            position: relative;
+            display: inline-block;
 
             &:first-child {
                 background-color: #631010;
@@ -41,7 +40,11 @@
                 cursor: pointer;
             }
 
-            &:hover:not(:first-child), &.active {
+            &:hover:not(:first-child) > a, &.active > a {
+                position: relative;
+                color: #FF9999;
+                text-decoration: none;
+
                 &:after {
                     width: 0;
                     height: 0;
@@ -50,21 +53,16 @@
                     border-bottom: 8px solid #fff;
                     content: " ";
                     position: absolute;
-                    bottom: -1px;
+                    bottom: 0;
                     left: 50%;
                     margin-left: -8px;
-                }
-
-                > a {
-                    color: #FF9999;
-                    text-decoration: none;
                 }
             }
         }
     }
 
     .sub-menu {
-        position: fixed;
+        position: absolute;
         background-color: #fff;
         left: 0;
         right: 0;
