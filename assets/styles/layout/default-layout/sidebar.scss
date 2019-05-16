@@ -195,9 +195,6 @@
         font-size: 14px;
     }
 
-    .menubar .sub-menu .sub-menu-item {
-
-    }
     .menubar .list-menu {
         @include box-shadow-multiple("0 0 4px 1px rgba(0,0,0,.3)");
         position: fixed;
@@ -281,4 +278,5 @@
             display: none;
         }
     }
+
 }
