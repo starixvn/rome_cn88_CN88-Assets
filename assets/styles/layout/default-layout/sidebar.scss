@@ -2,9 +2,12 @@
 @import "../../abstracts/_mixins.scss";
 
 .menubar {
-    width: 100%;
-    background: #7E1414;
+    width: 100%;    
     font-size: 14px;
+
+    .mainmenu-container {
+        background: #7E1414;
+    }
 
     .list-menu {
         margin-bottom: 0;
