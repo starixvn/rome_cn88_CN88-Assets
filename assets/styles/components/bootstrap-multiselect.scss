@@ -33,7 +33,10 @@
         
 }
 
-.btn:not(.btn-raised):not(.btn-link):hover, .btn:not(.btn-raised):not(.btn-link):focus, .input-group-btn .btn:not(.btn-raised):not(.btn-link):hover, .input-group-btn .btn:not(.btn-raised):not(.btn-link):focus {
+.btn:not(.btn-raised):not(.btn-link):hover,
+ .btn:not(.btn-raised):not(.btn-link):focus,
+ .input-group-btn .btn:not(.btn-raised):not(.btn-link):hover,
+ .input-group-btn .btn:not(.btn-raised):not(.btn-link):focus {
     background: #fff;
 }
 
@@ -145,7 +148,8 @@
     color: $text-color;
 }
 
-@media (max-device-width: 767px) {
+@media (max-device-width: $screen-device-lower768),
+    (min-device-width: $screen-device-greater768) and (max-device-width: $screen-device-lower1024) and (orientation: landscape) {
     .filter .btn-group {
         width: 100%;
 
