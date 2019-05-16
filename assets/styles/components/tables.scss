@@ -154,18 +154,25 @@
         > thead > tr > th {
                 background-color: $table2-header-bg-color;
                 color: $table2-header-color;
-                border-bottom-color: $table2-header-border-color;
+                border-bottom-color: $table2-header-border-color !important;
         }
 
         > tbody > tr > td,
         > tfoot > tr > td {
-            padding: 12px 0;
-            border-bottom-color: 1px solid $table2-border-color;
+            padding: 12px 8px;
+            border-bottom-color: $table2-border-color;
         }
 
         .sorting:after {
             display: none;  
         }
    }
+
+   .tbl-style2 thead th,
+   .tbl-style2 tbody td,
+   .tbl-style2 tfoot td {
+        height: auto;
+        padding: 12px 8px;
+    }
 }
 
