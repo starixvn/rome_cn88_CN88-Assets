@@ -96,9 +96,20 @@
 
 @media (max-device-width: $screen-device-lower768),
     (min-device-width: $screen-device-greater768) and (max-device-width: $screen-device-lower1024) and (orientation: landscape) {
-   .nav.nav-tabs > li > a {
-       padding: 7px 20px 7px;
-       font-size: $font-size-mobile;
-       text-align: center;
-   }
+   .nav.nav-tabs {
+        display: table;
+        width: 100%;
+        margin-top: 10px;
+
+        > li {
+            display: table-cell;
+            float: none;
+        }
+
+        > li > a {
+           padding: 7px 20px 7px;
+           font-size: $font-size-mobile;
+           text-align: center;
+       }
+    }
 }
