@@ -134,6 +134,12 @@ var PopupManager = (function () {
                 }
 
                 popUp.css({ "padding-right": 0 });
+
+                if(isAutoHeight) {
+                    popUp.find(".modal-content .modal-body").css("height", _this.topWindow.$(window).height() - popUp.find(".modal-header").height());
+                }
+                
+
             }).on("hidden.bs.modal", function () {
                 popUp.find("iframe").attr("src", "about:blank");
             });
@@ -234,6 +240,13 @@ var PopupManager = (function () {
                 _this.setIframeInfo(iframe, activePopup, { height: iframeHeight, left: options.left, top: options.top });
             }
             _this.openPopUpAfterSetIframeSrc(activePopup, isAutoHeight, options);
+
+            if (isAutoHeight) {
+                _this.topWindow.$(window).on("resize", function () {
+                    activePopup.find(".modal-content .modal-body").css("height", _this.topWindow.$(window).height() - activePopup.find(".modal-header").height());
+                });
+                
+            }
         };
         this.bootboxConfirm = function (title, message, callback, width) {
             if (width === void 0) { width = undefined; }

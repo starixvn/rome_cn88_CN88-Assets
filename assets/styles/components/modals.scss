@@ -105,6 +105,15 @@
 
 @media (max-device-width: $screen-device-lower768),
     (min-device-width: $screen-device-greater768) and (max-device-width: $screen-device-lower1024) and (orientation: landscape) {
+    .modal-open {
+        -webkit-overflow-scrolling: auto; /* Stops scrolling immediately */
+
+        .main-page {
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: auto; /* Stops scrolling immediately */
+        }
+    }
+
     .popup-guidelines {
         width: 95% !important;
     }
@@ -116,13 +125,15 @@
         width: 100% !important;
         height: 100% !important;
         padding-left: 0 !important;
+        overflow-y: hidden !important;
 
         .modal-dialog {
             height: 100%;
         }
 
         .modal-content .modal-body {
-            height: 100% !important;
+            overflow-y: initial;
+            padding-bottom: 12px;
         }
     }
 }
