@@ -249,4 +249,17 @@
     .input-group.date .form-control {
         font-size: 16px;
     }
+
+    .form-group {
+        &.from-date-box, &.to-date-box {
+            .date {
+                width: 100%;
+            }
+
+            .input-group-addon {
+                width: 40px;
+            }
+        }
+    }
+     
 }
