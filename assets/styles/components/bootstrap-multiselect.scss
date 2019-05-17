@@ -73,6 +73,7 @@
         line-height: 28px;
         padding: 0 20px 0 35px;
     }
+
     label.checkbox, label.radio {
         margin: 0;
         font-size: 13px;
@@ -167,5 +168,9 @@
 
     .multiselect-container.dropdown-menu {
         width: 100%;
+
+        > li > a > label {
+            text-transform: capitalize;
+        }
     }
 }
