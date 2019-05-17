@@ -1,7 +1,7 @@
 ﻿(function ($) {
 
     $.fn.backtop = function (options) {
-        var defaults = { animationTime: 300, scrollTopIndex: 100, hideTimeout: 3 },
+        var defaults = { animationTime: 300, scrollTopIndex: 100, hideTimeout: 2 },
             settings = $.extend({}, defaults, options),
             $backToTop = $('<div class="back-to-top" id="back-top-component" style="display:none;"><span class="icon"></span></div>'),
             $html = $('html, body'),
