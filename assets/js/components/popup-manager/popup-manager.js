@@ -75,6 +75,10 @@ var PopupManager = (function () {
             var isiOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
             return isiOS;
         };
+        this.isMobile = function () {
+            var isiOS = /iPhone|iPad|iPod|android/i.test(navigator.userAgent);
+            return isiOS;
+        };
         this.isSmallDevice = function () {
             var isSmallDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
             return isSmallDevice;
@@ -135,10 +139,10 @@ var PopupManager = (function () {
 
                 popUp.css({ "padding-right": 0 });
 
-                if(isAutoHeight) {
+                if (isAutoHeight) {
                     popUp.find(".modal-content .modal-body").css("height", _this.topWindow.$(window).height() - popUp.find(".modal-header").height());
                 }
-                
+
 
             }).on("hidden.bs.modal", function () {
                 popUp.find("iframe").attr("src", "about:blank");
@@ -205,7 +209,7 @@ var PopupManager = (function () {
             var scrollLeft = _this.getScrollLeft(window.document.body);
 
             // ON iOS: there is scroll issues with popup. We must show popup with auto height
-            var isAutoHeight = _this.isiOS();
+            var isAutoHeight = _this.isMobile();
             var left = options.centerScreen ? _this.$(window).width() / 2 - popupWidth / 2 : options.left + scrollLeft;
             var popupCss = {
                 position: "absolute",
@@ -245,7 +249,7 @@ var PopupManager = (function () {
                 _this.topWindow.$(window).on("resize", function () {
                     activePopup.find(".modal-content .modal-body").css("height", _this.topWindow.$(window).height() - activePopup.find(".modal-header").height());
                 });
-                
+
             }
         };
         this.bootboxConfirm = function (title, message, callback, width) {
