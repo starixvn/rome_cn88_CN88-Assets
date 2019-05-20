@@ -104,7 +104,8 @@
       "styles/components/tabs.css",
       "styles/components/bootstrap.nexDatePicker.css",
       "styles/components/month-picker.css",
-      "styles/components/buttons.css"
+      "styles/components/buttons.css",
+      "styles/components/backtop.css"
     ]
   },
   {
@@ -135,7 +136,8 @@
       "styles/components/textboxes.css",
       "styles/components/form.css",
       "styles/components/checkbox-radio.css",
-      "styles/components/pagination.css"
+      "styles/components/pagination.css",
+      "styles/components/backtop.css"
     ]
   },
   {
@@ -149,7 +151,8 @@
       "styles/components/textboxes.css",
       "styles/components/buttons.css",
       "styles/components/tabs.css",
-      "styles/components/breadcrumbs.css"
+      "styles/components/breadcrumbs.css",
+      "styles/components/backtop.css"
 
     ]
   },
@@ -170,7 +173,8 @@
       "js/libs/bootstrap/tab.js",
       "js/libs/raven/raven.js",
       "js/libs/cleave/cleave.js",
-      "js/components/storejs/store.js"
+      "js/components/storejs/store.js",
+      "js/components/backtop/backtop.js"
     ]
   },
   {
@@ -238,7 +242,8 @@
       "js/components/pagination/jquery.pagination.js",
       "js/components/autocomplete/autocomplete.js",
       "js/libs/jquery/jquery.cookie.js",
-      "js/components/sticky-table-headers/jquery.stickytableheaders.js"
+      "js/components/sticky-table-headers/jquery.stickytableheaders.js",
+      "js/components/backtop/backtop.js"
     ]
   },
   {
@@ -252,7 +257,8 @@
       "styles/components/tabs.css",
       "styles/components/buttons.css",
       "styles/components/textboxes.css",
-      "styles/components/form.css"
+      "styles/components/form.css",
+      "styles/components/backtop.css"
     ]
   },
   {
@@ -265,7 +271,8 @@
       "js/libs/moment/moment.js",
       "js/components/datetimepicker/datepicker.js",
       "js/components/datetimepicker/bootstrap-datetimepicker.js",
-      "js/components/select2/select2.js"
+      "js/components/select2/select2.js",
+      "js/components/backtop/backtop.js"
     ]
   }
 ]
