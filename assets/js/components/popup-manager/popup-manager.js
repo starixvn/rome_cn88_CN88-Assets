@@ -5,6 +5,7 @@ var PopupManager = (function () {
         this.activePopups = [];
         this.onClosing = null;
         this.popupId = "";
+        this.bodyScrollTop = 0;
         // Choose most suitable screen resolution 1920 X 1080
         this.defaultOptions = {
             height: 1000,
@@ -39,6 +40,11 @@ var PopupManager = (function () {
             popUp.modal("hide");
             if (_this.onClosing && typeof (_this.onClosing) == "function") {
                 _this.onClosing();
+            }
+
+            var isMobile = _this.isMobile();
+            if (isMobile) {
+                _this.topWindow.$("body").scrollTop(_this.bodyScrollTop);
             }
         };
         this.setDefaultOptions = function (options) {
@@ -178,12 +184,7 @@ var PopupManager = (function () {
                 });
             }
             popUp.find(".icon-close").unbind("click").click(function () {
-                _this.activePopups.pop();
-                popUp.find('.modal-body #target').remove();
-                popUp.modal("hide");
-                if (_this.onClosing && typeof (_this.onClosing) == "function") {
-                    _this.onClosing();
-                }
+                _this.close();
             });
             popUp.tinyDraggable({
                 exclude: "a.icon-information-outline.icon-info, button.icon.icon-close.close",
@@ -206,6 +207,8 @@ var PopupManager = (function () {
             _this.popupId = popupId;
             // Calculate body scrolltop to fix issue: focus popup make body scroll to popup position (on device)
             var scrollTop = _this.getScrollTop(window.document.body);
+            this.bodyScrollTop = scrollTop;
+
             var scrollLeft = _this.getScrollLeft(window.document.body);
 
             // ON iOS: there is scroll issues with popup. We must show popup with auto height
