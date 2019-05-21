@@ -157,6 +157,7 @@
         button.multiselect {
             width: 100%;
             text-align: left;
+            padding: 0;
         }
     }
 
@@ -172,5 +173,10 @@
         > li > a > label {
             text-transform: capitalize;
         }
+    }
+
+    .multiselect .multiselect-selected-text {
+        width: 100%;
+        padding: 6px 10px;
     }
 }
