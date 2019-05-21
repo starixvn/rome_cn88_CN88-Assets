@@ -3,6 +3,7 @@ var PopupManager = (function () {
         var _this = this;
         this.positionPadding = 5;
         this.activePopups = [];
+        this.popupOptions = [];
         this.onClosing = null;
         this.popupId = "";
         this.bodyScrollTop = 0;
@@ -30,9 +31,11 @@ var PopupManager = (function () {
         this.closeAllPopup = function () {
             _this.topWindow.$('.modal[id^="page-popup-"]').modal("hide");
             _this.activePopups = [];
+            _this.popupOptions = [];
         };
         this.close = function () {
             var popUp = _this.activePopups.pop();
+            _this.popupOptions.pop();
             if (!popUp) {
                 return;
             }
@@ -185,12 +188,14 @@ var PopupManager = (function () {
             }
             popUp.find(".icon-close").unbind("click").click(function () {
                 _this.close();
+                _this.activePopups.pop();
             });
             popUp.tinyDraggable({
                 exclude: "a.icon-information-outline.icon-info, button.icon.icon-close.close",
                 resizeElement: options.resizable ? ".resizable-handle" : ""
             });
             _this.activePopups.push(popUp);
+            _this.popupOptions.push(options);
         };
         this.open = function (options) {
             _this.setDefaultOptions(options);

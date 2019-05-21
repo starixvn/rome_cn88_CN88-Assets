@@ -37,6 +37,13 @@
     display: inline-block;
 }
 
+.icon-unlock {
+    @include ripple-effect-icon($margin-left: -7px, $margin-right: -4px, $height: 26px, $width: 26px, $top: 0);
+    font-size: 19px;
+    display: inline-block;
+    color: #e88300;
+}
+
 /*.icon-refresh {
     @include ripple-effect-icon($margin-left: -7px, $margin-right: -4px, $height: 26px, $width: 26px, $top: -3px);
     font-size: 12px;
