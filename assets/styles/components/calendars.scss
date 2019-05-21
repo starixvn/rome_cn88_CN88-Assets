@@ -224,10 +224,8 @@
     }
 }
 
-// For mobile
-
-@media (max-device-width: $screen-device-lower768),
-    (min-device-width: $screen-device-greater768) and (max-device-width: $screen-device-lower1024) and (orientation: landscape) {
+// For Phone
+body.phone {
     .from-date-box .bootstrap-datetimepicker-widget.dropdown-menu {
         left: 0 !important;
 
