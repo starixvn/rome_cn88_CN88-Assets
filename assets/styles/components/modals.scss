@@ -105,7 +105,7 @@
 
 // For Phone
 body.phone {
-    .modal-open {
+    &.modal-open {
         -webkit-overflow-scrolling: auto; /* Stops scrolling immediately */
 
         .main-page {
