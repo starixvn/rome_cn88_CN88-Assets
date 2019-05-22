@@ -166,6 +166,13 @@ body.phone {
         .sorting:after {
             display: none;  
         }
+
+        > thead > tr.sub-header th {
+            padding-top: 4px;
+            padding-bottom: 4px;
+            color: #737373;
+            font-size: $font-size-mobile;
+        }
    }
 
    .tbl-style2 thead th,
