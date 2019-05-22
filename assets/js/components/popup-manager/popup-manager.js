@@ -260,7 +260,7 @@ var PopupManager = (function () {
 
             }
         };
-        this.bootboxConfirm = function (title, message, callback, width) {
+        this.bootboxConfirm = function (title, message, callback, width, okLabel, cancelLabel) {
             if (width === void 0) { width = undefined; }
             var dialog = bootbox.confirm({
                 title: title,
@@ -268,11 +268,11 @@ var PopupManager = (function () {
                 animate: false,
                 buttons: {
                     cancel: {
-                        //label: "Cancel",
+                        label: cancelLabel || "Cancel",
                         className: "btn-cancel"
                     },
                     confirm: {
-                        //label: "Submit",
+                        label: okLabel || "OK",
                         className: "btn-submit"
                     }
                 },
