@@ -82,7 +82,7 @@ var PopupManager = (function () {
             return isiOS;
         };
         this.isMobile = function () {
-            var isiOS = /iPhone|iPad|iPod|android/i.test(navigator.userAgent);
+            var isiOS = /iPhone|iPod|android/i.test(navigator.userAgent);
             return isiOS;
         };
         this.isSmallDevice = function () {
