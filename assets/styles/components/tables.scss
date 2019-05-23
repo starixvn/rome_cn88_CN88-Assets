@@ -181,5 +181,42 @@ body.phone {
         height: auto;
         padding: 12px 8px;
     }
+
+   // view more icon
+   .col-action {
+       .dropdown a {
+            height: 30px;
+            display: inline-block;
+            width: 26px;
+        }
+
+        .dropdown .dropdown-menu {
+            border-color: #DBDBDB;
+            min-width: 132px;
+            left: auto;
+            right: -14px;
+        }
+
+        .dropdown .dropdown-menu li {
+            display: block;
+            line-height: 34px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-family: $font-family !important;
+            font-size: $font-size-mobile;
+            color: $text-color;
+        }
+
+        .dropdown .dropdown-menu li:focus {
+            background: #DBDBDB;
+        }
+
+        .icon-more-action {
+            position: relative;
+            top: 7px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+   }
 }
 
