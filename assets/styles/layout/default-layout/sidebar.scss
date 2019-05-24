@@ -210,6 +210,16 @@ body.phone {
         &.collapsed {
              transition: left .1s ease-out .2s;
              left: -245px;
+        }        
+
+        .menu-item > a {
+            display: block;
+            padding: 12px 14px;
+            color: #000;
+        }
+        
+        .menu-item:hover > a {
+            color: #000;
         }
 
         .menu-item {
@@ -222,7 +232,6 @@ body.phone {
                 display: none;
             }
 
-            &:hover:not(:first-child) > a,
             &.active > a {
                 color: #7D1514;
             }
@@ -241,12 +250,6 @@ body.phone {
             }
         }
 
-        .menu-item > a {
-            display: block;
-            padding: 12px 14px;
-            color: #000;
-        }
-        
         .sub-menu {
             position: static;
             box-shadow: none;
