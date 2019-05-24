@@ -76,6 +76,11 @@
     background: transparent;
 }
 
+html {
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+}
+
 body {
     height: 100%;
     width: 100%;
@@ -84,6 +89,11 @@ body {
     line-height: unset;
     color: $text-color;
     //overflow: hidden;
+
+    // For Phone
+    &.phone {
+        font-size: $font-size-mobile;
+    }
 }
 
 .page-title {
@@ -92,6 +102,39 @@ body {
     margin-bottom: 12px;
     color: #3B3B3B;
     font-size: 16px;
+}
+
+.new-page-header {
+    height: 36px;
+    line-height: 36px;
+    background-color: #7D1514;
+    text-align: center;            
+    font-size: 14px;
+    color: #fff;
+}
+
+.page-title-mobile {
+    position: relative;
+    padding: 2px 0 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: 24px;    
+    font-size: 13px;
+
+    .back-step {
+        display: inline-block;
+        position: relative;
+        top: 10px;
+        left: -9px;
+        width: 16px;
+        line-height: 0; 
+        font-size: 34px;                       
+    }
+
+    .back-area {
+        line-height: 30px;
+        color: #337ab7;
+    }
 }
 
 a, a:focus, a:active, a:target, a:hover {

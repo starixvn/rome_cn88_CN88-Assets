@@ -97,3 +97,32 @@
         }
     }
 }
+
+// For Phone
+body.phone {
+    .filter {
+        width: 100%;
+
+        .form-group {
+            display: block;
+            width: 100%;
+        }
+
+        .form-group label {
+            display: block;
+            text-transform: uppercase;
+        }
+    }
+
+    [class^="icon-filter"] {
+        float: right;
+        background-color: #27A67B;
+        padding: 2px;
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 27px;
+        font-size: 15px
+    }
+}

@@ -72,3 +72,9 @@ $text-color: #5b534f;
     }
 }
 
+// For Phone
+body.phone {
+    .header-nav {
+        display: none;
+    }
+}

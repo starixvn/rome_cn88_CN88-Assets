@@ -5,6 +5,7 @@ var PopupManager = (function () {
         this.activePopups = [];
         this.onClosing = null;
         this.popupId = "";
+        this.bodyScrollTop = 0;
         // Choose most suitable screen resolution 1920 X 1080
         this.defaultOptions = {
             height: 1000,
@@ -40,6 +41,11 @@ var PopupManager = (function () {
             if (_this.onClosing && typeof (_this.onClosing) == "function") {
                 _this.onClosing();
             }
+
+            var isMobile = _this.isMobile();
+            if (isMobile) {
+                _this.topWindow.$("body").scrollTop(_this.bodyScrollTop);
+            }
         };
         this.setDefaultOptions = function (options) {
             options.centerScreen = options.centerScreen == undefined || options.centerScreen;
@@ -73,6 +79,10 @@ var PopupManager = (function () {
         };
         this.isiOS = function () {
             var isiOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+            return isiOS;
+        };
+        this.isMobile = function () {
+            var isiOS = /iPhone|iPod|android/i.test(navigator.userAgent);
             return isiOS;
         };
         this.isSmallDevice = function () {
@@ -134,6 +144,12 @@ var PopupManager = (function () {
                 }
 
                 popUp.css({ "padding-right": 0 });
+
+                if (isAutoHeight) {
+                    popUp.find(".modal-content .modal-body").css("height", _this.topWindow.$(window).height() - popUp.find(".modal-header").height());
+                }
+
+
             }).on("hidden.bs.modal", function () {
                 popUp.find("iframe").attr("src", "about:blank");
             });
@@ -168,12 +184,7 @@ var PopupManager = (function () {
                 });
             }
             popUp.find(".icon-close").unbind("click").click(function () {
-                _this.activePopups.pop();
-                popUp.find('.modal-body #target').remove();
-                popUp.modal("hide");
-                if (_this.onClosing && typeof (_this.onClosing) == "function") {
-                    _this.onClosing();
-                }
+                _this.close();
             });
             popUp.tinyDraggable({
                 exclude: "a.icon-information-outline.icon-info, button.icon.icon-close.close",
@@ -196,10 +207,12 @@ var PopupManager = (function () {
             _this.popupId = popupId;
             // Calculate body scrolltop to fix issue: focus popup make body scroll to popup position (on device)
             var scrollTop = _this.getScrollTop(window.document.body);
+            this.bodyScrollTop = scrollTop;
+
             var scrollLeft = _this.getScrollLeft(window.document.body);
 
             // ON iOS: there is scroll issues with popup. We must show popup with auto height
-            var isAutoHeight = _this.isiOS();
+            var isAutoHeight = _this.isMobile();
             var left = options.centerScreen ? _this.$(window).width() / 2 - popupWidth / 2 : options.left + scrollLeft;
             var popupCss = {
                 position: "absolute",
@@ -234,6 +247,13 @@ var PopupManager = (function () {
                 _this.setIframeInfo(iframe, activePopup, { height: iframeHeight, left: options.left, top: options.top });
             }
             _this.openPopUpAfterSetIframeSrc(activePopup, isAutoHeight, options);
+
+            if (isAutoHeight) {
+                _this.topWindow.$(window).on("resize", function () {
+                    activePopup.find(".modal-content .modal-body").css("height", _this.topWindow.$(window).height() - activePopup.find(".modal-header").height());
+                });
+
+            }
         };
         this.bootboxConfirm = function (title, message, callback, width) {
             if (width === void 0) { width = undefined; }

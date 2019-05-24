@@ -36,17 +36,19 @@
     @include border-radius(1px);
 
     .modal-header {
+        position: relative;
         padding: 0;
         border-bottom: none;
         background-color: #7e1414;
         min-height: 41px;
+        padding-right: 40px;        
 
-        .icon-close, .close {
+        .close {
             position: absolute;
             right: 0;
             top: 2px;
             width: 40px;
-            height: 41px;
+            bottom: 0;
             margin-right: 0;
             color: #fff;
             opacity: 1;
@@ -101,9 +103,38 @@
     cursor: default;
 }
 
-@media only screen and (max-device-width : $screen-device-lower768) {
+// For Phone
+body.phone {
+    &.modal-open {
+        -webkit-overflow-scrolling: auto; /* Stops scrolling immediately */
+
+        .main-page {
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: auto; /* Stops scrolling immediately */
+        }
+    }
+
     .popup-guidelines {
         width: 95% !important;
+    }
+
+    .modal {
+        position: fixed !important;        
+        left: 0 !important;
+        top: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        padding-left: 0 !important;
+        overflow-y: hidden !important;
+
+        .modal-dialog {
+            height: 100%;
+        }
+
+        .modal-content .modal-body {
+            overflow-y: initial;
+            padding-bottom: 12px;
+        }
     }
 }
 

@@ -33,7 +33,10 @@
         
 }
 
-.btn:not(.btn-raised):not(.btn-link):hover, .btn:not(.btn-raised):not(.btn-link):focus, .input-group-btn .btn:not(.btn-raised):not(.btn-link):hover, .input-group-btn .btn:not(.btn-raised):not(.btn-link):focus {
+.btn:not(.btn-raised):not(.btn-link):hover,
+ .btn:not(.btn-raised):not(.btn-link):focus,
+ .input-group-btn .btn:not(.btn-raised):not(.btn-link):hover,
+ .input-group-btn .btn:not(.btn-raised):not(.btn-link):focus {
     background: #fff;
 }
 
@@ -70,6 +73,7 @@
         line-height: 28px;
         padding: 0 20px 0 35px;
     }
+
     label.checkbox, label.radio {
         margin: 0;
         font-size: 13px;
@@ -143,4 +147,36 @@
 .dropdown-menu > .active > a:focus {
     background: none;
     color: $text-color;
+}
+
+// For Phone
+body.phone {
+    .filter .btn-group {
+        width: 100%;
+    }
+
+    .btn-group  button.multiselect {
+        width: 100%;
+        text-align: left;
+        padding: 0;
+    }
+
+    .btn-group button.multiselect,
+    .multiselect-container.dropdown-menu label.checkbox,
+     .multiselect-container.dropdown-menu label.radio {
+        font-size: $font-size-mobile;
+    }
+
+    .multiselect-container.dropdown-menu {
+        width: 100%;
+
+        > li > a > label {
+            text-transform: capitalize;
+        }
+    }
+
+    .multiselect .multiselect-selected-text {
+        width: 100%;
+        padding: 6px 10px;
+    }
 }

@@ -7,7 +7,7 @@
       "styles/fonts/iconcn88/style.css",
       "styles/base/scaffolding.css",
       "styles/components/blockui.css",
-      "styles/components/dropdown.css",      
+      "styles/components/dropdown.css",
       "styles/base/icon-fonts.css",
       "styles/components/icon.css",
       "styles/components/tables.css",
@@ -18,7 +18,8 @@
     "outputFileName": "bundles/site-cn88/default.css",
     "inputFiles": [
       "styles/layout/default-layout/header.css",
-      "styles/layout/default-layout/sidebar.css"
+      "styles/layout/default-layout/sidebar.css",
+      "styles/components/backtop.css"
     ]
   },
   {
@@ -56,7 +57,8 @@
       "js/libs/cleave/cleave.js",
       "js/components/draggable/tiny-draggable.js",
       "js/components/resizable/resizable.js",
-      "js/components/popup-manager/popup-manager.js"
+      "js/components/popup-manager/popup-manager.js",
+      "js/components/backtop/backtop.js"
     ]
   },
   {
@@ -79,6 +81,8 @@
       "styles/components/alerts.css",
       "styles/components/tooltip.css",
       "styles/components/breadcrumbs.css",
+      "styles/components/stacktable.css",
+      "styles/components/backtop.css",
       "styles/layout/default-layout/sidebar.css"
     ]
   },
@@ -100,7 +104,8 @@
       "styles/components/tabs.css",
       "styles/components/bootstrap.nexDatePicker.css",
       "styles/components/month-picker.css",
-      "styles/components/buttons.css"
+      "styles/components/buttons.css",
+      "styles/components/backtop.css"
     ]
   },
   {
@@ -131,7 +136,8 @@
       "styles/components/textboxes.css",
       "styles/components/form.css",
       "styles/components/checkbox-radio.css",
-      "styles/components/pagination.css"
+      "styles/components/pagination.css",
+      "styles/components/backtop.css"
     ]
   },
   {
@@ -145,7 +151,8 @@
       "styles/components/textboxes.css",
       "styles/components/buttons.css",
       "styles/components/tabs.css",
-      "styles/components/breadcrumbs.css"
+      "styles/components/breadcrumbs.css",
+      "styles/components/backtop.css"
 
     ]
   },
@@ -165,7 +172,9 @@
       "js/components/multiselect/bootstrap-multiselect.js",
       "js/libs/bootstrap/tab.js",
       "js/libs/raven/raven.js",
-      "js/libs/cleave/cleave.js"
+      "js/libs/cleave/cleave.js",
+      "js/components/storejs/store.js",
+      "js/components/backtop/backtop.js"
     ]
   },
   {
@@ -196,7 +205,9 @@
       "js/libs/raven/raven.js",
       "js/components/draggable/tiny-draggable.js",
       "js/components/resizable/resizable.js",
-      "js/components/popup-manager/popup-manager.js"
+      "js/components/popup-manager/popup-manager.js",
+      "js/components/stack-table/stacktable.js",
+      "js/components/backtop/backtop.js" 
     ]
   },
   {
@@ -231,7 +242,8 @@
       "js/components/pagination/jquery.pagination.js",
       "js/components/autocomplete/autocomplete.js",
       "js/libs/jquery/jquery.cookie.js",
-      "js/components/sticky-table-headers/jquery.stickytableheaders.js"
+      "js/components/sticky-table-headers/jquery.stickytableheaders.js",
+      "js/components/backtop/backtop.js"
     ]
   },
   {
@@ -245,7 +257,8 @@
       "styles/components/tabs.css",
       "styles/components/buttons.css",
       "styles/components/textboxes.css",
-      "styles/components/form.css"
+      "styles/components/form.css",
+      "styles/components/backtop.css"
     ]
   },
   {
@@ -258,7 +271,8 @@
       "js/libs/moment/moment.js",
       "js/components/datetimepicker/datepicker.js",
       "js/components/datetimepicker/bootstrap-datetimepicker.js",
-      "js/components/select2/select2.js"
+      "js/components/select2/select2.js",
+      "js/components/backtop/backtop.js"
     ]
   }
 ]

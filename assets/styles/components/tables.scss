@@ -5,155 +5,6 @@
     width: 100%;
 }
 
-/*.tblRpt {
-    border: 1px solid $table-border-color;
-    border-collapse: collapse;
-    background-color: #fff;
-
-    &.tblRpt-bordered {
-        > thead > tr > th, > tbody > tr > td, tfoot > tr > td {
-            border: 1px solid $table-border-color;
-        }
-    }
-
-    &.tblRpt-striped {
-        tbody {
-            > tr:nth-of-type(2n) {
-                background-color: $table-even-bg;
-            }
-        }
-    }
-
-    &.alternative-row-table {
-        tbody {
-            .even-row {
-                background-color: $table-even-bg;
-            }
-        }
-    }
-
-    &.tblRpt-hover {
-       > tbody {
-            > tr:hover > td {
-                background-color: $table-td-hover-color;
-            }
-        }
-    }
-
-    thead th, tbody td, tfoot td {
-        height: $height-normal;
-        padding: 4px 8px;
-        white-space: nowrap;
-        vertical-align: middle;
-        @include box-sizing;
-    }
-
-    thead {
-        th {
-            background-color: $table-header-bg-color;
-            color: $table-header-color;
-            font-weight: 400;
-            text-align: center;
-        }
-
-        tr.thead-row2-pt th {
-            background-color: #f0f1c7;
-            color: $text-color;
-
-            &.thead-row {
-                background-color: $table-header-bg-color;
-                color: $table-header-color;
-            }
-        }
-    }
-
-    .thead-row2 th {
-        background-color: $table-subheader-bg-color;
-        color: $table-subheader-color;
-    }
-
-    tbody {
-        td {
-            &.text-center {
-                text-align: center;
-            }
-
-            &.group-league {
-                background: #f4f5e0;
-                text-transform: uppercase;
-                color: $text-color;
-                font-weight: bold;
-                text-align: left;
-            }
-        }
-
-        .col-first {
-            background-color: #ffefde;
-        }
-
-        .altercol {
-            background-color: #f6f2d7;
-            text-align: right;
-        }
-
-        .col-sma {
-            background-color: #f8d7a2;
-            font-weight: bold;
-            text-transform: uppercase;
-            text-align: center;
-        }
-    }
-
-    .tbl-footer {
-        background-color: $table-footer-bg;
-        color: $table-footer-color;
-        font-weight: 700;
-
-        .altercol {
-            background-color: #432616;
-        }
-    }
-
-    .product-row {
-        background-color: #f3f5e0;
-        color: #333;
-        text-transform: uppercase;
-
-        .altercol {
-            background-color: #f3f5e0;
-        }
-
-        &:hover {
-            cursor: pointer;
-        }
-
-        td:first-child {
-            width: 20%;
-        }
-
-        > td {
-            .icon-arrow-right {
-                @include transform(rotate(0));
-                font-size: 16px;
-                position: relative;
-                top: 2px;
-                @include transition(transform 0.3s ease-out);
-            }
-
-            &.active {
-                .icon-arrow-right {
-                    @include transform(rotate(90deg));
-                }
-            }
-        }
-    }
-
-    .noInfo {
-        background-color: #fff !important;
-        text-align: center;
-    }
-}*/
-
 .tbl-noborder {
     > thead > tr > th {
         border-bottom: 2px solid #c8c8c8;
@@ -239,7 +90,7 @@
         @include box-sizing;
     }
 
-    thead {
+    thead > tr {
         border-bottom: 1px solid $table2-header-border-color;
 
         th {
@@ -296,3 +147,39 @@
         }
     }
 }
+
+// For Phone
+body.phone {
+   .tbl-noborder {
+        > thead > tr > th {
+                background-color: $table2-header-bg-color;
+                color: $table2-header-color;
+                border-bottom-color: $table2-header-border-color !important;
+        }
+
+        > tbody > tr > td,
+        > tfoot > tr > td {
+            padding: 12px 8px;
+            border-bottom-color: $table2-border-color;
+        }
+
+        .sorting:after {
+            display: none;  
+        }
+
+        > thead > tr.sub-header th {
+            padding-top: 4px;
+            padding-bottom: 4px;
+            color: #737373;
+            font-size: $font-size-mobile;
+        }
+   }
+
+   .tbl-style2 thead th,
+   .tbl-style2 tbody td,
+   .tbl-style2 tfoot td {
+        height: auto;
+        padding: 12px 8px;
+    }
+}
+

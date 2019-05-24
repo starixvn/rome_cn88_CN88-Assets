@@ -1,0 +1,68 @@
+﻿@import "../abstracts/_variables.scss";
+
+/* RESPONSIVE EXAMPLE */
+
+.stacktable.large-only {
+    display: table;
+}
+
+.stacktable.small-only {
+    display: none;
+}
+
+// For Phone
+body.phone {
+    .stacktable {
+        &.large-only {
+            display: none;
+        }
+
+        &.small-only {
+            display: table;
+        }
+
+        > thead > tr.total > th,
+        > tbody > tr > td,
+        > tfoot > tr > td {
+            padding: 12px 8px !important;
+        }
+        
+        > tbody > tr.fixed-row.stack-expanded > td {
+            border-bottom: none;
+        }
+
+        tr.stack-row.stack-last-row td {
+            border-bottom: 1px solid $table2-border-color;
+        }
+
+        > tbody > tr.stack-row > td {
+            padding: 8px 8px !important;
+            border-bottom: none;
+        }
+
+        .btn-collapse-expanse {
+            position: relative;
+            top: 2px;
+            line-height: 0;
+            font-size: 16px;
+            color: #27A67B;
+        }
+
+        .btn-collapse-expanse:hover:after {
+            left: 1px;
+            top: -9px;
+        }
+
+        .st-cell-label {
+            float: left;
+        }
+
+        .st-cell-value {
+            float: right;
+        }
+
+        .col-action {
+            width: 34px;
+        }
+    }
+}
