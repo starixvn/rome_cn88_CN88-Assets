@@ -144,6 +144,22 @@ body.phone {
             overflow-y: initial;
             padding-bottom: 12px;
         }
+
+        .modal-content .modal-footer {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    }
+
+    .bootbox.modal {
+        .modal-dialog {
+            width: 100% !important;
+            margin-top: 0;
+        }
+
+        .modal-footer button[data-bb-handler="confirm"] {
+            width: 100%;
+        }
     }
 }
 
