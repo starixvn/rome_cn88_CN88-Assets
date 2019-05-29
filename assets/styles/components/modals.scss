@@ -59,8 +59,10 @@
             outline: none;
             z-index: 9999;
         }
+
         .close {
             font-size: 0;
+
             &:before {
                 font-family: 'CN88Icon';
                 content: "\e90e";
@@ -99,9 +101,16 @@
     }
 }
 
-.bootbox .modal-header .modal-title {
-    cursor: default;
+.bootbox {
+    .modal-header .modal-title {
+        cursor: default;
+    }
+
+    .modal-body {
+        padding: 16px 20px;
+    }
 }
+
 
 // For Phone
 body.phone {
