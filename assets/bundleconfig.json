@@ -11,7 +11,8 @@
       "styles/base/icon-fonts.css",
       "styles/components/icon.css",
       "styles/components/tables.css",
-      "styles/components/modals.css"
+      "styles/components/modals.css",
+      "styles/components/backtop.css"
     ]
   },
   {
