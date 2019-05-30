@@ -164,7 +164,18 @@ body.phone {
 
         .modal-footer button[data-bb-handler="confirm"] {
             width: 100%;
+            margin-left: 0;
         }
+
+        .modal-footer button[data-bb-handler="cancel"] {
+             width: 48%;
+             margin-right: 4%;
+        }
+
+        .modal-footer button[data-bb-handler="cancel"] + button[data-bb-handler="confirm"] {
+            width: 48%;
+        }
+        
     }
 }
 

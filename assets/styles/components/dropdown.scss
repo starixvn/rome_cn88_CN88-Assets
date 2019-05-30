@@ -6,6 +6,7 @@ select {
     color: $text-color;
     height: $height-normal;
     padding: 4px 8px;
+    @include border-radius(0);
     @include box-sizing;
 
     option {
