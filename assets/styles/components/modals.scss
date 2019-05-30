@@ -142,7 +142,12 @@ body.phone {
 
         .modal-content .modal-body {
             overflow-y: initial;
-            padding-bottom: 12px;
+        }
+
+        .modal-content .modal-body > iframe {
+            position: absolute;
+            top: 0 !important;
+            left: 0 !important;
         }
 
         .modal-content .modal-footer {

@@ -175,12 +175,18 @@ body.phone {
         }
    }
 
-   .tbl-style2 thead th,
-   .tbl-style2 tbody td,
-   .tbl-style2 tfoot td {
-        height: auto;
-        padding: 12px 8px;
-    }
+   .tbl-style2 {
+       thead th,
+       tbody td,
+       tfoot td {
+            height: auto;
+            padding: 12px 8px;
+        }
+
+       .sorting:after {
+           display: none;
+       }
+   }
 
    // view more icon
    .col-action {
