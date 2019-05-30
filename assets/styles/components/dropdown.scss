@@ -2,12 +2,16 @@
 @import "../abstracts/_mixins.scss";
 
 select {
-    border: 1px solid $border-color;
-    color: $text-color;
-    height: $height-normal;
-    padding: 4px 8px;
     @include border-radius(0);
     @include box-sizing;
+    border: 1px solid $border-color;
+    color: $text-color;
+    height: $height-normal;       
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAG0lEQVR42mNgwAfKy8v/48I4FeA0AacVDFQBAP9wJkE/KhUMAAAAAElFTkSuQmCC) no-repeat right 10px center;
+    padding: 2px 18px 2px 10px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 
     option {
         padding: 4px;
