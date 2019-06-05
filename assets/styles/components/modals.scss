@@ -156,6 +156,11 @@ body.phone {
         }
     }
 
+    .modal-content .modal-header .modal-title {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
     .bootbox.modal {
         .modal-dialog {
             width: 100% !important;
