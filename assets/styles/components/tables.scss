@@ -229,6 +229,12 @@ body.phone {
             top: 4px;
             font-size: 18px;
             cursor: pointer;
+
+            .path2:before {
+                margin-left: 9px;
+                position: absolute;
+                top: 0;
+            }
         }
    }
 }
