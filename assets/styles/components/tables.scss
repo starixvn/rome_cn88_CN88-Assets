@@ -190,10 +190,10 @@ body.phone {
 
    // view more icon
    .col-action {
-       .dropdown a {
+       .dropdown .dropdown-toggle {
             height: 30px;
             display: inline-block;
-            width: 26px;
+            width: 30px;
         }
 
         .dropdown .dropdown-menu {
