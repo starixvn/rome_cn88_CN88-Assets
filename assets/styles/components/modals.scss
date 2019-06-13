@@ -115,6 +115,7 @@
 // For Phone
 body.phone {
     &.modal-open {
+        overflow: hidden;
         -webkit-overflow-scrolling: auto; /* Stops scrolling immediately */
 
         .main-page {
