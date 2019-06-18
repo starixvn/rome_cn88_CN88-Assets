@@ -115,6 +115,7 @@
 // For Phone
 body.phone {
     &.modal-open {
+        overflow: hidden;
         -webkit-overflow-scrolling: auto; /* Stops scrolling immediately */
 
         .main-page {
@@ -142,8 +143,45 @@ body.phone {
 
         .modal-content .modal-body {
             overflow-y: initial;
-            padding-bottom: 12px;
         }
+
+        .modal-content .modal-body > iframe {
+            position: absolute;
+            top: 0 !important;
+            left: 0 !important;
+        }
+
+        .modal-content .modal-footer {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    }
+
+    .modal-content .modal-header .modal-title {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .bootbox.modal {
+        .modal-dialog {
+            width: 100% !important;
+            margin-top: 0;
+        }
+
+        .modal-footer button[data-bb-handler="confirm"] {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        .modal-footer button[data-bb-handler="cancel"] {
+             width: 48%;
+             margin-right: 4%;
+        }
+
+        .modal-footer button[data-bb-handler="cancel"] + button[data-bb-handler="confirm"] {
+            width: 48%;
+        }
+        
     }
 }
 
