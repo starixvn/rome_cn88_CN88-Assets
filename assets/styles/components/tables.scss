@@ -226,17 +226,12 @@ body.phone {
 
         .icon-user-unlock {
             position: relative;
-            display: block;
-            margin: 0;
-            top: 4px;
-            font-size: 18px;
-            cursor: pointer;
-
-            .path2:before {
-                margin-left: -9px;
-                position: absolute;
-                top: 0;
-            }
+            top: 2px;
+            display: inline-block;
+            width: 21px;
+            height: 21px;
+            margin: 0 !important;
+            background: url(../images/user_unlock.svg) no-repeat;
         }
    }
 }
