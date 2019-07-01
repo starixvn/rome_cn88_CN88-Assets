@@ -39,7 +39,7 @@ input[type="submit"][disabled] {
 
     &[disabled], .disabled {
        opacity: .4;
-       cursor: not-allowed;
+       cursor: not-allowed !important;
     }
 }
 
