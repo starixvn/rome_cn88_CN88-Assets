@@ -51,15 +51,11 @@ input[type="submit"][disabled] {
      &:hover, &:active {
 	    color: $btn-color-hover;
         background-color: $btn-bg-hover;
-
-        &[disabled], .disabled {
-            background-color: $btn-bg;    
-            color: $btn-color;
-        }
     }
 
-    &[disabled] {
-        color: $btn-color;
+    &[disabled], .disabled {
+        background-color: $btn-bg !important;  
+        color: $btn-color !important;
     }
 }
 
@@ -68,17 +64,13 @@ input[type="submit"][disabled] {
     background: $btn-submit-bg;
     color: $btn-submit-color;
     &:hover, &:active, &:focus {
-        background-color: $btn-submit-bg-hover !important;
+        background-color: $btn-submit-bg-hover;
         color: $btn-submit-color-hover;
-
-        &[disabled], .disabled {
-            background-color: $btn-submit-bg;    
-            color: $btn-submit-color;
-        }
     }
 
-    &[disabled] {
-        color: $btn-submit-color;
+    &[disabled], .disabled {
+        background-color: $btn-submit-bg !important;    
+        color: $btn-submit-color !important;
     }
 }
 
@@ -89,16 +81,12 @@ input[type="submit"][disabled] {
     color: $btn-cancel-color;
 
     &:hover, &:active, &:focus {
-        background-color: $btn-cancel-bg-hover !important;
-
-        &[disabled], .disabled {
-            background-color: $btn-cancel-bg;
-            color: $btn-cancel-color;
-        }
+        background-color: $btn-cancel-bg-hover;
     }
 
-    &[disabled] {
-        color: $btn-cancel-color;
+    &[disabled], .disabled {
+        background-color: $btn-cancel-bg !important;
+        color: $btn-cancel-color !important;
     }
 }
 
@@ -110,10 +98,11 @@ input[type="submit"][disabled] {
 
     &:hover, &:active, &:focus {
         background-color: $btn-secondary-bg-hover;
-        &[disabled], .disabled {
-            background-color: $btn-secondary-bg;
-            color: $btn-secondary-color;
-        }
+    }
+
+    &[disabled], .disabled {
+        background-color: $btn-secondary-bg !important;
+        color: $btn-secondary-color !important;
     }
 }
 
