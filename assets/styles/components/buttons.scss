@@ -37,9 +37,9 @@ input[type="submit"][disabled] {
        font-size: $font-size-mobile;
     }
 
-    &[disabled], .disabled {
+    &:disabled, .disabled {
        opacity: .4;
-       cursor: not-allowed !important;
+       pointer-events: none;
     }
 }
 
@@ -53,7 +53,7 @@ input[type="submit"][disabled] {
         background-color: $btn-bg-hover;
     }
 
-    &[disabled], .disabled {
+    &:disabled, .disabled {
         background-color: $btn-bg !important;  
         color: $btn-color !important;
     }
@@ -68,7 +68,7 @@ input[type="submit"][disabled] {
         color: $btn-submit-color-hover;
     }
 
-    &[disabled], .disabled {
+    &:disabled, .disabled {
         background-color: $btn-submit-bg !important;    
         color: $btn-submit-color !important;
     }
@@ -84,7 +84,7 @@ input[type="submit"][disabled] {
         background-color: $btn-cancel-bg-hover;
     }
 
-    &[disabled], .disabled {
+    &:disabled, .disabled {
         background-color: $btn-cancel-bg !important;
         color: $btn-cancel-color !important;
     }
@@ -100,7 +100,7 @@ input[type="submit"][disabled] {
         background-color: $btn-secondary-bg-hover;
     }
 
-    &[disabled], .disabled {
+    &:disabled, .disabled {
         background-color: $btn-secondary-bg !important;
         color: $btn-secondary-color !important;
     }
