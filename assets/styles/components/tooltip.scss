@@ -2,8 +2,8 @@
 
 // Base class
 .tooltip {
-    border: none;
-    background: transparent;
+    border: none !important;
+    background: transparent !important;
 
     &.in {
         opacity: 1;
