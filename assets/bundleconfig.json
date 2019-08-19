@@ -312,7 +312,8 @@
       "styles/components/form.css",
       "styles/components/alerts.css",
       "styles/components/stacktable.css",
-      "styles/components/backtop.css"
+      "styles/components/backtop.css",
+      "styles/components/checkbox-radio.css"
     ]
   }
 ]
