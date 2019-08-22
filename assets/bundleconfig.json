@@ -294,6 +294,7 @@
       "js/components/datetimepicker/datepicker.js",
       "js/components/datetimepicker/bootstrap-datetimepicker.js",
       "js/components/bootstrap.nexDatePicker/bootstrap.nexDatePicker.js",
+      "js/components/stack-table/stacktable.js",
       "js/components/backtop/backtop.js"
     ]
   },
