@@ -138,6 +138,7 @@
       "styles/components/form.css",
       "styles/components/checkbox-radio.css",
       "styles/components/pagination.css",
+      "styles/components/stacktable.css",
       "styles/components/backtop.css"
     ]
   },
@@ -243,6 +244,7 @@
       "js/components/pagination/jquery.pagination.js",
       "js/components/autocomplete/autocomplete.js",
       "js/libs/jquery/jquery.cookie.js",
+      "js/components/stack-table/stacktable.js",
       "js/components/sticky-table-headers/jquery.stickytableheaders.js",
       "js/components/backtop/backtop.js"
     ]
