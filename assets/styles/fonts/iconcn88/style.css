@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'CN88Icon';
-  src:  url('fonts/CN88Icon.eot?2gdqyw');
-  src:  url('fonts/CN88Icon.eot?2gdqyw#iefix') format('embedded-opentype'),
-    url('fonts/CN88Icon.ttf?2gdqyw') format('truetype'),
-    url('fonts/CN88Icon.woff?2gdqyw') format('woff'),
-    url('fonts/CN88Icon.svg?2gdqyw#CN88Icon') format('svg');
+  src:  url('fonts/CN88Icon.eot?2cij9u');
+  src:  url('fonts/CN88Icon.eot?2cij9u#iefix') format('embedded-opentype'),
+    url('fonts/CN88Icon.ttf?2cij9u') format('truetype'),
+    url('fonts/CN88Icon.woff?2cij9u') format('woff'),
+    url('fonts/CN88Icon.svg?2cij9u#CN88Icon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,13 +26,13 @@
 }
 
 .icon-account-notification:before {
-  content: "\e900";
+  content: "\e931";
 }
 .icon-unlock:before {
   content: "\e930";
 }
 .icon-more-action:before {
-  content: "\e937";
+  content: "\e92f";
   color: #27a67b;
 }
 .icon-settings:before {
@@ -45,50 +45,50 @@
   content: "\e92d";
 }
 .icon-left-menu:before {
-  content: "\e92e";
+  content: "\e92a";
 }
 .icon-filter-up:before {
-  content: "\e92a";
+  content: "\e928";
 }
 .icon-filter-down:before {
   content: "\e929";
 }
 .icon-more:before {
-  content: "\e928";
+  content: "\e927";
   color: #fff;
 }
 .icon-search:before {
   content: "\e926";
 }
 .icon-audio-speaker-off:before {
-  content: "\e925";
-}
-.icon-audio-speaker-on:before {
-  content: "\e927";
-}
-.icon-cancel-circular:before {
   content: "\e924";
 }
-.icon-filter:before {
-  content: "\e921";
+.icon-audio-speaker-on:before {
+  content: "\e925";
 }
-.icon-on:before {
-  content: "\e922";
-}
-.icon-pause:before {
+.icon-cancel-circular:before {
   content: "\e923";
 }
-.icon-no-stopping:before {
+.icon-filter:before {
   content: "\e920";
 }
+.icon-on:before {
+  content: "\e921";
+}
+.icon-pause:before {
+  content: "\e922";
+}
+.icon-no-stopping:before {
+  content: "\e91f";
+}
 .icon-menu:before {
-  content: "\e91d";
+  content: "\e91c";
 }
 .icon-refresh:before {
-  content: "\e91e";
+  content: "\e91d";
 }
 .icon-external-link:before {
-  content: "\e91f";
+  content: "\e91e";
 }
 .icon-expanse:before {
   content: "\e919";
@@ -100,7 +100,7 @@
   content: "\e91b";
 }
 .icon-delete:before {
-  content: "\e91c";
+  content: "\e918";
 }
 .icon-minus:before {
   content: "\e917";
@@ -154,26 +154,26 @@
   content: "\e908";
 }
 .icon-calendar:before {
-  content: "\e918";
-}
-.icon-chevron-double-left:before {
   content: "\e906";
 }
-.icon-chevron-down:before {
-  content: "\e901";
-}
-.icon-bell:before {
-  content: "\e902";
-}
-.icon-chat:before {
-  content: "\e903";
-}
-.icon-chevron-double-right:before {
-  content: "\e904";
-}
-.icon-web:before {
+.icon-chevron-double-left:before {
   content: "\e905";
 }
+.icon-chevron-down:before {
+  content: "\e900";
+}
+.icon-bell:before {
+  content: "\e901";
+}
+.icon-chat:before {
+  content: "\e902";
+}
+.icon-chevron-double-right:before {
+  content: "\e903";
+}
+.icon-web:before {
+  content: "\e904";
+}
 .icon-mic:before {
-  content: "\e92f";
+  content: "\e92e";
 }
