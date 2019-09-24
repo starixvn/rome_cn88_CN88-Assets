@@ -49,6 +49,12 @@ $text-color: #5b534f;
             }
         }
 
+        .icon-account-notification:before {
+            font-size: 16px;
+            position: relative;
+            top: 2px;
+        }
+
         .icon-bell:before {
             font-size: 15px;
         }
