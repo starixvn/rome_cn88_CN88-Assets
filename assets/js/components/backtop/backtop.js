@@ -10,17 +10,16 @@
         if (!iOS && settings.mainFrameId !== '') {
             var mainFrame = $('#' + settings.mainFrameId);
 
-            mainFrame.on('load.backtop', () => {
+            mainFrame.on('load.backtop', function () {
                 var iframeWindow = mainFrame[0].contentWindow || mainFrame[0].contentDocument;
 
                 RegisterBackTopEvents(
                     $(iframeWindow.window),
-                    $(iframeWindow.document).find('html, body'), 
+                    $(iframeWindow.document).find('html, body'),
                     $(iframeWindow.document).find('body'), settings);
             });
         }
     };
-
 
     function RegisterBackTopEvents($window, $html, $body, settings) {
         var timeOutHandler,
